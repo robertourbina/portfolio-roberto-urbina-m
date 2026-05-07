@@ -7,10 +7,14 @@ Epicor ERP specialist portfolio with SQL, Python data analysis, and mapping proj
 Welcome to my professional portfolio repository.  
 Here you can find projects and examples related to:
 
-- 🏢 Epicor ERP solutions
-- 📊 Data analysis with Python
-- 🗺 GIS and mapping projects
-- 💾 SQL and automation examples
+## ERP & Business Systems
+- 🏢 Epicor ERP
+- 📋 Functional Analysis
+- 🧩 Business Process Mapping
+- ⚙️ BPM (Business Process Management)
+- 📊 BAQ (Business Activity Queries)
+- 🧾 SSRS Reports
+- 🎛 Dashboard Customization
 
 ---
 
@@ -130,3 +134,15 @@ This repository was created to document my technical growth, share practical sol
 ---
 
 ⭐ Thanks for visiting my portfolio repository!
+
+# 📊 GitHub Statistics
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight)
+
+</div>
