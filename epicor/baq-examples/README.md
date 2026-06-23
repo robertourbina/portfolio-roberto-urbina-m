@@ -41,12 +41,12 @@ Labor Reporting
 
 ## BAQ Development Skills
 Multi-table joins
-Calculated fields
-Summary calculations
-Date filtering
-Parameter-driven reporting
-Advanced query design
-Data aggregation
+Calculated fields 
+Summary calculations 
+Date filtering 
+Parameter-driven reporting 
+Advanced query design 
+Data aggregation 
 Business rule implementation
 
 ## Business Analysis Skills
