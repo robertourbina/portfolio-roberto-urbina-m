@@ -1,6 +1,6 @@
 
-## Business Activity Queries (BAQs)
-# Overview
+# Business Activity Queries (BAQs)
+## Overview
 
 Business Activity Queries (BAQs) are one of the most powerful reporting and data analysis tools available in Epicor ERP.
 
