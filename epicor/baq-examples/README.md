@@ -31,13 +31,13 @@ By providing real-time access to business information, BAQs enable users to make
 The examples included in this portfolio demonstrate practical Epicor reporting and business analysis skills, including:
 
 ## Epicor ERP Knowledge
-Sales Order Management
-Production Management
-Inventory Management
-Purchasing Processes
-Shop Floor Operations
-Material Planning
-Labor Reporting
+- Sales Order Management
+- Production Management
+- Inventory Management
+- Purchasing Processes
+- Shop Floor Operations
+- Material Planning
+- Labor Reporting
 
 ## BAQ Development Skills
 Multi-table joins
