@@ -63,65 +63,65 @@ KPI development
 
 Provides visibility into customer orders that still have quantities pending shipment.
 
-Functional Area: Sales Management
+**Functional Area:** Sales Management
 
-Complexity: Intermediate
+**Complexity:** Intermediate
 
 ## Late Jobs Report
 
 Identifies manufacturing jobs that are behind schedule and require attention.
 
-Functional Area: Manufacturing Operations
+**Functional Area:** Manufacturing Operations
 
-Complexity: Intermediate
+**Complexity:** Intermediate
 
 ## Inventory Below Minimum
 
 Highlights parts that have inventory levels below the required minimum quantity.
 
-Functional Area: Inventory Management
+**Functional Area:** Inventory Management
 
-Complexity: Intermediate
+**Complexity:** Intermediate
 
 ## Customer Sales Analysis
 
 Analyzes customer sales performance based on invoiced revenue.
 
-Functional Area: Sales Reporting
+**Functional Area:** Sales Reporting
 
-Complexity: Intermediate
+**Complexity**: Intermediate
 
 ## Purchase Order Tracking
 
 Tracks open purchase orders and quantities pending receipt from suppliers.
 
-Functional Area: Purchasing
+**Functional Area:** Purchasing
 
-Complexity: Intermediate
+**Complexity:** Intermediate
 
 ## Labor Efficiency Dashboard
 
 Compares estimated production hours against actual labor hours reported on manufacturing jobs.
 
-Functional Area: Manufacturing Analytics
+**Functional Area:** Manufacturing Analytics
 
-Complexity: Advanced
+**Complexity:** Advanced
 
 ## Sales by Date Range with Parameters
 
 Provides flexible sales reporting using user-defined date parameters.
 
-Functional Area: Reporting and Analytics
+**Functional Area:** Reporting and Analytics
 
-Complexity: Intermediate
+**Complexity:** Intermediate
 
 ## Customer Sales Growth Comparison
 
 Compares customer sales performance across multiple periods to identify growth or decline.
 
-Functional Area: Advanced Sales Analytics
+**Functional Area:** Advanced Sales Analytics
 
-Complexity: Advanced
+**Complexity:** Advanced
 
 # Learning Objectives
 
