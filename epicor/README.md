@@ -1,3 +1,9 @@
+![Epicor ERP](https://img.shields.io/badge/Epicor-ERP-blue)
+![Manufacturing](https://img.shields.io/badge/Manufacturing-Operations-green)
+![BAQ](https://img.shields.io/badge/Epicor-BAQ-orange)
+![SQL](https://img.shields.io/badge/SQL-Reporting-red)
+![Data Analysis](https://img.shields.io/badge/Data-Analysis-purple)
+
 # Epicor ERP Projects
 ### Why Companies Need an ERP System
 
