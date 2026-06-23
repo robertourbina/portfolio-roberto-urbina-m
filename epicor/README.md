@@ -1,57 +1,236 @@
+# Epicor ERP Portfolio
+
 ![Epicor ERP](https://img.shields.io/badge/Epicor-ERP-blue)
 ![Manufacturing](https://img.shields.io/badge/Manufacturing-Operations-green)
 ![BAQ](https://img.shields.io/badge/Epicor-BAQ-orange)
 ![SQL](https://img.shields.io/badge/SQL-Reporting-red)
 ![Data Analysis](https://img.shields.io/badge/Data-Analysis-purple)
 
-# Epicor ERP Projects
-### Why Companies Need an ERP System
+Welcome to my Epicor ERP portfolio.
 
-Enterprise Resource Planning (ERP) systems play a critical role in modern organizations by integrating business processes into a single platform. Instead of managing sales, purchasing, inventory, production, finance, and customer information in separate systems, an ERP provides a centralized source of data that supports better decision-making and operational efficiency.
+This section showcases practical Epicor ERP solutions based on real-world manufacturing, inventory management, purchasing, and reporting scenarios. The examples included here demonstrate how ERP data can be transformed into actionable business information that supports operational excellence and strategic decision-making.
 
-As companies grow, managing information through spreadsheets, disconnected applications, or manual processes becomes increasingly difficult. An ERP helps organizations standardize processes, improve data accuracy, increase visibility across departments, and support strategic planning through real-time information.
+---
 
-By connecting departments such as Sales, Production, Purchasing, Inventory Management, Finance, and Customer Service, an ERP enables organizations to streamline operations, reduce costs, improve productivity, and deliver better service to customers.
+# Why Companies Need an ERP System
 
-## Why Epicor ERP
+Enterprise Resource Planning (ERP) systems play a critical role in modern organizations by integrating business processes into a single platform.
 
-Epicor ERP is a comprehensive enterprise solution designed to support manufacturing, distribution, retail, and service organizations. It provides an integrated platform that helps businesses manage their operations efficiently while maintaining visibility across the entire organization.
+Instead of managing sales, purchasing, inventory, production, finance, and customer information through disconnected systems, an ERP provides a centralized source of information that supports better decision-making and operational efficiency.
 
-One of Epicor's key strengths is its flexibility and deep industry focus, particularly in manufacturing environments. Epicor enables organizations to manage complex business processes such as production planning, inventory control, material requirements planning (MRP), purchasing, quality assurance, financial management, customer relationship management, and business intelligence.
+As organizations grow, manual processes and isolated applications often lead to data duplication, inefficiencies, and limited visibility. An ERP helps standardize processes, improve data accuracy, streamline operations, and provide real-time information across the organization.
 
-The platform offers powerful tools for operational reporting and analysis through features such as Business Activity Queries (BAQs), Dashboards, Data Discovery, and integrated analytics. These capabilities allow organizations to transform operational data into actionable business insights that support continuous improvement and informed decision-making.
+By connecting departments such as Sales, Production, Purchasing, Inventory Management, Finance, and Customer Service, an ERP enables organizations to improve productivity, reduce operational costs, and deliver better customer experiences.
 
-## Key Advantages of Epicor ERP
-Integrated Business Processes
+---
 
-Epicor provides a single source of truth by connecting all critical business functions within one system.
+# Why Epicor ERP
 
-# Real-Time Visibility
+Epicor ERP is a comprehensive enterprise solution designed specifically for manufacturing, distribution, retail, and service organizations.
 
-Users can access accurate and up-to-date information across departments, improving decision-making and operational responsiveness.
+One of Epicor's greatest strengths is its deep manufacturing focus. The platform enables organizations to manage complex business processes including:
 
-# Manufacturing Excellence
+- Production Planning
+- Shop Floor Control
+- Material Requirements Planning (MRP)
+- Inventory Management
+- Purchasing
+- Quality Assurance
+- Financial Management
+- Customer Relationship Management
+- Business Intelligence and Reporting
 
-Epicor offers robust capabilities for production planning, scheduling, shop floor control, labor tracking, quality management, and material planning.
+Epicor also provides powerful reporting and analytical tools such as:
 
-# Advanced Reporting and Analytics
+- Business Activity Queries (BAQs)
+- Dashboards
+- BAQ Reports
+- Data Discovery
+- SSRS Reports
+- Business Process Management (BPM)
 
-Tools such as BAQs, Dashboards, and Data Discovery enable users to create customized reports and monitor key performance indicators.
+These capabilities help organizations transform operational data into meaningful business insights.
 
-# Scalability
+---
 
-Epicor can support organizations ranging from small businesses to large multinational enterprises, adapting as business needs evolve.
+# About This Portfolio
 
-# Process Automation
+This portfolio demonstrates practical Epicor ERP solutions designed to address common business challenges across multiple functional areas.
 
-Automated workflows reduce manual effort, improve consistency, and increase operational efficiency.
+Each example focuses on a real business scenario and includes:
 
-# Improved Customer Service
+- Business Scenario
+- Business Question
+- Epicor Tables Used
+- Table Relationships
+- Selected Fields
+- Calculated Fields
+- Filter Criteria
+- Sample Results
+- Business Value
+- Functional Area
+- Complexity Level
+- Skills Demonstrated
 
-Access to integrated customer, inventory, production, and shipment information allows organizations to respond more effectively to customer needs.
+The objective is to demonstrate how ERP data can be transformed into valuable business information that supports operational efficiency and continuous improvement.
 
-## My Experience with Epicor ERP
+---
 
-As an Application Specialist with more than 25 years of experience in business systems and ERP solutions, I have worked extensively with Epicor ERP to support manufacturing operations, production planning, inventory management, purchasing processes, reporting, and business process improvement.
+# Epicor ERP Experience
+
+I am an Application Specialist with extensive experience supporting ERP systems, manufacturing operations, reporting solutions, and business process improvement initiatives.
+
+Throughout my career, I have collaborated with users across multiple departments to analyze business requirements, improve operational visibility, and develop solutions that support decision-making and process optimization.
+
+My experience includes:
+
+- Production Management
+- Inventory Management
+- Purchasing
+- Sales Order Management
+- Material Planning
+- Shop Floor Operations
+- Labor Reporting
+- Business Reporting and Analytics
+- User Support and Training
+- Business Process Analysis
+
+---
+
+# Epicor Skills
+
+## Functional Skills
+
+- Production Planning
+- Inventory Control
+- Purchasing Processes
+- Sales Order Processing
+- Material Requirements Planning (MRP)
+- Shop Floor Control
+- Labor Reporting
+- Customer Service Support
+- Manufacturing Operations
+- Supply Chain Processes
+
+## Technical Skills
+
+- Business Activity Queries (BAQ)
+- Dashboards
+- BAQ Reports
+- Data Discovery
+- SSRS Reporting
+- BPM Concepts
+- User Customizations
+- SQL Query Analysis
+- ERP Reporting Design
+- Data Analysis
+
+---
+
+# Portfolio Structure
+
+```text
+epicor/
+│
+├── README.md
+│
+├── baqs/
+│   ├── baq-open-sales-orders.md
+│   ├── baq-late-jobs-report.md
+│   ├── baq-inventory-below-minimum.md
+│   ├── baq-customer-sales-analysis.md
+│   ├── baq-purchase-order-tracking.md
+│   ├── baq-labor-efficiency-dashboard.md
+│   ├── baq-sales-by-date-range-parameters.md
+│   └── baq-customer-sales-growth-comparison.md
+│
+├── dashboards/
+│   ├── production-kpi-dashboard.md
+│   ├── inventory-dashboard.md
+│   └── executive-sales-dashboard.md
+│
+├── bpm/
+│   ├── purchase-order-approval.md
+│   ├── customer-credit-validation.md
+│   └── job-release-validation.md
+│
+├── ssrs/
+│   ├── production-schedule-report.md
+│   ├── supplier-performance-report.md
+│   └── customer-sales-report.md
+│
+├── customizations/
+│   ├── required-field-validation.md
+│   ├── custom-search-form.md
+│   └── issue-material-validation.md
+│
+└── assets/
+    ├── images/
+    └── diagrams/
+```
+
+---
+
+# Current BAQ Projects
+
+| Project | Functional Area | Complexity |
+|----------|----------|----------|
+| Open Sales Orders | Sales Management | Intermediate |
+| Late Jobs Report | Manufacturing | Intermediate |
+| Inventory Below Minimum | Inventory Management | Intermediate |
+| Customer Sales Analysis | Sales Reporting | Intermediate |
+| Purchase Order Tracking | Purchasing | Intermediate |
+| Labor Efficiency Dashboard | Manufacturing Analytics | Advanced |
+| Sales by Date Range with Parameters | Reporting | Intermediate |
+| Customer Sales Growth Comparison | Advanced Analytics | Advanced |
+
+---
+
+# Business Value Delivered
+
+The solutions included in this repository are designed to support:
+
+- Operational Visibility
+- Data-Driven Decision Making
+- Inventory Optimization
+- Production Performance Monitoring
+- Supplier Performance Analysis
+- Purchasing Efficiency
+- Customer Service Improvement
+- Sales Analysis
+- Labor Efficiency Measurement
+- Continuous Improvement Initiatives
+
+The primary objective of these solutions is to transform ERP data into actionable business information that helps organizations improve efficiency, reduce operational risk, and support business growth.
+
+---
+
+# Future Enhancements
+
+This portfolio will continue to evolve with additional examples and business solutions.
+
+Planned additions include:
+
+- Executive KPI Dashboards
+- Production Performance Analytics
+- MRP Exception Reporting
+- Supplier Performance Analysis
+- Quality Management Reporting
+- Customer Service Metrics
+- Advanced BAQ Reporting Examples
+- Dashboard Design Examples
+- BPM Use Cases
+- SSRS Reporting Examples
+- Epicor Kinetic Customization Examples
+
+---
+
+# Professional Profile
+
+Application Specialist with extensive experience supporting ERP systems, manufacturing operations, reporting solutions, and business process improvement initiatives.
+
+Passionate about leveraging technology, ERP systems, and data analysis to improve operational efficiency, increase business visibility, and support strategic decision-making.
+
+This portfolio reflects my commitment to continuous learning and demonstrates practical examples of how Epicor ERP data can be transformed into meaningful business insights.management, purchasing processes, reporting, and business process improvement.
 
 The examples included in this portfolio demonstrate practical ERP reporting and analysis solutions using Epicor Business Activity Queries (BAQs), focusing on real-world business scenarios that support operational visibility, decision-making, and continuous improvement initiatives.
