@@ -68,6 +68,8 @@ JobHead.ReqDueDate < Today()
 
 These filters remove jobs that are not active, jobs that are already closed, and jobs that are not yet late.
 
+You can also sum some days to Today, if you want to know, which ones will be delayed next week.
+
 ## Sample Result
 
 | Job Number | Part Number | Description | Production Qty | Due Date | Operation | Estimated Hours | Actual Hours | Days Late |
