@@ -40,23 +40,23 @@ The examples included in this portfolio demonstrate practical Epicor reporting a
 - Labor Reporting
 
 ## BAQ Development Skills
-Multi-table joins
-Calculated fields 
-Summary calculations 
-Date filtering 
-Parameter-driven reporting 
-Advanced query design 
-Data aggregation 
-Business rule implementation
+- Multi-table joins
+- Calculated fields 
+- Summary calculations 
+- Date filtering 
+- Parameter-driven reporting 
+- Advanced query design 
+- Data aggregation 
+ -Business rule implementation
 
 ## Business Analysis Skills
-Sales analysis
-Production monitoring
-Inventory optimization
-Supplier performance tracking
-Labor efficiency analysis
-Revenue reporting
-KPI development
+- Sales analysis
+- Production monitoring
+- Inventory optimization
+- Supplier performance tracking
+- Labor efficiency analysis
+- Revenue reporting
+-KPI development
 
 # BAQ Portfolio Projects
 ## Open Sales Orders
