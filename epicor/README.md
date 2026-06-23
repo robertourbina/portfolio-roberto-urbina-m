@@ -6,7 +6,7 @@
 ![SQL](https://img.shields.io/badge/SQL-Reporting-red)
 ![Data Analysis](https://img.shields.io/badge/Data-Analysis-purple)
 
-Welcome to my Epicor ERP portfolio.
+# Welcome to my Epicor ERP portfolio.
 
 This section showcases practical Epicor ERP solutions based on real-world manufacturing, inventory management, purchasing, and reporting scenarios. The examples included here demonstrate how ERP data can be transformed into actionable business information that supports operational excellence and strategic decision-making.
 
