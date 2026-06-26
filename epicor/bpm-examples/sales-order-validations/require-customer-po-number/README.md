@@ -35,18 +35,6 @@ The validation is implemented using a **Pre-Processing Method Directive** on the
 
 ---
 
-### Business Object
-
-Business Object: SalesOrder
-
-Method: Update
-
-Execution: Pre-Processing
-
-![Business Object](images/01-method-directive.png)
-
----
-
 ### Condition
 
 The BPM verifies whether the Customer PO Number is blank.
