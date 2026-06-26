@@ -57,7 +57,7 @@ The BPM verifies whether the Customer PO Number is blank.
 
 The BPM evaluates the condition before the transaction is processed.
 
-![Workflow](images/03-workflow.png)
+![Workflow](images/03-bpm-workflow.png)
 
 ---
 
