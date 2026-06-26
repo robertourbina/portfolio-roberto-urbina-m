@@ -27,105 +27,75 @@ If the field is blank, Epicor should display an error message and stop the trans
 
 ---
 
-## Proposed Solution
+## Method Directive
 
-Create a **Pre-Processing Method Directive BPM** on the Sales Order update process.
+The validation is implemented using a **Pre-Processing Method Directive** on the `SalesOrder.Update` method.
 
-The BPM will check if the Customer PO Number field is empty. If the field does not contain a value, the BPM will raise an exception and prevent the Sales Order from being saved.
-
----
-
-## BPM Configuration
-
-| Property             | Value                       |
-| -------------------- | --------------------------- |
-| Module               | Sales Management            |
-| Business Object      | SalesOrder                  |
-| Method               | Update                      |
-| Directive Type       | Method Directive            |
-| Execution Type       | Pre-Processing              |
-| Validation           | Customer PO Number is empty |
-| Action               | Raise Exception             |
-| Custom Code Required | No                          |
+![Method Directive](images/01-method-directive.png)
 
 ---
 
-## Process Flow
+### Business Object
 
-```text
-User creates or updates a Sales Order
-              |
-              v
-User clicks Save
-              |
-              v
-Pre-Processing BPM executes
-              |
-              v
-Is Customer PO Number empty?
-        /              \
-      Yes               No
-      |                 |
-      v                 v
-Display error       Save Sales Order
-Stop transaction    Continue process
-```
+Business Object: SalesOrder
+
+Method: Update
+
+Execution: Pre-Processing
+
+![Business Object](images/01-method-directive.png)
 
 ---
 
-## Example Validation Logic
+### Condition
 
-```text
-IF Customer PO Number is blank
-THEN
-    Display error message
-    Stop the transaction
-ELSE
-    Allow the Sales Order to be saved
-END IF
-```
+The BPM verifies whether the Customer PO Number is blank.
 
----
+![Condition](images/02-condition.png)
 
-## Error Message
+### BPM Workflow
 
-```text
-Customer PO Number is required before saving the Sales Order.
-Please enter a valid Customer PO Number and try again.
-```
+The BPM evaluates the condition before the transaction is processed.
+
+![Workflow](images/03-workflow.png)
 
 ---
 
-## Test Cases
+### Raise Exception
 
-| Test Case           | Customer PO Number | Expected Result                   | Status |
-| ------------------- | ------------------ | --------------------------------- | ------ |
-| Valid Sales Order   | PO-45897           | Sales Order is saved successfully | Pass   |
-| Missing Customer PO | Blank              | Error message is displayed        | Pass   |
-| Spaces only         | "   "              | Error message is displayed        | Pass   |
+If the condition is true, the BPM stops the transaction and displays a validation message.
+
+![Raise Exception](images/04-raise-exception.png)
 
 ---
 
-## Expected Result
+## Test Case 1
 
-When the Customer PO Number is completed, the Sales Order can be saved normally.
+Customer PO Number = PO45897
 
-When the Customer PO Number is empty, Epicor displays an error message and prevents the transaction from being completed.
+Expected Result:
 
----
+Sales Order is saved successfully.
 
-## Business Value
+![Success](images/06-success.png)
 
-This BPM helps the organization by:
+## Test Case 2
 
-* Improving sales order data accuracy.
-* Reducing missing customer references.
-* Preventing incomplete orders.
-* Supporting better invoice validation.
-* Reducing manual corrections.
-* Improving communication between departments.
+Customer PO Number = Blank
 
----
+Expected Result:
+
+The Sales Order cannot be saved.
+
+![Validation Error](images/07-error.png)
+
+| Before BPM          | After BPM            |
+| ------------------- | -------------------- |
+| Missing Customer PO | Required Customer PO |
+| Manual validation   | Automatic validation |
+| Incomplete orders   | Valid orders         |
+| User errors         | Standardized process |
+
 
 ## Possible Enhancements
 
@@ -142,12 +112,15 @@ This BPM can be expanded in the future to include additional rules, such as:
 
 ## Skills Demonstrated
 
-### Functional Skills
+![Epicor](https://img.shields.io/badge/Epicor-ERP-blue)
 
-* Sales Order Management
-* Business Process Analysis
-* Requirements Interpretation
-* ERP Process Control
+![BPM](https://img.shields.io/badge/BPM-Method%20Directive-green)
+
+![Sales](https://img.shields.io/badge/Sales-Order%20Management-orange)
+
+![ERP](https://img.shields.io/badge/ERP-Business%20Analysis-red)
+
+![Automation](https://img.shields.io/badge/Automation-Process-yellow)
 
 ### Technical Skills
 
