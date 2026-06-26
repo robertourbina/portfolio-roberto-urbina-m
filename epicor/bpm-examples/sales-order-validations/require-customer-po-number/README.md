@@ -77,7 +77,7 @@ Expected Result:
 
 Sales Order is saved successfully.
 
-![Success](images/06-success.png)
+![Success](images/06-sales-order-success.png)
 
 ## Test Case 2
 
@@ -87,7 +87,7 @@ Expected Result:
 
 The Sales Order cannot be saved.
 
-![Validation Error](images/07-error.png)
+![Validation Error](images/07-error-message.png)
 
 | Before BPM          | After BPM            |
 | ------------------- | -------------------- |
