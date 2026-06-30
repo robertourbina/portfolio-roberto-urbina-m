@@ -1,4 +1,4 @@
-# Epicor ERP Solutions Library
+# Epicor ERP Implementation & Solutions Library
 
 > **Business Solutions • Case Studies • Technical Documentation • Best Practices**
 
