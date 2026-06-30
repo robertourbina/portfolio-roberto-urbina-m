@@ -1,3 +1,15 @@
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│             Epicor ERP Implementation & Solutions Library    │
+│                                                              │
+│            Implementation Guides • Business Solutions        │
+│              Case Studies • Best Practices                   │
+│                                                              │
+│                      Roberto Urbina                          │
+│                 Epicor ERP Application Specialist            │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
 # Epicor ERP Implementation & Solutions Library
 
 > **Implementation Guides • Business Solutions • Case Studies • Best Practices**
