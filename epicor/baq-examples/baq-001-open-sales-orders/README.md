@@ -28,3 +28,5 @@ When sales orders remain open, different departments need visibility into key in
 Without a centralized view, users may need to review multiple screens or reports to understand the current status of open customer orders.
 
 This BAQ provides a consolidated view of open sales orders to support daily follow-up and operational decision-making.
+
+## 3. Business Problem
