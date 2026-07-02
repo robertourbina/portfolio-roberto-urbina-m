@@ -94,3 +94,60 @@ The BAQ must satisfy the following business requirements:
 - Support filtering by customer, part number, and order number.
 - Provide information suitable for dashboards and reporting.
 
+---
+
+# 6. Data Model
+
+The Open Sales Orders Analysis BAQ retrieves information from several Epicor ERP tables that together represent the complete sales order lifecycle.
+
+The following tables were selected because they provide the minimum set of information required to identify open customer orders, evaluate fulfillment progress, and support operational decision-making.
+
+| Table | Purpose | Business Justification |
+|--------|---------|------------------------|
+| OrderHed | Sales Order Header | Contains general information about the sales order, including customer, order dates, sales representative, and overall order status. |
+| OrderDtl | Sales Order Detail | Stores individual order lines, including ordered quantities, shipped quantities, pricing, and line status. This table represents the primary source of transactional information for the BAQ. |
+| Customer | Customer Master | Provides customer identification and descriptive information required by Sales and Customer Service teams. |
+| Part | Part Master | Supplies product descriptions and additional item attributes to improve readability of the report. |
+| SalesRep *(Optional)* | Sales Representative | Associates each sales order with the responsible sales representative for reporting and follow-up purposes. |
+
+The final selection of tables may vary depending on specific business requirements. Additional tables can be incorporated to extend the analysis without changing the overall design of the implementation.
+
+---
+
+# 7. Table Relationships
+
+The BAQ is built around the relationship between the Sales Order Header and Sales Order Detail tables.
+
+Each sales order consists of one header record and one or more detail records. Additional master tables are joined to enrich the information presented to users.
+
+The logical relationships are illustrated below.
+
+```text
+Customer
+    │
+    │ CustNum
+    ▼
+OrderHed
+    │
+    │ OrderNum
+    ▼
+OrderDtl
+    │
+    ├────────► Part
+    │             │
+    │             ▼
+    │      Part Description
+    │
+    └────────► Sales Representative
+```
+
+### Primary Relationships
+
+| Parent Table | Child Table | Relationship |
+|--------------|-------------|--------------|
+| Customer | OrderHed | Customer Number |
+| OrderHed | OrderDtl | Company + Order Number |
+| OrderDtl | Part | Company + Part Number |
+| OrderHed | SalesRep *(Optional)* | Sales Representative Code |
+
+Maintaining proper table relationships ensures that the BAQ returns accurate information while avoiding duplicate records and preserving data integrity.
