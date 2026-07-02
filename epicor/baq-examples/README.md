@@ -1,159 +1,123 @@
-
 # Business Activity Queries (BAQs)
-## Overview
 
-Business Activity Queries (BAQs) are one of the most powerful reporting and data analysis tools available in Epicor ERP.
+Welcome to the **Business Activity Queries (BAQs)** section of my Epicor ERP portfolio.
 
-BAQs enable users to retrieve, analyze, and present information from multiple ERP modules without directly accessing the database. By combining data from different business areas, BAQs help organizations transform operational data into actionable business insights.
+Business Activity Queries (BAQs) are one of the most powerful tools available in Epicor ERP for retrieving, analyzing, and presenting business data without directly modifying the database. They enable organizations to transform operational data into meaningful information that supports daily activities and strategic decision-making.
 
-These queries can be used as standalone reports or as the foundation for Dashboards, BAQ Reports, Data Discovery views, BPM validations, and executive reporting solutions.
+This repository contains a growing collection of practical BAQ implementations based on real-world business scenarios commonly found in manufacturing environments. Each implementation demonstrates not only how to build a BAQ, but also the functional analysis and business reasoning behind the solution.
 
-# Why BAQs Matter
+The purpose of this section is to showcase my experience as an **Epicor ERP Application Specialist**, highlighting my ability to understand business requirements, analyze ERP processes, and deliver solutions that provide measurable value to end users.
 
-Organizations generate large amounts of data every day through sales orders, production activities, purchasing transactions, inventory movements, and financial processes.
+---
 
-Without effective reporting tools, this information remains difficult to analyze and utilize.
+# Objectives
 
-BAQs help organizations:
+The BAQ examples in this repository are designed to demonstrate:
 
-Improve operational visibility
-Support data-driven decision-making
-Monitor business performance
-Identify process bottlenecks
-Track key performance indicators (KPIs)
-Support continuous improvement initiatives
-Reduce manual reporting efforts
+* Functional analysis of business requirements
+* Knowledge of Epicor ERP business processes
+* Data modeling and table relationships
+* BAQ design and development
+* Query optimization techniques
+* Validation and testing practices
+* Documentation following implementation standards
+* Focus on business value and continuous improvement
 
-By providing real-time access to business information, BAQs enable users to make faster and more informed decisions.
+---
 
-# Skills Demonstrated in This Section
+# What You'll Find
 
-The examples included in this portfolio demonstrate practical Epicor reporting and business analysis skills, including:
+Each BAQ implementation follows a consistent documentation structure that mirrors a professional ERP consulting engagement.
 
-## Epicor ERP Knowledge
-- Sales Order Management
-- Production Management
-- Inventory Management
-- Purchasing Processes
-- Shop Floor Operations
-- Material Planning
-- Labor Reporting
+Typical documentation includes:
 
-## BAQ Development Skills
-- Multi-table joins
-- Calculated fields 
-- Summary calculations 
-- Date filtering 
-- Parameter-driven reporting 
-- Advanced query design 
-- Data aggregation 
- -Business rule implementation
+* Business Scenario
+* Business Problem
+* Functional Requirements
+* Business Process Overview
+* Epicor Tables Used
+* Table Relationships
+* BAQ Design
+* Calculated Fields
+* Parameters
+* Validation Process
+* Expected Results
+* Business Value
+* Lessons Learned
+* Future Enhancements
 
-## Business Analysis Skills
-- Sales analysis
-- Production monitoring
-- Inventory optimization
-- Supplier performance tracking
-- Labor efficiency analysis
-- Revenue reporting
--KPI development
+The objective is not simply to demonstrate technical implementation, but to explain **why** the solution was developed and **how** it improves business operations.
 
-# BAQ Portfolio Projects
-## Open Sales Orders
+---
 
-Provides visibility into customer orders that still have quantities pending shipment.
+# Repository Structure
 
-**Functional Area:** Sales Management
+```text
+baq-examples/
+│
+├── README.md
+│
+├── baq-001-open-sales-orders/
+├── baq-002-inventory-availability/
+├── baq-003-purchase-orders/
+├── baq-004-job-material-shortages/
+├── baq-005-customer-order-status/
+└── ...
+```
 
-**Complexity:** Intermediate
+Each BAQ is organized as an independent implementation, making the repository easy to navigate and expand over time.
 
-## Late Jobs Report
+---
 
-Identifies manufacturing jobs that are behind schedule and require attention.
+# Current BAQ Portfolio
 
-**Functional Area:** Manufacturing Operations
+| ID      | Status         | Implementation                            |
+| ------- | -------------- | ----------------------------------------- |
+| BAQ-001 | 🚧 In Progress | Open Sales Orders Analysis                |
+| BAQ-002 | 📋 Planned     | Inventory Availability by Warehouse       |
+| BAQ-003 | 📋 Planned     | Purchase Orders Pending Receipt           |
+| BAQ-004 | 📋 Planned     | Job Material Shortages                    |
+| BAQ-005 | 📋 Planned     | Customer Order Status                     |
+| BAQ-006 | 📋 Planned     | Supplier Performance Analysis             |
+| BAQ-007 | 📋 Planned     | Production Work in Process (WIP) Tracking |
+| BAQ-008 | 📋 Planned     | Late Customer Shipments                   |
+| BAQ-009 | 📋 Planned     | Sales Backlog Analysis                    |
+| BAQ-010 | 📋 Planned     | Manufacturing Performance Indicators      |
 
-**Complexity:** Intermediate
+---
 
-## Inventory Below Minimum
+# Skills Demonstrated
 
-Highlights parts that have inventory levels below the required minimum quantity.
+These implementations showcase experience in:
 
-**Functional Area:** Inventory Management
+* Epicor ERP Functional Analysis
+* Business Process Analysis
+* Manufacturing Operations
+* Sales Order Management
+* Purchasing Processes
+* Inventory Management
+* Production Management
+* Data Analysis
+* SQL Concepts
+* BAQ Design
+* ERP Documentation
+* Problem Solving
 
-**Complexity:** Intermediate
+---
 
-## Customer Sales Analysis
+# Why This Repository?
 
-Analyzes customer sales performance based on invoiced revenue.
+Many BAQ examples focus exclusively on the technical query.
 
-**Functional Area:** Sales Reporting
+This portfolio goes a step further by documenting the complete implementation lifecycle, including the business context, functional analysis, solution design, validation, and expected business outcomes.
 
-**Complexity**: Intermediate
+This approach reflects the responsibilities of an Epicor ERP Application Specialist, where understanding business processes is just as important as developing technical solutions.
 
-## Purchase Order Tracking
+---
 
-Tracks open purchase orders and quantities pending receipt from suppliers.
+# Continuous Improvement
 
-**Functional Area:** Purchasing
+This repository will continue to grow as additional BAQ implementations are completed. Each new example will follow the same documentation standards to ensure consistency, maintainability, and knowledge sharing across the portfolio.
 
-**Complexity:** Intermediate
+Thank you for visiting this section of my Epicor ERP portfolio. I hope these examples provide insight into my approach to designing practical, well-documented ERP solutions that help organizations improve operational efficiency and make better business decisions.
 
-## Labor Efficiency Dashboard
-
-Compares estimated production hours against actual labor hours reported on manufacturing jobs.
-
-**Functional Area:** Manufacturing Analytics
-
-**Complexity:** Advanced
-
-## Sales by Date Range with Parameters
-
-Provides flexible sales reporting using user-defined date parameters.
-
-**Functional Area:** Reporting and Analytics
-
-**Complexity:** Intermediate
-
-## Customer Sales Growth Comparison
-
-Compares customer sales performance across multiple periods to identify growth or decline.
-
-**Functional Area:** Advanced Sales Analytics
-
-**Complexity:** Advanced
-
-# Learning Objectives
-
-The purpose of these examples is to demonstrate how Epicor ERP data can be transformed into meaningful business information.
-
-Each example focuses on:
-
-Understanding business requirements
-Identifying relevant ERP tables
-Building effective data relationships
-Creating calculated business metrics
-Delivering actionable insights
-Supporting operational and strategic decision-making
-
-# Future BAQ Examples
-
-This section will continue to expand with additional examples covering:
-
-Executive KPI Reporting
-MRP Exception Analysis
-Supplier Performance Metrics
-Quality Management Reporting
-Customer Service Analytics
-Production Scheduling Analysis
-Inventory Turnover Reporting
-Manufacturing Performance Dashboards
-
-# About the Author
-Application Specialist with extensive experience supporting ERP systems, manufacturing operations, reporting solutions, and business process improvement initiatives.
-
-Passionate about using Epicor ERP, business intelligence, and data analysis to improve operational efficiency and support informed decision-making.
-
-Application Specialist with extensive experience supporting ERP systems, manufacturing operations, reporting solutions, and business process improvement initiatives.
-
-Passionate about using Epicor ERP, business intelligence, and data analysis to improve operational efficiency and support informed decision-making.
