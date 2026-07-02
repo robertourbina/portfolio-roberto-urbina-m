@@ -95,31 +95,31 @@ The design follows Epicor ERP best practices by minimizing unnecessary joins, se
 
 ### 5.1 Data Model
 
-*Pending implementation.*
+---
 
 ### 5.2 Tables Used
 
-*Pending implementation.*
+---
 
 ### 5.3 Table Relationships
 
-*Pending implementation.*
+---
 
 ### 5.4 Calculated Fields
 
-*Pending implementation.*
+---
 
 ### 5.5 Parameters
 
-*Pending implementation.*
+---
 
 ### 5.6 Filters
 
-*Pending implementation.*
+---
 
 ### 5.7 Expected Output
 
-*Pending implementation.*
+---
 
 ---
 
