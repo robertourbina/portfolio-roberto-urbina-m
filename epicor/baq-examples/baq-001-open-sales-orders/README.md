@@ -93,7 +93,33 @@ The design follows Epicor ERP best practices by minimizing unnecessary joins, se
 
 > *(Implementation details will be documented in the following sections.)*
 
-### 5.1 Data Model
+## 5.1 Data Model
+
+The data model for this BAQ is centered on the sales order lifecycle within Epicor ERP.
+
+The main business entity is the **Sales Order**, which represents a customer commitment to purchase manufactured or supplied products. In this implementation, the sales order is analyzed at both the header level and the line level to provide a complete view of open customer demand.
+
+The BAQ uses the following logical data areas:
+
+| Data Area | Purpose |
+|----------|---------|
+| Sales Order Header | Identifies the customer, order number, order date, and overall order information. |
+| Sales Order Lines | Provides the ordered parts, quantities, pricing, shipment status, and remaining quantities. |
+| Customer Information | Adds customer identification and descriptive information for sales and customer service follow-up. |
+| Part Information | Adds product descriptions and item details to make the results easier to understand. |
+| Sales Representative Information | Supports accountability and follow-up by identifying the responsible sales representative when applicable. |
+
+The purpose of the data model is to combine transactional sales order data with supporting master data so users can analyze open orders in a single, consolidated view.
+
+This structure allows the BAQ to answer key business questions such as:
+
+- Which sales orders are still open?
+- Which customers have pending orders?
+- Which products are pending shipment?
+- What quantity remains to be shipped?
+- Which orders require follow-up based on requested ship dates?
+
+By organizing the BAQ around the sales order header and detail relationship, the solution provides a reliable foundation for dashboards, reports, and future operational analysis.
 
 ---
 
