@@ -97,29 +97,33 @@ The design follows Epicor ERP best practices by minimizing unnecessary joins, se
 
 The data model for this BAQ is centered on the sales order lifecycle within Epicor ERP.
 
-The main business entity is the **Sales Order**, which represents a customer commitment to purchase manufactured or supplied products. In this implementation, the sales order is analyzed at both the header level and the line level to provide a complete view of open customer demand.
+The main business entity is the **Sales Order**, which represents a customer commitment to purchase manufactured or supplied products. In this implementation, the sales order is analyzed at the header, line, and release levels to provide a complete view of open customer demand.
 
 The BAQ uses the following logical data areas:
 
 | Data Area | Purpose |
 |----------|---------|
-| Sales Order Header | Identifies the customer, order number, order date, and overall order information. |
-| Sales Order Lines | Provides the ordered parts, quantities, pricing, shipment status, and remaining quantities. |
+| Sales Order Header | Identifies the customer, order number, order date, and general order information. |
+| Sales Order Lines | Provides the ordered parts, quantities, pricing, and commercial information. |
+| Sales Order Releases | Provides delivery schedules, release quantities, requested ship dates, remaining quantities, and fulfillment status. |
 | Customer Information | Adds customer identification and descriptive information for sales and customer service follow-up. |
 | Part Information | Adds product descriptions and item details to make the results easier to understand. |
 | Sales Representative Information | Supports accountability and follow-up by identifying the responsible sales representative when applicable. |
 
-The purpose of the data model is to combine transactional sales order data with supporting master data so users can analyze open orders in a single, consolidated view.
+The inclusion of **Sales Order Releases** is important because Epicor ERP manages customer delivery commitments at the release level. A single sales order line may have multiple releases with different shipment dates, quantities, or delivery requirements.
 
-This structure allows the BAQ to answer key business questions such as:
+This is especially relevant in a manufacturing environment where institutional furniture orders may be delivered in phases based on production capacity, material availability, or customer installation schedules.
 
-- Which sales orders are still open?
-- Which customers have pending orders?
-- Which products are pending shipment?
-- What quantity remains to be shipped?
-- Which orders require follow-up based on requested ship dates?
+By including release-level information, the BAQ can answer key business questions such as:
 
-By organizing the BAQ around the sales order header and detail relationship, the solution provides a reliable foundation for dashboards, reports, and future operational analysis.
+- Which sales order releases are still open?
+- Which customers have pending shipments?
+- Which products are pending delivery?
+- What quantity remains to be shipped by release?
+- Which releases are overdue or require follow-up?
+- What is scheduled to ship during a specific period?
+
+By organizing the BAQ around the sales order header, detail, and release relationship, the solution provides a reliable foundation for dashboards, reports, and future operational analysis.
 
 ---
 
