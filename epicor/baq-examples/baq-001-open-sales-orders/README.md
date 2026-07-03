@@ -127,7 +127,24 @@ By organizing the BAQ around the sales order header, detail, and release relatio
 
 ---
 
-### 5.2 Tables Used
+## 5.2 Tables Used
+
+The BAQ retrieves information from several Epicor ERP tables that together represent the complete Sales Order process. Each table was selected based on the business requirements identified during the analysis phase.
+
+The following tables provide the transactional and master data required to analyze open sales orders and their associated delivery commitments.
+
+| Table | Data Type | Purpose |
+|--------|-----------|---------|
+| OrderHed | Transaction | Stores the sales order header information, including customer, order dates, sales representative, and overall order status. |
+| OrderDtl | Transaction | Contains the products ordered by the customer, ordered quantities, pricing information, and line-level status. |
+| OrderRel | Transaction | Stores release-level information, including requested ship dates, release quantities, open quantities, warehouse, and fulfillment status. |
+| Customer | Master | Provides customer identification and descriptive information. |
+| Part | Master | Provides product descriptions and item master information used to enrich the report output. |
+| SalesRep *(Optional)* | Master | Identifies the sales representative responsible for the customer order. |
+
+The implementation combines transactional data with master data to provide users with a complete business view of each open sales order.
+
+Although this implementation focuses on the core tables required to satisfy the identified business requirements, the design allows additional tables to be incorporated in future enhancements without significantly changing the overall data model.
 
 ---
 
