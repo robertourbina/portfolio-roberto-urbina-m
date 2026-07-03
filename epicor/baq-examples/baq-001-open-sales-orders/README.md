@@ -146,6 +146,14 @@ The implementation combines transactional data with master data to provide users
 
 Although this implementation focuses on the core tables required to satisfy the identified business requirements, the design allows additional tables to be incorporated in future enhancements without significantly changing the overall data model.
 
+### Design Decision
+
+The BAQ intentionally uses the minimum set of transaction and master tables required to satisfy the business requirements.
+
+This design helps reduce unnecessary joins, improves maintainability, and supports better query performance.
+
+The inclusion of `OrderRel` is a key design decision because delivery commitments in Epicor ERP are managed at the release level. This allows the BAQ to provide more accurate visibility into pending shipments, open quantities, and requested ship dates.
+
 ---
 
 ### 5.3 Table Relationships
