@@ -158,7 +158,24 @@ The inclusion of `OrderRel` is a key design decision because delivery commitment
 
 ### 5.3 Table Relationships
 
----
+## 5.3 Table Relationships
+
+The BAQ follows the natural sales order hierarchy used by Epicor ERP. The relationship flow begins with the customer, continues through the sales order header and detail records, and reaches the release level where shipment commitments are managed.
+
+```text
+Customer
+   │
+   ▼
+OrderHed
+   │
+   ▼
+OrderDtl
+   │
+   ▼
+OrderRel
+   │
+   ▼
+Part
 
 ### 5.4 Calculated Fields
 
