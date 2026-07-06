@@ -160,7 +160,11 @@ The inclusion of `OrderRel` is a key design decision because delivery commitment
 
 ## 5.3 Table Relationships
 
-The BAQ follows the natural sales order hierarchy used by Epicor ERP. The relationship flow begins with the customer, continues through the sales order header and detail records, and reaches the release level where shipment commitments are managed.
+## 5.3 Table Relationships
+
+The BAQ follows the natural sales order hierarchy used by Epicor ERP. The relationship flow begins with the customer, continues through the sales order header and detail records, and reaches the release level, where customer delivery commitments are managed.
+
+This hierarchical structure ensures that each level of the sales order process contributes the information required to provide a complete view of open customer demand.
 
 ```text
 Customer
@@ -176,6 +180,30 @@ OrderRel
    │
    ▼
 Part
+```
+
+The following table describes the primary relationships used in this implementation.
+
+| Relationship | What? | Why? | Business Impact |
+|--------------|-------|------|-----------------|
+| **Customer → OrderHed** | Associates customer master data with the sales order header. | Every sales order belongs to a customer, making this relationship essential for identifying ownership of each order. | Enables Sales and Customer Service teams to analyze open orders by customer and respond more efficiently to customer inquiries. |
+| **OrderHed → OrderDtl** | Connects the sales order header with its corresponding order lines. | A single sales order may contain multiple products or services, each represented as an individual order line. | Provides visibility into the complete list of products requested by the customer and supports line-level analysis. |
+| **OrderDtl → OrderRel** | Connects each sales order line with one or more shipment releases. | Epicor ERP manages delivery commitments at the release level, allowing multiple scheduled deliveries for a single order line. | Enables accurate analysis of pending shipments, requested ship dates, release quantities, and overdue deliveries. This relationship is fundamental for production planning and shipping operations. |
+| **OrderDtl → Part** | Retrieves descriptive product information from the Part Master. | Part numbers alone are not sufficient for business users to identify products quickly. | Improves report readability and allows users to understand the products included in each sales order without additional lookups. |
+
+### Design Decision
+
+The relationship between **OrderDtl** and **OrderRel** represents the core of this implementation.
+
+Rather than analyzing customer demand exclusively at the sales order or line level, this BAQ evaluates open demand at the **release level**, where Epicor ERP manages shipment schedules and customer delivery commitments.
+
+This design provides a more accurate representation of operational activities because production planning, shipping, and customer service teams typically manage deliveries based on releases rather than entire sales orders.
+
+### Best Practice
+
+When designing BAQs for operational analysis, it is recommended to use the **lowest business level that supports the required decision-making process**.
+
+For sales order management, the release level offers the greatest visibility into customer commitments because it captures shipment schedules, open quantities, and delivery dates. This approach improves the accuracy of dashboards, reports, and operational planning while reducing the need for additional calculations in downstream solutions.
 
 ### 5.4 Calculated Fields
 
