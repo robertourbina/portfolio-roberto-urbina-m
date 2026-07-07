@@ -342,11 +342,64 @@ Applying meaningful filter criteria transforms the BAQ into a focused operationa
 Users can immediately concentrate on orders that require planning, production, or shipping activities, reducing report review time and improving decision-making across production, customer service, and logistics teams.
 
 
-### 5.7 Expected Output
+## 5.7 Expected Output
 
----
+### Report Objective
 
----
+The objective of this BAQ is to provide a clear and actionable view of open sales orders that require operational attention. The information returned should allow users to quickly evaluate order status, shipping progress, and upcoming customer commitments without navigating through multiple Epicor screens.
+
+### Information Presented
+
+The report is expected to display the following key business information for each sales order line:
+
+| Information | Business Purpose |
+|-------------|------------------|
+| Sales Order Number | Identifies the customer order. |
+| Customer ID | Identifies the customer associated with the order. |
+| Customer Name | Allows users to recognize the customer without additional lookups. |
+| Part Number | Identifies the requested product. |
+| Part Description | Provides a meaningful description of the item being produced or shipped. |
+| Order Quantity | Displays the quantity originally requested by the customer. |
+| Quantity Shipped | Indicates the quantity already fulfilled. |
+| Remaining Quantity | Highlights the quantity still pending shipment. |
+| Shipment Completion % | Shows overall fulfillment progress. |
+| Need By Date | Indicates the customer's requested delivery date. |
+| Estimated Days to Ship | Provides visibility into the current shipping cycle. |
+| Open Order Value | Displays the financial value still pending shipment. |
+| Order Status | Provides a business-friendly operational status. |
+
+### Suggested Sorting
+
+To improve usability, the report should be sorted using the following priority:
+
+1. **Need By Date (Ascending)** — Orders with the closest delivery dates appear first.
+2. **Customer Name (Ascending)** — Groups customer orders together for easier review.
+3. **Sales Order Number (Ascending)** — Keeps related order lines organized.
+
+This sorting strategy allows production planners and customer service representatives to identify urgent customer commitments immediately while maintaining a logical report structure.
+
+### Expected User Experience
+
+The BAQ should provide enough information for users to answer common operational questions without opening additional Epicor forms, including:
+
+- Which orders require immediate attention?
+- How much remains to be shipped?
+- Which customer commitments are approaching?
+- What is the current fulfillment progress?
+- What is the remaining financial commitment?
+- Which orders may require production or logistics follow-up?
+
+### Implementation Insight
+
+The expected output was designed to prioritize business readability over technical complexity. Rather than exposing every available database field, only information that contributes to operational decision-making was included.
+
+This approach produces a cleaner report, reduces unnecessary data, and allows users to focus on the information that directly supports production planning and customer fulfillment.
+
+### Business Impact
+
+By presenting operational, scheduling, and financial indicators within a single report, the BAQ becomes a practical decision-support tool rather than a simple data listing.
+
+Production planners, customer service teams, and operations managers can monitor order progress, prioritize daily activities, and respond to customer commitments more efficiently using a single, consolidated source of information.
 
 # 6. Validation
 
