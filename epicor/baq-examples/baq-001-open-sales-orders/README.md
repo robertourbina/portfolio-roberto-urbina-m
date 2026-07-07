@@ -288,13 +288,59 @@ The calculated fields transformed the BAQ from a simple data extraction tool int
 Users can immediately identify open commitments, monitor fulfillment progress, estimate shipping performance, and prioritize orders requiring attention without exporting data for additional analysis. This improves reporting efficiency, increases data consistency, and provides greater visibility into the order fulfillment process.
 
 
-### 5.5 Parameters
+## 5.5 Runtime Parameters
 
----
+### Parameter Strategy
 
-### 5.6 Filters
+This BAQ was intentionally designed without runtime parameters.
 
----
+Its primary purpose is to provide production planners, customer service representatives, and operations teams with an immediate view of all open sales orders requiring attention. Since this report is intended to be used throughout the day as an operational dashboard, requiring users to enter parameters before execution would introduce unnecessary steps and reduce efficiency.
+
+By returning all relevant open orders automatically, the BAQ delivers consistent information across departments while simplifying daily operational reviews.
+
+### Future Enhancements
+
+If future business requirements demand more specific analysis, optional runtime parameters can be incorporated without modifying the overall query structure. Examples include:
+
+- Customer ID
+- Sales Representative
+- Order Date Range
+- Need By Date Range
+- Product Group
+- Plant or Warehouse
+
+This design keeps the current BAQ simple and operational while allowing future scalability as reporting requirements evolve.
+
+## 5.6 Filter Criteria
+
+### Why Filter Criteria Were Necessary
+
+A well-designed Business Activity Query should return only the information that supports the business objective. Retrieving unnecessary records increases processing time, complicates data analysis, and may lead users to make decisions based on irrelevant information.
+
+For this reason, the BAQ includes a set of filters that focus exclusively on active sales orders requiring operational attention.
+
+### Filter Criteria
+
+| Filter                                 | Business Purpose                                                                                                                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Order Open = True**                  | Includes only sales orders that still have pending activities or shipments. Closed orders are excluded because they no longer require operational follow-up.          |
+| **RemainingQuantity > 0**              | Returns only order lines with quantities still pending to ship, allowing planners to focus on outstanding commitments.                                                |
+| **OrderHeld = False** *(Optional)*     | Excludes orders that have been placed on hold, preventing them from appearing in the operational review until they are released.                                      |
+| **NeedByDate >= Today()** *(Optional)* | Focuses the report on current and upcoming customer commitments. Depending on business requirements, overdue orders may also be included for exception management.    |
+| **Company = Current Company**          | Ensures that the BAQ retrieves information only for the active company environment, supporting organizations with multiple companies within the same Epicor database. |
+
+### Implementation Insight
+
+The filtering strategy was designed to reduce noise and highlight only the records that require action. Instead of presenting every sales order stored in the ERP, the BAQ focuses on open commitments that influence production scheduling, inventory planning, and customer delivery performance.
+
+Each filter contributes to improving report usability while reducing the amount of information users must review during their daily operations.
+
+### Business Impact
+
+Applying meaningful filter criteria transforms the BAQ into a focused operational report rather than a complete transaction listing.
+
+Users can immediately concentrate on orders that require planning, production, or shipping activities, reducing report review time and improving decision-making across production, customer service, and logistics teams.
+
 
 ### 5.7 Expected Output
 
