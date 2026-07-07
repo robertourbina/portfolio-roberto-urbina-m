@@ -203,7 +203,90 @@ For sales order management, the release level offers the greatest visibility int
 
 ### 5.4 Calculated Fields
 
----
+## 5.4 Calculated Fields
+
+### Why Calculated Fields Were Necessary
+
+The standard fields available in Epicor provided the required transactional information, but several business indicators needed to be derived to make the report more meaningful for production planners and customer service teams.
+
+Instead of requiring users to export data to spreadsheets for additional calculations, the necessary metrics were generated directly within the BAQ. This approach delivers actionable information at the source, reduces manual work, and improves consistency across departments.
+
+### Calculated Fields
+
+| Calculated Field          | Purpose                                                                                                                                                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **OpenOrderValue**        | Calculates the monetary value that remains pending to ship.                                                                                                                                    |
+| **RemainingQuantity**     | Determines the quantity that is still open after completed shipments.                                                                                                                          |
+| **DaysUntilNeedBy**       | Calculates the number of days remaining before the requested delivery date.                                                                                                                    |
+| **OrderStatus**           | Displays a business-friendly status based on shipment progress and remaining quantities.                                                                                                       |
+| **ShipmentCompletionPct** | Calculates the percentage of the ordered quantity that has already been shipped, allowing users to quickly evaluate fulfillment progress.                                                      |
+| **AvgDaysToShip**         | Estimates the shipping cycle time by calculating the elapsed days between the order date and the shipment date, providing a useful operational performance indicator at the transaction level. |
+
+### Example Expressions
+
+#### Remaining Quantity
+
+```sql
+OrderDtl.OrderQty - OrderDtl.OurShipQty
+```
+
+#### Open Order Value
+
+```sql
+(OrderDtl.OrderQty - OrderDtl.OurShipQty) * OrderDtl.DocUnitPrice
+```
+
+#### Days Until Required Date
+
+```sql
+DATEDIFF(day, Today(), OrderDtl.NeedByDate)
+```
+
+#### Shipment Completion Percentage
+
+```sql
+CASE
+    WHEN OrderDtl.OrderQty = 0 THEN 0
+    ELSE (OrderDtl.OurShipQty * 100.0) / OrderDtl.OrderQty
+END
+```
+
+#### Estimated Days to Ship
+
+```sql
+DATEDIFF(day, OrderHed.OrderDate, ShipHead.ShipDate)
+```
+
+#### Business Status
+
+```sql
+CASE
+    WHEN RemainingQuantity = 0 THEN 'Completed'
+    WHEN RemainingQuantity > 0 AND DaysUntilNeedBy <= 0 THEN 'Overdue'
+    ELSE 'Open'
+END
+```
+
+### Implementation Insight
+
+The calculated fields were designed to transform transactional data into meaningful business information that supports day-to-day operational decisions. Rather than presenting only quantities and dates, the BAQ answers practical questions that production planners, customer service representatives, and operations managers typically ask:
+
+* How much of the order is still pending?
+* What is the remaining financial commitment?
+* Which orders require immediate attention?
+* How far has each order progressed?
+* How long is the current shipping cycle?
+
+Providing these insights directly within the BAQ reduces the need for manual spreadsheet calculations and enables faster, more informed decision-making.
+
+> **Design Note:** The `AvgDaysToShip` field represents an estimated shipping cycle time at the transaction level. A future analytical BAQ will extend this concept using aggregation functions (`AVG`) and grouping to measure average shipment performance by customer, product line, or other business dimensions.
+
+### Business Impact
+
+The calculated fields transformed the BAQ from a simple data extraction tool into an operational decision-support solution.
+
+Users can immediately identify open commitments, monitor fulfillment progress, estimate shipping performance, and prioritize orders requiring attention without exporting data for additional analysis. This improves reporting efficiency, increases data consistency, and provides greater visibility into the order fulfillment process.
+
 
 ### 5.5 Parameters
 
