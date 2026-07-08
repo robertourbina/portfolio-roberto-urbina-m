@@ -279,13 +279,25 @@ The calculated fields were designed to transform transactional data into meaning
 
 Providing these insights directly within the BAQ reduces the need for manual spreadsheet calculations and enables faster, more informed decision-making.
 
-> **Design Note:** The `AvgDaysToShip` field represents an estimated shipping cycle time at the transaction level. A future analytical BAQ will extend this concept using aggregation functions (`AVG`) and grouping to measure average shipment performance by customer, product line, or other business dimensions.
+### Design Decision
+
+The `AvgDaysToShip` calculated field was intentionally included as a transaction-level operational indicator rather than an aggregated performance metric.
+
+Its primary purpose is to provide users with immediate visibility into the elapsed shipping cycle for individual customer orders.
+
+Future analytical BAQs may extend this concept by using aggregation functions (such as `AVG`) and grouping to evaluate shipping performance by customer, product line, or other business dimensions.
 
 ### Business Impact
 
 The calculated fields transformed the BAQ from a simple data extraction tool into an operational decision-support solution.
 
 Users can immediately identify open commitments, monitor fulfillment progress, estimate shipping performance, and prioritize orders requiring attention without exporting data for additional analysis. This improves reporting efficiency, increases data consistency, and provides greater visibility into the order fulfillment process.
+
+### Future Enhancement
+
+This implementation establishes the foundation for more advanced operational reporting.
+
+Future versions could incorporate aggregated performance indicators, customer service metrics, backlog analysis, and trend reporting to support strategic decision-making while reusing the same business logic developed in this BAQ.
 
 
 ## 5.5 Runtime Parameters
