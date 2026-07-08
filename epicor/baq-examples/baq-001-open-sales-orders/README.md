@@ -434,6 +434,8 @@ The following validation activities were performed:
 
 # 7. Business Value
 
+This implementation reduced the effort required to monitor customer commitments by consolidating operational information into a single reusable data source. The resulting BAQ serves not only as a reporting tool but also as the foundation for dashboards, reports, and future automation initiatives throughout the order fulfillment process.
+
 The implementation provides several operational benefits:
 
 - Improves visibility into open customer orders.
