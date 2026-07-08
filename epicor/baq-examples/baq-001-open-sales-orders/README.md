@@ -201,8 +201,6 @@ When designing BAQs for operational analysis, it is recommended to use the **low
 
 For sales order management, the release level offers the greatest visibility into customer commitments because it captures shipment schedules, open quantities, and delivery dates. This approach improves the accuracy of dashboards, reports, and operational planning while reducing the need for additional calculations in downstream solutions.
 
-### 5.4 Calculated Fields
-
 ## 5.4 Calculated Fields
 
 ### Why Calculated Fields Were Necessary
