@@ -413,13 +413,22 @@ Production planners, customer service teams, and operations managers can monitor
 
 # 6. Validation
 
-Validation activities performed during implementation include:
+Validation of this BAQ focused on confirming that the returned information accurately represented open customer commitments.
 
-- Verification of returned records.
-- Comparison against standard Epicor inquiries.
-- Validation of calculated quantities.
-- Functional testing with representative business scenarios.
-- Confirmation that only open sales orders are displayed.
+The following validation activities were performed:
+
+• Compared returned records against standard Epicor inquiry screens.
+
+• Verified remaining quantities using representative sales orders.
+
+• Confirmed calculated fields produced expected values.
+
+• Tested orders in different lifecycle stages
+  (Open, Partially Shipped, Completed).
+
+• Verified that optional filters produced consistent results.
+
+• Confirmed that only active customer commitments were returned.
 
 ---
 
