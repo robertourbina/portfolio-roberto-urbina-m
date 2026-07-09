@@ -1,3 +1,5 @@
+# BAQ-002 – Inventory Availability
+
 | Property                | Value                         |
 | ----------------------- | ----------------------------- |
 | **Module**              | Inventory Management          |
