@@ -2,15 +2,17 @@
 
 ## Purpose
 
-This document defines the documentation standards used throughout the Epicor ERP Portfolio. Its purpose is to ensure that every project follows a consistent structure, writing style, and level of detail, allowing readers to easily navigate the portfolio while demonstrating a professional and methodical approach to ERP solution design.
+This document defines the documentation methodology used throughout the Epicor ERP Portfolio. Its purpose is to establish a consistent approach for documenting technical solutions, ensuring that every project follows the same structure, writing style, and level of detail.
 
-The methodology emphasizes business analysis, solution design, implementation, validation, and business value rather than simply presenting technical artifacts.
+By applying a standardized methodology, the portfolio demonstrates not only technical expertise but also the analytical thinking, organization, and communication skills expected from an ERP Application Specialist.
+
+The objective of this portfolio is not only to present completed technical solutions, but also to demonstrate the methodology used to analyze, design, implement, validate, and document ERP solutions in a professional environment.
 
 ---
 
-# Scope
+## Scope
 
-These standards apply to all technical projects included in this portfolio, including but not limited to:
+This methodology applies to all technical projects included in this portfolio, including but not limited to:
 
 - Business Activity Queries (BAQs)
 - Business Process Management (BPM) examples
@@ -19,13 +21,13 @@ These standards apply to all technical projects included in this portfolio, incl
 - Epicor Customizations
 - Integrations
 - SQL Examples
-- Future Epicor ERP solutions
+- Other Epicor ERP technical solutions
 
 ---
 
-# Documentation Philosophy
+## Documentation Philosophy
 
-The portfolio has been designed to reflect the documentation practices commonly used during ERP implementation and continuous improvement projects.
+The portfolio is organized using a business-first documentation approach that reflects the practices commonly adopted during ERP implementation and continuous improvement projects.
 
 Each project should communicate:
 
