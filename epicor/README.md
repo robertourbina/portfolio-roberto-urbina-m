@@ -151,5 +151,11 @@ This portfolio reflects my commitment to continuous learning and sharing practic
 
 ---
 
+# Professional Context
+
+The examples presented in this portfolio are based on real-world Epicor ERP implementations developed while supporting a manufacturer of institutional furniture. The manufacturing environment primarily utilized wood and stainless steel, providing experience across Sales, Inventory Management, Purchasing, Production Planning, Shop Floor Operations, and Business Intelligence. Company-specific information has been omitted to maintain confidentiality while preserving the technical and business value of each solution.
+
+---
+
 > **"Technology delivers the greatest value when it solves real business problems."**
 
