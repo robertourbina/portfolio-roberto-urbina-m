@@ -82,18 +82,13 @@ Every section, document, and technical decision included in this portfolio has a
 
 # Manufacturing Context
 
-The examples presented throughout this portfolio are based on real-world Epicor ERP implementations developed while supporting a manufacturer of institutional furniture.
+The examples presented throughout this portfolio are based on professional experience supporting a manufacturer of institutional furniture.
 
-The manufacturing environment primarily involved products built from wood and stainless steel, providing practical experience across:
+The manufacturing environment primarily involved products built from wood and stainless steel, requiring coordination across multiple business functions including Sales, Inventory Management, Purchasing, Production Planning, Shop Floor Operations, and Business Intelligence.
 
-- Sales Order Management
-- Inventory Management
-- Purchasing
-- Production Planning
-- Shop Floor Operations
-- Business Intelligence
+Working within this environment provided opportunities to design and implement solutions that improved operational visibility, streamlined business processes, and supported data-driven decision making throughout the organization.
 
-Company-specific information has been intentionally omitted to protect confidentiality while preserving the technical and business value of each implementation.
+To maintain professional confidentiality, all company-specific information has been removed or generalized. The technical implementations, documentation methodology, and business scenarios presented in this portfolio reflect real-world experience while respecting confidentiality requirements.
 
 ---
 
