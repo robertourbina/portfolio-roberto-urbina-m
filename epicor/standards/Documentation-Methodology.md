@@ -44,16 +44,39 @@ The objective is not only to demonstrate technical knowledge, but also to showca
 
 # Writing Principles
 
-Every document should follow these principles:
+The following principles define the writing style used throughout this portfolio. Their purpose is to ensure that every project is presented in a consistent, professional, and business-oriented manner.
 
-- Business-first approach.
-- Professional consulting tone.
-- Clear and concise language.
-- Consistent terminology.
-- Technology-neutral descriptions where possible.
-- Real implementation examples.
-- No confidential company information.
-- Focus on maintainability and readability.
+## Business-First Approach
+
+Every project begins by explaining the business problem before introducing the technical solution. This approach demonstrates an understanding that technology exists to support business objectives, not as an end in itself.
+
+## Professional Consulting Tone
+
+Documentation should be written using a clear, objective, and professional tone. The focus is on explaining the problem, the proposed solution, and the resulting business value in a manner suitable for technical teams, business stakeholders, and hiring managers.
+
+## Clarity and Simplicity
+
+Technical concepts should be explained using concise and straightforward language. Whenever possible, unnecessary complexity should be avoided without sacrificing technical accuracy.
+
+## Consistency
+
+All projects should follow the same documentation structure, terminology, formatting, and writing style. Consistency improves readability and reinforces the professionalism of the portfolio.
+
+## Real-World Experience
+
+Every project included in this portfolio represents a real implementation or a solution based on actual business requirements and professional experience. Examples are documented to demonstrate practical problem-solving while protecting confidential information.
+
+## Confidentiality
+
+Company names, proprietary processes, customer information, and other confidential details are intentionally omitted. Business scenarios are described at a level that preserves the technical value of the solution while respecting professional confidentiality.
+
+## Continuous Improvement
+
+Documentation should evolve as the portfolio grows. Opportunities to improve clarity, organization, or consistency should be recorded and incorporated during scheduled portfolio reviews rather than interrupting ongoing development.
+
+## Intentional Design
+
+Every section, document, and technical decision included in this portfolio has a defined purpose. The portfolio emphasizes thoughtful analysis and deliberate design choices rather than following templates without understanding their value.
 
 ---
 
