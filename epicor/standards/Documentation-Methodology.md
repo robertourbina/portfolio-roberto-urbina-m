@@ -10,12 +10,12 @@ The objective of this portfolio is not only to present completed technical solut
 
 ---
 
-## Scope
+# Scope
 
 This methodology applies to all technical projects included in this portfolio, including but not limited to:
 
 - Business Activity Queries (BAQs)
-- Business Process Management (BPM) examples
+- Business Process Management (BPM)
 - Dashboards
 - SSRS Reports
 - Epicor Customizations
@@ -25,7 +25,7 @@ This methodology applies to all technical projects included in this portfolio, i
 
 ---
 
-## Documentation Philosophy
+# Documentation Philosophy
 
 The portfolio is organized using a business-first documentation approach that reflects the practices commonly adopted during ERP implementation and continuous improvement projects.
 
@@ -70,13 +70,13 @@ Every project included in this portfolio represents a real implementation or a s
 
 Company names, proprietary processes, customer information, and other confidential details are intentionally omitted. Business scenarios are described at a level that preserves the technical value of the solution while respecting professional confidentiality.
 
-## Continuous Improvement
-
-Documentation should evolve as the portfolio grows. Opportunities to improve clarity, organization, or consistency should be recorded and incorporated during scheduled portfolio reviews rather than interrupting ongoing development.
-
 ## Intentional Design
 
 Every section, document, and technical decision included in this portfolio has a defined purpose. The portfolio emphasizes thoughtful analysis and deliberate design choices rather than following templates without understanding their value.
+
+## Continuous Improvement
+
+Documentation should evolve as the portfolio grows. Opportunities to improve clarity, organization, or consistency should be recorded and incorporated during scheduled portfolio reviews rather than interrupting ongoing development.
 
 ---
 
@@ -94,79 +94,46 @@ To maintain professional confidentiality, all company-specific information has b
 
 # Standard Documentation Structure
 
-Every BAQ should follow the structure below.
+Every project included in this portfolio follows a standardized documentation structure. Although individual sections may vary depending on the type of implementation, the objective is to maintain consistency across the repository.
 
-## Project Header
+The standard BAQ documentation includes:
 
-## Overview
+1. Project Header
+2. Overview
+3. Problem
+4. Requirements
+   - Functional Requirements
+   - Business Requirements
+5. Solution Design
+6. Data Sources
+7. Query Logic
+8. Calculated Fields
+9. Parameters
+10. Filter Criteria
+11. Validation
+12. Business Value
+13. Technical Skills Demonstrated
+14. Lessons Learned
+15. Future Enhancements (Optional)
 
-## 1. Problem
-
-## 2. Requirements
-
-### Functional Requirements
-
-### Business Requirements
-
-## 3. Solution Design
-
-## 4. Data Sources
-
-## 5. Query Logic
-
-## 6. Calculated Fields
-
-## 7. Parameters
-
-## 8. Filter Criteria
-
-## 9. Validation
-
-## 10. Business Value
-
-## 11. Technical Skills Demonstrated
-
-## 12. Lessons Learned
-
-## 13. Future Enhancements (Optional)
+Other project types (BPMs, Dashboards, Reports, Integrations, etc.) may adapt this structure while preserving the same documentation philosophy.
 
 ---
 
-# Documentation Lifecycle
+# Related Standards
 
-Each project progresses through the following stages:
+This methodology is supported by additional standards located in the `standards/` directory.
 
-1. Analysis
-2. Documentation
-3. Review
-4. Freeze
-5. Final Portfolio Review
+These documents define specific aspects of the portfolio documentation framework.
 
-Once a project reaches the **Freeze** stage, only corrections or portfolio-wide consistency improvements should be applied.
+- Documentation Workflow
+- Implementation Guide Template
+- Naming Conventions
+- Folder Structure
+- Image Standards
+- Project Decisions
 
----
-
-# Frozen Standards
-
-The following standards have been approved and should remain consistent across the portfolio.
-
-- Standard documentation structure.
-- Business-first writing methodology.
-- Professional consulting tone.
-- Real implementation examples only.
-- Consistent naming conventions.
-- Future Enhancements section is optional.
-- Final consistency review performed after all projects are completed.
-
----
-
-# Continuous Improvement
-
-Ideas identified during development that could improve the portfolio should not interrupt ongoing work.
-
-Instead, they should be documented as future improvements and evaluated during the final portfolio review.
-
-This approach ensures project consistency while allowing the methodology to evolve over time.
+Together, these documents establish the complete documentation framework used throughout the portfolio.
 
 ---
 
@@ -174,4 +141,4 @@ This approach ensures project consistency while allowing the methodology to evol
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 1.0 | July 2026 | Initial documentation methodology established and frozen. |
+| Draft | July 2026 | Initial methodology under review. |
