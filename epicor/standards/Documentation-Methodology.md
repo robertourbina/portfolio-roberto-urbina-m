@@ -7,7 +7,7 @@
 | Version | Draft |
 | Status | Under Review |
 | Applies To | Epicor ERP Portfolio |
-| Owner | Roberto Urbina |
+| Author | Roberto Urbina |
 | Last Updated | July 2026 |
 
 ## Purpose
