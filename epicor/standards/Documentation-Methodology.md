@@ -12,7 +12,7 @@
 
 ## Purpose
 
-This document defines the documentation methodology used throughout the Epicor ERP Portfolio. Its purpose is to establish a consistent approach for documenting technical solutions, ensuring that every project follows the same structure, writing style, and level of detail.
+This document defines the documentation methodology used throughout the Epicor ERP Portfolio. It establishes the principles and standards that ensure every project is documented using a consistent structure, writing style, and level of detail.
 
 By applying a standardized methodology, the portfolio demonstrates not only technical expertise but also the analytical thinking, organization, and communication skills expected from an ERP Application Specialist.
 
