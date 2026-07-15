@@ -16,7 +16,7 @@ This document defines the documentation methodology used throughout the Epicor E
 
 By applying a standardized methodology, the portfolio demonstrates not only technical expertise but also the analytical thinking, organization, and communication skills expected from an ERP Application Specialist.
 
-The objective of this portfolio is not only to present completed technical solutions, but also to demonstrate the methodology used to analyze, design, implement, validate, and document ERP solutions in a professional environment.
+The objective of this portfolio is not only to present completed technical solutions, but also to demonstrate the professional methodology used to analyze, design, implement, validate, and document ERP solutions.
 
 ---
 
