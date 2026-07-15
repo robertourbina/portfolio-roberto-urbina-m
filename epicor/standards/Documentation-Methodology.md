@@ -1,5 +1,15 @@
 # Documentation Methodology
 
+| Property | Value |
+|----------|-------|
+| Document | Documentation Methodology |
+| Category | Portfolio Standard |
+| Version | Draft |
+| Status | Under Review |
+| Applies To | Epicor ERP Portfolio |
+| Owner | Roberto Urbina |
+| Last Updated | July 2026 |
+
 ## Purpose
 
 This document defines the documentation methodology used throughout the Epicor ERP Portfolio. Its purpose is to establish a consistent approach for documenting technical solutions, ensuring that every project follows the same structure, writing style, and level of detail.
