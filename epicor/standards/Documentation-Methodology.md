@@ -22,7 +22,7 @@ The objective of this portfolio is not only to present completed technical solut
 
 # Scope
 
-This methodology applies to all technical projects included in this portfolio, including but not limited to:
+This methodology applies to all Epicor ERP technical projects included in the Epicor section of this portfolio, including but not limited to:
 
 - Business Activity Queries (BAQs)
 - Business Process Management (BPM)
