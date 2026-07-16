@@ -66,7 +66,7 @@ Documentation should be written using a clear, objective, and professional tone.
 
 ## Clarity and Simplicity
 
-Technical concepts should be explained using concise and straightforward language. Whenever possible, unnecessary complexity should be avoided without sacrificing technical accuracy.
+Technical concepts should be explained using concise and straightforward language. Unnecessary complexity should be avoided while maintaining technical accuracy.
 
 ## Consistency
 
