@@ -37,7 +37,7 @@ This methodology applies to all Epicor ERP technical projects included in the Ep
 
 # Documentation Philosophy
 
-The portfolio is organized using a business-first documentation approach that reflects the practices commonly adopted during ERP implementation and continuous improvement projects.
+The portfolio follows a business-first documentation approach based on professional experience supporting ERP implementation and continuous improvement initiatives.
 
 Each project should communicate:
 
@@ -48,7 +48,7 @@ Each project should communicate:
 - The validation process.
 - The business value delivered.
 
-The objective is not only to demonstrate technical knowledge, but also to showcase analytical thinking, structured problem solving, and professional documentation skills.
+The objective of this portfolio is not only to demonstrate technical knowledge, but also to showcase analytical thinking, structured problem solving, and professional documentation skills.
 
 ---
 
