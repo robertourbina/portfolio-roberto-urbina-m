@@ -134,7 +134,7 @@ Other project types (BPMs, Dashboards, Reports, Integrations, etc.) may adapt th
 
 This methodology is supported by additional standards located in the `standards/` directory.
 
-These documents define specific aspects of the portfolio documentation framework.
+These documents define specific components of the portfolio documentation framework.
 
 - Documentation Workflow
 - Implementation Guide Template
