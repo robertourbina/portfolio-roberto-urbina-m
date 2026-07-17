@@ -94,7 +94,7 @@ Documentation should evolve as the portfolio grows. Opportunities to improve cla
 
 The examples presented throughout this portfolio are based on professional experience supporting a manufacturer of institutional furniture.
 
-The manufacturing environment primarily involved products built from wood and stainless steel, requiring coordination across multiple business functions including Sales, Inventory Management, Purchasing, Production Planning, Shop Floor Operations, and Business Intelligence.
+The manufacturing environment primarily involved products built from wood and stainless steel, requiring close coordination across multiple business functions including Sales, Inventory Management, Purchasing, Production Planning, Shop Floor Operations, and Business Intelligence.
 
 Working within this environment provided opportunities to design and implement solutions that improved operational visibility, streamlined business processes, and supported data-driven decision making throughout the organization.
 
