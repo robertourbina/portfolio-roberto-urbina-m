@@ -104,7 +104,7 @@ To maintain professional confidentiality, all company-specific information has b
 
 # Standard Documentation Structure
 
-Every project included in this portfolio follows a standardized documentation structure. Although individual sections may vary depending on the type of implementation, the objective is to maintain consistency across the repository.
+Every project included in this portfolio follows a standardized documentation structure. Although individual sections may vary depending on the implementation type, the objective is to maintain consistency across the repository.
 
 The standard BAQ documentation includes:
 
@@ -112,8 +112,8 @@ The standard BAQ documentation includes:
 2. Overview
 3. Problem
 4. Requirements
-   - Functional Requirements
    - Business Requirements
+   - Functional Requirements
 5. Solution Design
 6. Data Sources
 7. Query Logic
