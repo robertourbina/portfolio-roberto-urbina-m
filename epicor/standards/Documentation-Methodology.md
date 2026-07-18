@@ -147,8 +147,8 @@ Together, these documents establish the complete documentation framework used th
 
 ---
 
-# Version History
+| Version | Date      | Description                                                  |
+| ------- | --------- | ------------------------------------------------------------ |
+| Draft   | July 2026 | Initial methodology under review.                            |
+| **1.0** | July 2026 | **First approved version of the Documentation Methodology.** |
 
-| Version | Date | Description |
-|----------|------|-------------|
-| Draft | July 2026 | Initial methodology under review. |
