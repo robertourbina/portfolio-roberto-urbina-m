@@ -4,8 +4,8 @@
 |----------|-------|
 | Document | Documentation Methodology |
 | Category | Portfolio Standard |
-| Version | Draft |
-| Status | Under Review |
+| Version | 1.0 |
+| Status | Frozen |
 | Applies To | Epicor ERP Portfolio |
 | Author | Roberto Urbina |
 | Last Updated | July 2026 |
