@@ -23,6 +23,18 @@ Current Phase:
 ⏳ Development Pending
 
 ---
+# Purpose
+
+The purpose of this document is to define the standard workflow used to create, review, validate, approve, and manage documentation throughout its lifecycle within the Epicor ERP Portfolio.
+
+This workflow establishes a consistent and repeatable lifecycle that guides the development of portfolio standards and technical documentation from initial planning through final approval and long-term maintenance.
+
+By following a structured workflow, every document is developed using the same quality-focused process, ensuring consistency, traceability, and continuous improvement across the portfolio.
+
+This document complements the **Documentation Methodology** by defining how documentation is developed and governed, while the methodology defines how documentation should be structured and written.
+
+
+
 
 # Approved Architecture
 
