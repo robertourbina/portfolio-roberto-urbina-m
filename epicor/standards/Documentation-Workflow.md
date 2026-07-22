@@ -48,8 +48,6 @@ Together, these standards ensure that portfolio documentation is not only writte
 
 
 
-
-
 # Approved Architecture
 
 1. Project Header
