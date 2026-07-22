@@ -42,7 +42,7 @@ The Documentation Methodology defines the principles, writing standards, documen
 
 The Documentation Workflow defines the lifecycle used to plan, develop, review, validate, approve, and maintain documentation. It establishes the activities and governance that guide each document from its initial concept through its approved and maintained state.
 
-Together, these standards ensure that portfolio documentation is not only written consistently, but also developed using a structured, repeatable, and quality-focused process. While the methodology defines the expected result, the workflow defines the process used to achieve that result.
+Together, these standards establish a complete documentation framework for the Epicor ERP Portfolio. The methodology defines the expected result, while the workflow defines the process used to achieve that result
 
 ---
 
