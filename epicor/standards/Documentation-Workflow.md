@@ -59,6 +59,37 @@ The Documentation Workflow defines the lifecycle used to plan, develop, review, 
 Together, these standards establish a complete documentation framework for the Epicor ERP Portfolio. The methodology defines the expected result, while the workflow defines the process used to achieve that result
 
 ---
+# Workflow Principles
+
+The following principles define how documentation is developed, reviewed, approved, and maintained throughout the Epicor ERP Portfolio. Their purpose is to ensure that every document follows a consistent lifecycle and is managed using a structured, repeatable, and quality-focused process.
+
+## Planned Development
+
+Documentation should be developed according to a defined plan before content is written. Each document begins by identifying its purpose, scope, and architecture to ensure that development is guided by clear objectives.
+
+## Phase-Based Progress
+
+Documentation is developed in sequential phases. Each phase should be completed and reviewed before moving to the next, ensuring that progress is deliberate, measurable, and consistent.
+
+## Review Before Approval
+
+Every section should be reviewed against the established documentation standards before it is approved. Reviews verify clarity, consistency, completeness, and alignment with the Documentation Methodology.
+
+## Approved Decisions
+
+Only reviewed and approved content should become part of the documentation. Draft ideas, incomplete sections, and future considerations should remain outside the official document until they have been validated.
+
+## Controlled Change
+
+Once a document or section has been approved, changes should only be introduced through the defined workflow. This preserves document integrity and provides a clear history of its evolution.
+
+## Continuous Improvement
+
+Documentation should continue to evolve as new experience and opportunities for improvement are identified. Enhancements should follow the established workflow to ensure that future versions remain consistent with the portfolio standards.
+
+--
+
+
 
 
 
