@@ -89,6 +89,17 @@ Documentation should continue to evolve as new experience and opportunities for 
 
 --
 
+# Documentation Lifecycle
+
+The Documentation Lifecycle defines the sequence of phases used to develop and maintain documentation throughout the Epicor ERP Portfolio.
+
+Each phase has a specific objective and expected outcome, ensuring that documentation progresses through a structured, consistent, and quality-focused process. Following this lifecycle promotes traceability, supports informed decision-making, and helps ensure that every document reaches an approved and maintainable state before becoming part of the portfolio.
+
+The lifecycle applies to portfolio standards as well as technical documentation, providing a common process for planning, developing, reviewing, validating, approving, and maintaining documentation over time.
+
+--
+
+
 
 
 
