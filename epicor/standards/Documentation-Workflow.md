@@ -97,6 +97,100 @@ Each phase has a specific objective and expected outcome, ensuring that document
 
 The lifecycle applies to portfolio standards as well as technical documentation, providing a common process for planning, developing, reviewing, validating, approving, and maintaining documentation over time.
 
+# Documentation Lifecycle
+
+The Documentation Lifecycle defines the sequence of phases used to develop and maintain documentation throughout the Epicor ERP Portfolio.
+
+Each phase has a specific objective and expected outcome, ensuring that documentation progresses through a structured, consistent, and quality-focused process. Following this lifecycle promotes traceability, supports informed decision-making, and helps ensure that every document reaches an approved and maintainable state before becoming part of the portfolio.
+
+The lifecycle applies to portfolio standards as well as technical documentation, providing a common process for planning, developing, reviewing, validating, approving, and maintaining documentation over time.
+
+---
+
+## Planning
+
+### Objective
+
+Define the purpose, scope, and proposed architecture of the document before development begins.
+
+### Expected Outcome
+
+A clear development plan, an approved document structure, and defined objectives that guide the remaining phases.
+
+---
+
+## Development
+
+### Objective
+
+Develop the document according to the approved plan, following the Documentation Methodology and applicable portfolio standards.
+
+### Expected Outcome
+
+Document sections completed and ready for technical and editorial review.
+
+---
+
+## Review
+
+### Objective
+
+Evaluate the developed content to verify clarity, consistency, completeness, and compliance with the Documentation Methodology and other applicable standards.
+
+### Expected Outcome
+
+Reviewed documentation with identified improvements incorporated before validation.
+
+---
+
+## Validation
+
+### Objective
+
+Confirm that the documentation fulfills its intended purpose, accurately represents the implementation or standard, and provides value to its intended audience.
+
+### Expected Outcome
+
+Validated documentation that is technically accurate, complete, and ready for formal approval.
+
+---
+
+## Approval
+
+### Objective
+
+Formally accept the validated documentation as meeting the portfolio's quality standards and authorize it to become the official version.
+
+### Expected Outcome
+
+An approved document ready to become the current reference within the portfolio.
+
+---
+
+## Freeze
+
+### Objective
+
+Preserve the approved version as the official baseline. Future modifications should not alter the frozen version directly but instead be incorporated into a future revision.
+
+### Expected Outcome
+
+A stable, traceable reference version that maintains the integrity and history of the documentation.
+
+---
+
+## Future Improvements
+
+### Objective
+
+Capture ideas, observations, and enhancement opportunities identified after approval without affecting the current approved version.
+
+### Expected Outcome
+
+A prioritized list of potential improvements to be evaluated during the next documentation revision cycle.
+
+
+
 --
 
 
