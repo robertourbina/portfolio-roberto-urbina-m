@@ -193,6 +193,16 @@ A prioritized list of potential improvements to be evaluated during the next doc
 
 --
 
+# Roles and Responsibilities
+
+This section defines the roles responsible for developing, reviewing, approving, and maintaining documentation throughout the Epicor ERP Portfolio.
+
+The Documentation Workflow establishes the sequence of activities required to produce high-quality documentation, while this section identifies the responsibilities associated with each role involved in that process. Clearly defined responsibilities promote accountability, consistency, and effective governance throughout the documentation lifecycle.
+
+Although a single individual may perform multiple roles within this portfolio, the responsibilities are defined independently of specific people. This approach ensures that the workflow remains scalable, reusable, and applicable to both individual and collaborative documentation environments.
+
+--
+
 
 
 
