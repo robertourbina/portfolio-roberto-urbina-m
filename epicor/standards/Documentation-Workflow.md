@@ -203,9 +203,22 @@ Although a single individual may perform multiple roles within this portfolio, t
 
 --
 
+## Author
 
+### Purpose
 
+The Author is responsible for creating and maintaining documentation in accordance with the Documentation Methodology and other applicable portfolio standards. This role transforms technical knowledge, implementation experience, and business context into clear, accurate, and structured documentation.
 
+### Responsibilities
+
+- Create new documentation following the approved document architecture.
+- Apply the Documentation Methodology and applicable portfolio standards throughout the development process.
+- Ensure that technical content accurately reflects the implemented solution.
+- Incorporate approved review feedback before submitting documentation for validation.
+- Maintain clarity, consistency, and completeness throughout the document.
+- Update documentation when approved revisions are initiated.
+
+--
 
 
 # Approved Architecture
