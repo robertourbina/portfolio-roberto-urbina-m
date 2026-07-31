@@ -218,6 +218,21 @@ The Author is responsible for creating and maintaining documentation in accordan
 - Maintain clarity, consistency, and completeness throughout the document.
 - Update documentation when approved revisions are initiated.
 
+## Reviewer
+
+### Purpose
+
+The Reviewer is responsible for evaluating documentation to ensure compliance with the Documentation Methodology, Documentation Workflow, and other applicable portfolio standards. This role verifies that documentation is accurate, consistent, complete, and ready to proceed through the remaining stages of the documentation lifecycle.
+
+### Responsibilities
+
+- Review documentation for compliance with the Documentation Methodology and applicable portfolio standards.
+- Verify that the document follows the approved structure and writing principles.
+- Evaluate the accuracy, clarity, and consistency of the documented content.
+- Identify opportunities for improvement and provide constructive feedback.
+- Confirm that review comments have been addressed before recommending the document for approval.
+- Recommend documentation for approval when it satisfies the established quality standards.
+
 --
 
 
