@@ -233,6 +233,21 @@ The Reviewer is responsible for evaluating documentation to ensure compliance wi
 - Confirm that review comments have been addressed before recommending the document for approval.
 - Recommend documentation for approval when it satisfies the established quality standards.
 
+## Approver
+
+### Purpose
+
+The Approver is responsible for formally accepting documentation after the review process has been successfully completed. This role confirms that the document complies with the Documentation Methodology, Documentation Workflow, and applicable portfolio standards before it becomes an approved portfolio artifact.
+
+### Responsibilities
+
+- Evaluate the review results and verify that all required feedback has been appropriately addressed.
+- Confirm that the documentation satisfies the established quality standards and is ready for approval.
+- Formally approve documentation that complies with the applicable portfolio standards.
+- Ensure that approved documentation accurately represents the objectives and quality expectations of the portfolio.
+- Authorize the document to progress to the next stage of the documentation lifecycle.
+- Request additional revisions when documentation does not yet meet the required standards for approval.
+
 --
 
 
