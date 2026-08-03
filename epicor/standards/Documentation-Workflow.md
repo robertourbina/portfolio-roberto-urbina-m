@@ -248,6 +248,21 @@ The Approver is responsible for formally accepting documentation after the revie
 - Authorize the document to progress to the next stage of the documentation lifecycle.
 - Request additional revisions when documentation does not yet meet the required standards for approval.
 
+## Document Owner
+
+### Purpose
+
+The Document Owner is responsible for ensuring that approved documentation remains accurate, relevant, and aligned with the Documentation Methodology and other applicable portfolio standards throughout its lifecycle. This role oversees the long-term maintenance of documentation and coordinates approved revisions when improvements are required.
+
+### Responsibilities
+
+- Monitor approved documentation to ensure it remains current and aligned with portfolio standards.
+- Identify opportunities for updates based on approved improvement initiatives, changes in methodology, or lessons learned.
+- Coordinate the initiation of approved document revisions when necessary.
+- Ensure that version history is maintained and accurately reflects approved changes.
+- Preserve the integrity, consistency, and long-term value of the documentation framework.
+- Verify that obsolete or superseded documentation is appropriately updated or archived according to the established documentation standards.
+
 --
 
 
