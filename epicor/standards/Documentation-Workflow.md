@@ -265,6 +265,24 @@ The Document Owner is responsible for ensuring that approved documentation remai
 
 --
 
+###Change Management
+
+## Purpose
+
+The purpose of Change Management is to ensure that approved documentation evolves in a controlled, consistent, and traceable manner while preserving the integrity of the Documentation Methodology, Documentation Workflow, and other applicable portfolio standards.
+
+As the portfolio grows, opportunities for improvement, clarification, and refinement are expected. This section establishes the principles and process for managing those changes, ensuring that every approved modification is properly evaluated, documented, reviewed, and incorporated without compromising the consistency or quality of the documentation framework.
+
+By defining a structured approach to change management, the portfolio supports continuous improvement while maintaining the stability and reliability of its documentation standards.
+
+
+--
+
+
+--
+
+
+
 
 # Approved Architecture
 
