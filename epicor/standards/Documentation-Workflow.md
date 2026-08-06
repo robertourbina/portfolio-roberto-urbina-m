@@ -275,6 +275,33 @@ As the portfolio grows, opportunities for improvement, clarification, and refine
 
 By defining a structured approach to change management, the portfolio supports continuous improvement while maintaining the stability and reliability of its documentation standards.
 
+## Change Principles
+
+The following principles govern all modifications to approved documentation within the portfolio. Their purpose is to ensure that every change is implemented in a controlled, consistent, and transparent manner while preserving the integrity of the documentation framework.
+
+### Controlled Evolution
+
+Approved documentation should evolve only through the established Change Management process. Changes should be introduced deliberately and with a clear business or documentation objective.
+
+### Traceability
+
+Every approved change should be documented and reflected in the appropriate version history. Documentation should provide a clear record of what changed, when the change was made, and why it was necessary.
+
+### Consistency
+
+Changes should maintain consistency with the Documentation Methodology, Documentation Workflow, and all applicable portfolio standards. New content should reinforce the existing framework rather than introduce conflicting approaches.
+
+### Justification
+
+Every proposed change should have a defined purpose. Modifications should improve clarity, accuracy, organization, or the overall quality of the documentation, rather than reflect personal preference.
+
+### Preservation of Quality
+
+Changes should preserve or enhance the professional quality of the documentation. Approved standards should not be weakened or simplified in ways that reduce the value or reliability of the portfolio.
+
+### Continuous Improvement
+
+The documentation framework is expected to evolve as new experience, lessons learned, and better practices are identified. Continuous improvement should always follow the established Change Management process to maintain stability while supporting long-term growth.
 
 --
 
