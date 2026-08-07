@@ -303,6 +303,28 @@ Changes should preserve or enhance the professional quality of the documentation
 
 The documentation framework is expected to evolve as new experience, lessons learned, and better practices are identified. Continuous improvement should always follow the established Change Management process to maintain stability while supporting long-term growth.
 
+## Change Request Process
+
+Changes to approved documentation should follow a defined process to ensure that proposed improvements are properly evaluated before they are incorporated into the portfolio.
+
+The process begins when a need for change is identified. The proposed change should be documented with sufficient information to explain what should be changed, why the change is necessary, and which documentation or standard may be affected.
+
+Once the change has been documented, it is evaluated against the applicable portfolio standards and its potential impact on related documentation. This evaluation determines whether the proposed change is appropriate and whether additional review is required.
+
+Changes that require formal approval proceed through the established approval process before implementation. Approved changes are then incorporated into the affected documentation and recorded according to the applicable version control and documentation standards.
+
+The general change request sequence is:
+
+1. Identify the need for change.
+2. Document the proposed change.
+3. Evaluate the change and its potential impact.
+4. Submit the change for the appropriate review and approval.
+5. Implement the approved change.
+6. Update the affected documentation and applicable records.
+7. Close the change request.
+
+This process ensures that documentation can evolve through controlled improvement while maintaining consistency, traceability, and alignment with the Documentation Methodology.
+
 --
 
 
