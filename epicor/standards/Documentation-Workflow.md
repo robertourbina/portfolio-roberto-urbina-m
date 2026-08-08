@@ -325,6 +325,48 @@ The general change request sequence is:
 
 This process ensures that documentation can evolve through controlled improvement while maintaining consistency, traceability, and alignment with the Documentation Methodology.
 
+## Types of Changes
+
+Changes to portfolio documentation may vary in scope, impact, and purpose. Classifying changes helps distinguish routine improvements from modifications that may affect established standards or the structure of the documentation framework.
+
+The following categories define the primary types of changes applicable to the portfolio.
+
+### Editorial Changes
+
+Editorial changes improve the presentation or readability of existing documentation without changing its meaning or established requirements.
+
+Examples include correcting grammar, improving wording, fixing formatting, or clarifying sentences.
+
+### Content Changes
+
+Content changes modify or expand the information contained within an existing document while preserving its overall structure and purpose.
+
+Examples include adding explanations, updating examples, correcting technical information, or incorporating lessons learned.
+
+### Structural Changes
+
+Structural changes modify the organization or design of a document or documentation component.
+
+Examples include adding, removing, combining, or reorganizing sections when those modifications affect the established documentation structure.
+
+### Methodology Changes
+
+Methodology changes modify the standards, principles, or practices that govern how portfolio documentation is created, reviewed, or maintained.
+
+These changes may affect multiple documents and therefore require careful evaluation to preserve consistency across the portfolio.
+
+### Framework Changes
+
+Framework changes affect the broader documentation architecture, governance model, or relationship between portfolio standards.
+
+These changes represent the highest level of modification because they may influence how the documentation framework operates as a whole.
+
+### Change Classification
+
+The classification of a change should be based on its purpose and potential impact rather than on the amount of text modified. A small modification may have significant implications if it affects an established standard, while a larger editorial update may have limited impact on the framework.
+
+Change classification provides a common reference for evaluating proposed modifications while leaving the specific review and approval requirements to the Change Approval process.
+
 --
 
 
