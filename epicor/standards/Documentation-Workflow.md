@@ -367,6 +367,43 @@ The classification of a change should be based on its purpose and potential impa
 
 Change classification provides a common reference for evaluating proposed modifications while leaving the specific review and approval requirements to the Change Approval process.
 
+## Change Approval
+
+Proposed changes to approved documentation should be reviewed and approved according to their purpose, scope, and potential impact on the portfolio. The approval process ensures that changes are appropriate, justified, and consistent with the Documentation Methodology, Documentation Workflow, and applicable portfolio standards.
+
+### Approval Criteria
+
+Before approval, a proposed change should be evaluated based on the following criteria:
+
+- **Purpose:** The change has a clear and justified objective.
+- **Impact:** The potential effect on related documentation, standards, or the portfolio framework has been considered.
+- **Consistency:** The change remains aligned with the Documentation Methodology, Documentation Workflow, and applicable standards.
+- **Quality:** The proposed modification maintains or improves the clarity, accuracy, and professional quality of the documentation.
+- **Traceability:** The proposed change can be properly documented and incorporated into the applicable version history.
+
+### Approval Decision
+
+Following evaluation, the proposed change may be:
+
+- **Approved** — The change satisfies the applicable criteria and may proceed to implementation.
+- **Rejected** — The change does not satisfy the applicable criteria or does not provide sufficient value to justify implementation.
+- **Returned for Revision** — The change has potential value but requires clarification, additional information, or modification before a decision can be made.
+
+The approval decision should be documented to provide a clear record of the outcome and the reasoning supporting the decision when appropriate.
+
+### Approval Responsibility
+
+Approval responsibility follows the Roles and Responsibilities defined within the Documentation Workflow. The designated Approver is responsible for evaluating proposed changes within the scope of the established governance model and determining whether they may proceed.
+
+Approval authority should remain separate from the responsibility for implementing the change. This separation supports objective review and helps maintain the integrity of the documentation framework.
+
+### Implementation After Approval
+
+An approved change may proceed to implementation through the established documentation process. The affected documentation should be updated in accordance with the applicable standards, and the completed change should be reflected in the appropriate version control records.
+
+Rejected changes should not be incorporated into approved documentation. Changes returned for revision may be resubmitted after the identified concerns have been addressed.
+
+
 --
 
 
