@@ -403,6 +403,38 @@ An approved change may proceed to implementation through the established documen
 
 Rejected changes should not be incorporated into approved documentation. Changes returned for revision may be resubmitted after the identified concerns have been addressed.
 
+## Version Control
+
+Version Control ensures that approved documentation changes are clearly identified, traceable, and maintained as part of the portfolio's documented history. It provides a consistent mechanism for distinguishing current documentation from previous versions while preserving the context of changes made over time.
+
+### Version Identification
+
+Each controlled document should have a clearly identifiable version. Version information should allow users to distinguish the current approved version from previous versions and understand the document's position within its lifecycle.
+
+Version identification should remain consistent with the documentation standards established by the portfolio.
+
+### Version History
+
+Each controlled document should maintain a version history that records significant approved changes. The history should provide sufficient information to understand what was changed, when the change occurred, and the reason or context for the modification when appropriate.
+
+Version history supports traceability without requiring the complete historical content of every previous version to be reproduced within the current document.
+
+### Change Traceability
+
+Changes recorded through Version Control should remain traceable to the applicable change request and approval decision when those records are maintained separately.
+
+This relationship provides a clear connection between the original need for change, its evaluation and approval, and the resulting documentation version.
+
+### Current Approved Version
+
+The current approved version represents the version that should be considered authoritative for portfolio use. Previous versions remain part of the documentation history but should not be treated as the current standard unless explicitly restored or reapproved through the applicable Change Management process.
+
+### Version Integrity
+
+Version information should be updated whenever an approved change results in a new controlled version. Version records should remain accurate, consistent, and aligned with the actual state of the documentation.
+
+Version Control supports the long-term integrity of the portfolio by ensuring that documentation changes remain identifiable, traceable, and connected to the governance process that authorized them.
+
 
 --
 
