@@ -435,6 +435,45 @@ Version information should be updated whenever an approved change results in a n
 
 Version Control supports the long-term integrity of the portfolio by ensuring that documentation changes remain identifiable, traceable, and connected to the governance process that authorized them.
 
+## Continuous Improvement
+
+Continuous Improvement ensures that the Documentation Methodology and Documentation Workflow can evolve as experience, lessons learned, and new requirements are identified. Improvements should strengthen the quality, consistency, and usefulness of the portfolio while preserving the governance structure already established.
+
+### Improvement Opportunities
+
+Improvement opportunities may be identified through project experience, lessons learned, recurring documentation issues, changes in business or technical requirements, review observations, or feedback from portfolio participants.
+
+An improvement opportunity should be considered when it can provide measurable or meaningful value to the documentation process, quality, consistency, or maintainability of the portfolio.
+
+### Lessons Learned
+
+Lessons learned from completed projects and documentation activities should be used as a source of improvement. Relevant observations may identify opportunities to clarify standards, improve templates, simplify processes, or strengthen validation practices.
+
+Lessons learned should not automatically modify approved documentation. When an observation requires a change to an established standard or controlled document, it should enter the applicable Change Management process.
+
+### Improvement Evaluation
+
+Identified improvement opportunities should be evaluated according to their purpose, potential impact, and alignment with the portfolio's established principles and standards.
+
+The evaluation should determine whether the improvement provides sufficient value to justify a controlled change.
+
+### Controlled Improvement
+
+Improvements to approved documentation remain subject to the established Change Management process. Continuous Improvement does not bypass the requirements for change classification, approval, implementation, or version control.
+
+This ensures that the portfolio can evolve without compromising consistency, traceability, or governance.
+
+### Feedback and Review
+
+The effectiveness of implemented improvements should be considered during future reviews of the documentation framework. Feedback and experience may identify additional opportunities for refinement, creating an ongoing cycle of evaluation and improvement.
+
+The Continuous Improvement cycle can therefore be represented as:
+
+**Experience → Observation → Improvement Opportunity → Evaluation → Controlled Change → Implementation → Review → Experience**
+
+This cycle supports the long-term evolution of the portfolio while maintaining the stability and integrity of its documentation standards.
+
+
 
 --
 
