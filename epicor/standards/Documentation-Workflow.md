@@ -479,15 +479,13 @@ This cycle supports the long-term evolution of the portfolio while maintaining t
 
 ## Workflow Diagram
 
-## Workflow Diagram
-
-The following diagram provides a visual representation of the Documentation Workflow defined by this methodology.
-
-```mermaid
 flowchart TD
     A["1. INITIATION<br/>Need / Definition"]
+
     B["2. DOCUMENTATION LIFECYCLE<br/>Develop → Review → Approve → Controlled Use"]
+
     C["3. MAINTENANCE<br/>Change Management → Version Control"]
+
     D["4. CONTINUOUS IMPROVEMENT<br/>Lessons Learned → Improvement Opportunity"]
 
     A --> B
