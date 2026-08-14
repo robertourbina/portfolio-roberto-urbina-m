@@ -479,34 +479,33 @@ This cycle supports the long-term evolution of the portfolio while maintaining t
 
 ## Workflow Diagram
 
-┌───────────────────────┐
-│ 1. INITIATION         │
-│                       │
-│ Need / Definition     │
-└───────────┬───────────┘
-            ↓
-┌──────────────────────────────────────┐
-│ 2. DOCUMENTATION LIFECYCLE           │
-│                                      │
-│ Develop → Review → Approve           │
-│              ↓                       │
-│        Controlled Use                │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│ 3. MAINTENANCE                       │
-│                                      │
-│ Change Management → Version Control  │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│ 4. CONTINUOUS IMPROVEMENT             │
-│                                      │
-│ Lessons Learned → Improvement        │
-│ Opportunity                          │
-└──────────────────┬───────────────────┘
-                   │
-                   └───────────────↺
+┌─────────────────────────┐
+│ 1. INITIATION           │
+│ Need / Definition       │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ 2. DOCUMENTATION        │
+│    LIFECYCLE            │
+│ Develop → Review        │
+│ → Approve → Controlled  │
+│   Use                   │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ 3. MAINTENANCE          │
+│ Change Management       │
+│ → Version Control       │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ 4. CONTINUOUS           │
+│    IMPROVEMENT           │
+│ Lessons Learned →       │
+│ Improvement Opportunity │
+└────────────┬────────────┘
+             │
+             └──────────↺
 
 --
 
