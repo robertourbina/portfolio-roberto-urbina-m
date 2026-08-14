@@ -479,7 +479,7 @@ This cycle supports the long-term evolution of the portfolio while maintaining t
 
 ## Workflow Diagram
 
-flowchart TD
+
     A["1. INITIATION<br/>Need / Definition"]
 
     B["2. DOCUMENTATION LIFECYCLE<br/>Develop → Review → Approve → Controlled Use"]
