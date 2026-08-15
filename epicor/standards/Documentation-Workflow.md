@@ -497,7 +497,7 @@ This cycle supports the long-term evolution of the portfolio while maintaining t
 
 The following diagram provides a visual representation of the Documentation Workflow defined by this methodology.
 
-![Documentation Workflow](../assets/documentation-workflow.png)
+![Documentation Workflow](../assets/documentation-workflow-diagram.svg)
 
 --
 
