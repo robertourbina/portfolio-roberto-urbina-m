@@ -501,7 +501,48 @@ The following diagram provides a visual representation of the Documentation Work
 
 --
 
+## Version History
 
+Version History provides a documented record of how controlled portfolio documentation has evolved over time. It supports traceability, historical understanding, and future maintenance by preserving relevant information about approved changes and the resulting document versions.
+
+### Purpose
+
+Version History records significant changes to controlled documentation and provides historical context for understanding how the current version was reached.
+
+The history should contain sufficient information to identify meaningful changes without duplicating the complete content of previous document versions.
+
+### History Record
+
+Each relevant history entry should provide enough information to understand the change that occurred. Depending on the nature of the document and change, the record may include:
+
+- Version identifier
+- Date of change
+- Summary of the change
+- Reason or context for the change
+- Relationship to the applicable change request or approval, when applicable
+
+The level of detail should be appropriate to the significance of the change and the purpose of the document.
+
+### Traceability
+
+Version History should maintain a clear relationship between significant documentation changes and the governance process that authorized them.
+
+When applicable, a history entry should allow the change to be traced back to the corresponding change request, approval decision, and controlled version.
+
+This relationship supports transparency and provides evidence of how the documentation evolved.
+
+### Historical Reference
+
+Previous versions and their history provide useful context for future maintenance, review, and continuous improvement.
+
+Historical information may help identify recurring changes, understand previous decisions, evaluate the effectiveness of improvements, and provide context when future modifications are considered.
+
+Version History serves as a reference to the evolution of the documentation while the current approved version remains the authoritative version for use.
+
+--
+
+
+--
 
 
 # Approved Architecture
