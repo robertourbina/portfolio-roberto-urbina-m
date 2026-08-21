@@ -18,3 +18,16 @@ This Business Activity Query (BAQ) provides a centralized view of inventory avai
 Designed to support warehouse operations, production planning, purchasing, and customer service, the BAQ presents essential inventory metrics such as on-hand quantity, allocated quantity, and available quantity. By improving inventory visibility, it helps users make informed decisions regarding material availability, production scheduling, and customer order fulfillment.
 
 --
+## Problem
+
+Inventory availability information is essential for operational decision-making, but users may need to review information from different areas of the ERP system to determine whether sufficient inventory is available to support current and upcoming requirements.
+
+Without a consolidated view of inventory availability, users may spend additional time reviewing inventory quantities and commitments before identifying potential shortages or determining whether a part requires further attention.
+
+The lack of clear and centralized visibility can affect inventory management, production planning, and purchasing decisions by making it more difficult to identify available quantities and potential inventory risks in a timely manner.
+
+--
+
+
+--
+
