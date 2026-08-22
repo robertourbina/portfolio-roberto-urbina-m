@@ -47,7 +47,17 @@ By improving visibility into inventory availability, the BAQ supports inventory 
 
 --
 
+### Business Requirements
 
+The BAQ must provide timely visibility into inventory availability to support operational decision-making across relevant manufacturing activities.
+
+The solution should support the evaluation of whether available inventory is sufficient to address current and upcoming operational requirements.
+
+The BAQ should help users identify potential inventory concerns and parts that may require further attention before shortages affect sales order fulfillment, production activities, or material planning.
+
+The information should reduce the effort required to evaluate inventory availability by providing a consolidated view of relevant inventory quantities and commitments.
+
+The solution should support inventory management, production planning, and purchasing decisions without replacing existing inventory planning or material planning processes.
 
 --
 
