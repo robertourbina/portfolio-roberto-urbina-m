@@ -37,6 +37,20 @@ A consolidated inventory availability view can support inventory management, pro
 
 --
 
+## Overview
+
+This Business Activity Query (BAQ) provides a consolidated view of inventory availability to support operational decision-making in a manufacturing environment.
+
+The query brings together relevant inventory information to help users evaluate available quantities, inventory commitments, and potential availability concerns in a single view.
+
+By improving visibility into inventory availability, the BAQ supports inventory management, production planning, and purchasing activities by helping users identify parts that may require attention in relation to current and upcoming operational requirements.
+
+--
+
+
+
+--
+
 
 --
 
