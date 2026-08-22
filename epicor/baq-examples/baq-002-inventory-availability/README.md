@@ -61,6 +61,21 @@ The solution should support inventory management, production planning, and purch
 
 --
 
+### Functional Requirements
+
+1. The BAQ must provide a consolidated view of inventory information at the part level.
+
+2. The BAQ must display relevant inventory quantities required to evaluate current availability.
+
+3. The BAQ must provide visibility into inventory commitments that affect the quantity available for operational use.
+
+4. The BAQ must support the comparison of available inventory with current and upcoming operational requirements.
+
+5. The BAQ must help identify parts where available inventory may not be sufficient to support the defined requirements.
+
+6. The BAQ must present the information in a format that allows users to quickly review inventory availability and identify parts that may require further attention.
+
+7. The BAQ should support the analysis of inventory availability without replacing existing inventory, material planning, purchasing, or production planning processes.
 
 --
 
