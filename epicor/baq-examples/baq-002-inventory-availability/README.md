@@ -105,7 +105,17 @@ The initial version of the BAQ is designed to provide inventory visibility at th
 
 --
 
+## Query Logic
 
+The BAQ is organized around the part and warehouse combination to maintain the appropriate level of inventory visibility.
+
+Inventory information is obtained at the warehouse level through the relationship between the Part and PartWhse data sources.
+
+Sales order requirements are evaluated separately and consolidated at the corresponding part and warehouse level before being used in the inventory availability evaluation.
+
+This approach prevents inventory quantities from being duplicated when multiple sales order releases exist for the same part. The aggregated sales order requirements can then be compared with the relevant warehouse-level inventory quantity.
+
+The resulting logic provides a single inventory availability view for each relevant part and warehouse combination, supporting the identification of situations where available inventory may not be sufficient to support current and upcoming sales order requirements.
 
 --
 
