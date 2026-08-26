@@ -193,7 +193,13 @@ This approach supports operational visibility and decision-making while preservi
 
 --
 
+## Parameters
 
+The initial version of BAQ-002 does not use runtime parameters.
+
+The BAQ is designed to provide broad visibility across the relevant Part + Warehouse combinations without requiring users to enter additional information at runtime. This approach supports the purpose of the BAQ as an inventory visibility and decision-support tool and avoids unnecessarily restricting the initial results.
+
+Future enhancements may introduce optional parameters, such as Part Number, Warehouse, or other business criteria, if additional filtering flexibility becomes necessary. These options are outside the scope of the initial version.
 
 --
 
