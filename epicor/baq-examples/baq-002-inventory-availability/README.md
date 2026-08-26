@@ -119,6 +119,77 @@ The resulting logic provides a single inventory availability view for each relev
 
 --
 
+## Calculated Fields
+
+The BAQ uses calculated fields and business indicators to compare warehouse-level On-Hand inventory with the total unfulfilled sales order requirements for each Part + Warehouse combination.
+
+The calculated fields are designed to provide a clear inventory availability evaluation without introducing unnecessary complexity.
+
+### Total Sales Order Requirement
+
+**Purpose:** Represents the total quantity from open sales order releases that remains relevant for fulfillment, aggregated at the Part + Warehouse level.
+
+This field consolidates multiple sales order releases into a single operational demand value. Aggregating the requirements prevents multiple demand records from duplicating inventory quantities during the availability evaluation.
+
+### On-Hand Quantity
+
+**Purpose:** Represents the current physical inventory quantity recorded for a part at a specific warehouse.
+
+The On-Hand Quantity is used as the inventory input for the availability evaluation. Using the physical inventory balance provides a clear distinction between inventory quantity and the sales order requirements that will be evaluated against it.
+
+### Remaining Availability
+
+**Purpose:** Represents the inventory quantity remaining after the total unfulfilled sales order requirements have been considered.
+
+**Business Logic:**
+
+On-Hand Quantity − Total Sales Order Requirement
+
+The result may be positive, zero, or negative:
+
+- **Positive:** Inventory remains after the identified sales order requirements are considered.
+- **Zero:** Inventory exactly covers the identified sales order requirements.
+- **Negative:** The identified sales order requirements exceed the current On-Hand Quantity.
+
+Negative values are intentionally preserved because they provide a direct indication of the magnitude of the inventory shortage.
+
+### Availability Status
+
+**Purpose:** Provides a quick business interpretation of the Remaining Availability result.
+
+**Business Logic:**
+
+- **Available:** Remaining Availability is greater than zero.
+- **Exactly Covered:** Remaining Availability is equal to zero.
+- **Shortage:** Remaining Availability is less than zero.
+
+This indicator allows users to quickly identify whether inventory remains, exactly covers the identified demand, or is insufficient to support the current requirements.
+
+### Shortage Quantity
+
+**Purpose:** Represents the positive quantity by which the Total Sales Order Requirement exceeds the On-Hand Quantity for a specific Part + Warehouse combination.
+
+The value is zero when no shortage exists.
+
+When Remaining Availability is negative, the Shortage Quantity represents the absolute value of the shortage. This provides a clear positive quantity indicating how many units are missing.
+
+### Calculated Fields Summary
+
+| Calculated Field | Business Purpose |
+|---|---|
+| **Total Sales Order Requirement** | Measures the relevant unfulfilled operational demand. |
+| **On-Hand Quantity** | Represents the current physical inventory at the warehouse. |
+| **Remaining Availability** | Calculates the inventory balance after demand is considered. |
+| **Availability Status** | Provides a quick business interpretation of the availability result. |
+| **Shortage Quantity** | Shows the magnitude of the inventory shortage when demand exceeds On-Hand Quantity. |
+
+Together, these calculated fields provide a logical inventory availability evaluation at the Part + Warehouse level.
+
+The sequence supports the following business flow:
+
+**Sales Order Demand → On-Hand Inventory → Remaining Availability → Availability Status → Shortage Quantity**
+
+This approach supports operational visibility and decision-making while preserving the BAQ as a decision-support tool rather than a replacement for inventory planning or material planning processes.
 
 --
 
