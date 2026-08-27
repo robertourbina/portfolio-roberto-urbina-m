@@ -203,6 +203,81 @@ Future enhancements may introduce optional parameters, such as Part Number, Ware
 
 --
 
+## Filter Criteria
+
+The BAQ is designed to evaluate inventory availability only for Part + Warehouse combinations with relevant operational demand.
+
+The filter criteria are driven by the business principle that only active, open, unfulfilled, and operationally valid sales order demand should participate in the inventory availability evaluation.
+
+### Relevant Sales Order Demand
+
+Only sales order releases with a remaining unfulfilled quantity greater than zero are included.
+
+This prevents fulfilled or completed demand from continuing to affect the inventory availability evaluation.
+
+### Open Orders
+
+Only open sales orders are considered.
+
+Closed orders are excluded because they no longer represent active operational demand requiring additional inventory evaluation.
+
+### Open Releases
+
+Only open sales order releases are included.
+
+This ensures that the BAQ evaluates releases that remain operationally active and expected to require fulfillment.
+
+### Cancelled Releases
+
+Cancelled releases are excluded from the evaluation.
+
+Once a release has been cancelled, it no longer represents valid operational demand and should not continue to affect the inventory availability calculation.
+
+### Held Orders
+
+Orders currently on hold are excluded from the initial evaluation.
+
+A held order may contain a business condition that prevents normal fulfillment or production from proceeding. Including held orders could overstate the inventory demand that currently requires operational action.
+
+### Part + Warehouse Scope
+
+Active operational demand determines which Part + Warehouse combinations are included in the BAQ.
+
+The relevant demand identifies the Part + Warehouse combination, and the corresponding On-Hand Quantity is then evaluated against the total sales order requirement.
+
+Part + Warehouse combinations with inventory but no relevant operational demand are outside the scope of the initial version.
+
+### Zero On-Hand Quantity
+
+A Part + Warehouse combination must not be excluded simply because its On-Hand Quantity is zero.
+
+A zero On-Hand Quantity may represent an important shortage condition when relevant operational demand exists.
+
+For example:
+
+- Total Sales Order Requirement: 50
+- On-Hand Quantity: 0
+- Remaining Availability: -50
+- Availability Status: Shortage
+- Shortage Quantity: 50
+
+For this reason, On-Hand Quantity is evaluated as part of the availability calculation rather than used as an exclusion criterion.
+
+### Filter Criteria Summary
+
+The BAQ includes sales order demand that meets the following business conditions:
+
+- The sales order remains open.
+- The sales order is not on hold.
+- The sales order release remains open.
+- The sales order release is not cancelled.
+- A remaining unfulfilled quantity greater than zero exists.
+
+These conditions define the relevant operational demand that determines the Part + Warehouse combinations included in the inventory availability evaluation.
+
+The corresponding On-Hand Quantity is then evaluated regardless of whether the inventory quantity is positive, zero, or insufficient to cover the demand.
+
+This approach keeps BAQ-002 focused on active operational requirements while avoiding the inclusion of inventory records with no relevant demand in the initial scope.
 
 --
 
