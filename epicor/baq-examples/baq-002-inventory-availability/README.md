@@ -400,11 +400,31 @@ By consolidating inventory and demand information in one place, BAQ-002 reduces 
 
 Overall, BAQ-002 provides **inventory visibility and decision support that helps the business identify availability risks, prioritize attention, and improve operational planning at the Part + Warehouse level.**
 
+![Figure — BAQ-002 Validation Logical Flow](../images/Figure%20%E2%80%94%20BAQ-002%20Validation%20Logical%20Flow.png?raw=true)
+
 **Status: 🔒 Frozen**
 
 --
 
+## Business Value
 
+BAQ-002 provides a consolidated view of On-Hand inventory and active sales order demand at the Part + Warehouse level. By bringing information from multiple operational sources into a single BAQ, users can quickly evaluate inventory availability and identify situations that require attention.
+
+The Availability Status helps users prioritize Part + Warehouse combinations according to their current situation, including Available, Exactly Covered, and Shortage conditions. This provides a practical decision-support view without replacing the planning or purchasing processes used by the business.
+
+The information can support several operational areas:
+
+- **Sales:** Provides visibility into whether current inventory and demand conditions may affect the ability to support customer commitments.
+- **Purchasing:** Helps identify parts that may require purchasing attention because current inventory is insufficient to cover operational demand.
+- **Production Planning:** Helps identify demand that may require scheduling or additional production planning attention.
+- **Inventory Management:** Provides visibility into the relationship between available inventory and upcoming sales order demand.
+- **Management:** Provides an overall view of inventory availability and potential shortages to support decisions related to purchasing and production requirements.
+
+By consolidating inventory and demand information in one place, BAQ-002 reduces the time required to evaluate inventory availability against current commitments. It also helps identify inventory risks that could prevent the business from meeting those commitments, allowing operational areas to review potential issues earlier and plan accordingly.
+
+Overall, BAQ-002 provides **inventory visibility and decision support that helps the business identify availability risks, prioritize attention, and improve operational planning at the Part + Warehouse level.**
+
+**Status: 🔒 Frozen**
 
 --
 
