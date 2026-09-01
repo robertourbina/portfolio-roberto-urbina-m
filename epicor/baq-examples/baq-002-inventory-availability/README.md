@@ -281,7 +281,102 @@ This approach keeps BAQ-002 focused on active operational requirements while avo
 
 --
 
+## Validation
 
+### Validation Approach
+
+The validation of BAQ-002 focuses on confirming that the query behaves according to the approved business design and provides reliable inventory availability information at the Part + Warehouse level.
+
+The validation process evaluates both On-Hand inventory and operational sales order demand, with particular attention to demand aggregation, demand filtering, calculated fields, and the resulting availability status.
+
+The validation is based on representative business scenarios rather than only confirming that the BAQ executes successfully. Each scenario evaluates the expected result and its corresponding business interpretation.
+
+### Scenario 1 — Inventory Exceeds Demand
+
+| Property | Value |
+|----------|-------|
+| On-Hand Quantity | 100 |
+| Total Sales Order Requirement | 50 |
+| Remaining Availability | 50 |
+| Availability Status | Available |
+| Shortage Quantity | 0 |
+
+**Business Interpretation**
+
+No immediate additional purchasing requirement is indicated for this Part + Warehouse based on the current demand and On-Hand inventory.
+
+### Scenario 2 — Inventory Exactly Covers Demand
+
+| Property | Value |
+|----------|-------|
+| On-Hand Quantity | 50 |
+| Total Sales Order Requirement | 50 |
+| Remaining Availability | 0 |
+| Availability Status | Exactly Covered |
+| Shortage Quantity | 0 |
+
+**Business Interpretation**
+
+No current shortage exists, but no remaining inventory buffer is available for additional demand.
+
+### Scenario 3 — Inventory Is Insufficient
+
+| Property | Value |
+|----------|-------|
+| On-Hand Quantity | 50 |
+| Total Sales Order Requirement | 80 |
+| Remaining Availability | -30 |
+| Availability Status | Shortage |
+| Shortage Quantity | 30 |
+
+**Business Interpretation**
+
+Current On-Hand inventory is insufficient to cover the active operational demand, resulting in a shortage of 30 units and requiring further operational review.
+
+### Scenario 4 — Multiple Sales Order Releases for the Same Part + Warehouse
+
+| Property | Value |
+|----------|-------|
+| Release 1 | 20 |
+| Release 2 | 30 |
+| Release 3 | 25 |
+| Total Sales Order Requirement | 75 |
+| On-Hand Quantity | 100 |
+| Remaining Availability | 25 |
+| Availability Status | Available |
+| Shortage Quantity | 0 |
+
+**Business Interpretation**
+
+Multiple active sales order releases for the same Part + Warehouse are aggregated into a single operational demand quantity, while the corresponding On-Hand inventory is evaluated once at the Part + Warehouse level.
+
+### Scenario 5 — Filtered / Inactive Demand
+
+| Property | Value |
+|----------|-------|
+| On-Hand Quantity | 100 |
+| Release A — Open / Active | 30 |
+| Release B — Fulfilled | 20 — Excluded |
+| Release C — Cancelled | 15 — Excluded |
+| Release D — Held Order | 25 — Excluded |
+| Total Valid Demand | 30 |
+| Remaining Availability | 70 |
+| Availability Status | Available |
+| Shortage Quantity | 0 |
+
+**Business Interpretation**
+
+Only active and operationally valid demand affects the inventory availability evaluation. Fulfilled, cancelled, and held demand is excluded so that the resulting availability reflects the current operational situation.
+
+### Validation Coverage Review
+
+The five validation scenarios collectively provide coverage of the approved BAQ-002 business logic. They validate the three possible availability outcomes — **Available, Exactly Covered, and Shortage** — while confirming the correct evaluation of operational demand and On-Hand inventory at the **Part + Warehouse** level.
+
+The validation also confirms that multiple sales order releases are correctly aggregated without duplicating On-Hand inventory, and that fulfilled, cancelled, and held demand is excluded from the availability calculation. The scenarios cover shortage conditions, including situations where available inventory is insufficient to satisfy the current operational demand.
+
+Finally, the scenarios validate the logical relationship among **Total Sales Order Requirement, On-Hand Quantity, Remaining Availability, Availability Status, and Shortage Quantity**. Therefore, the validation demonstrates not only that the BAQ executes correctly, but that its results behave according to the intended business logic and provide sufficient evidence to consider **BAQ-002 functionally validated**.
+
+**Status: 🔒 Frozen**
 
 --
 
