@@ -376,6 +376,9 @@ The validation also confirms that multiple sales order releases are correctly ag
 
 Finally, the scenarios validate the logical relationship among **Total Sales Order Requirement, On-Hand Quantity, Remaining Availability, Availability Status, and Shortage Quantity**. Therefore, the validation demonstrates not only that the BAQ executes correctly, but that its results behave according to the intended business logic and provide sufficient evidence to consider **BAQ-002 functionally validated**.
 
+[VALIDATION LOGICAL FLOW IMAGE]
+![Descriptive Alt Text](images/Figure — BAQ-002 Validation Logical Flow.png)
+
 **Status: 🔒 Frozen**
 
 --
