@@ -400,7 +400,7 @@ By consolidating inventory and demand information in one place, BAQ-002 reduces 
 
 Overall, BAQ-002 provides **inventory visibility and decision support that helps the business identify availability risks, prioritize attention, and improve operational planning at the Part + Warehouse level.**
 
-![Figure — BAQ-002 Validation Logical Flow]([../images/Figure%20%E2%80%94%20BAQ-002%20Validation%20Logical%20Flow.png?raw=true](https://github.com/robertourbina/portfolio-roberto-urbina-m/blob/main/epicor/baq-examples/baq-002-inventory-availability/images/Figure%20%E2%80%94%20BAQ-002%20Validation%20Logical%20Flow.png?raw=true))
+![Figure — BAQ-002 Validation Logical Flow](https://github.com/robertourbina/portfolio-roberto-urbina-m/blob/main/epicor/baq-examples/baq-002-inventory-availability/images/Figure%20%E2%80%94%20BAQ-002%20Validation%20Logical%20Flow.png)
 
 **Status: 🔒 Frozen**
 
