@@ -421,6 +421,23 @@ Finally, the development and validation of BAQ-002 demonstrate the ability to tr
 
 --
 
+## Lessons Learned
+
+BAQ-002 reinforced the importance of understanding the Epicor ERP data model before designing a query. Knowing where the required information is stored and understanding the purpose and relationships of the relevant tables provides the foundation for developing a reliable solution.
+
+The development of BAQ-002 also reinforced the importance of understanding how multiple sales order releases relate to the Part + Warehouse level. Working with multiple releases required careful use of joins and aggregation to obtain the correct demand quantity while avoiding duplicated inventory information.
+
+Another important lesson was recognizing the data integrity risks that can appear when demand and inventory information are joined. A query can execute correctly from a technical perspective while still producing misleading business results if the level of aggregation is not properly controlled.
+
+BAQ-002 also demonstrated how calculated fields can transform raw ERP data into information that is easier for users to understand and apply to business decisions. Similarly, query-level filtering reinforces the importance of selecting only the data that is relevant to the intended business analysis.
+
+One of the main lessons from the development process was that the business logic must be understood before designing and developing the technical solution. The technical implementation should represent the actual business process and the decisions the solution is intended to support.
+
+The validation process reinforced another important lesson: a BAQ can execute without errors and still provide misleading information. Functional validation against the approved business scope is therefore necessary to confirm that the results are reliable and behave as expected.
+
+The two main lessons from BAQ-002 are to clearly define the business issue to be resolved and understand how the required information is stored before designing the solution, and to validate the outcome to ensure that the resulting solution provides reliable information.
+
+**Status: 🔒 Draft**
 
 --
 
