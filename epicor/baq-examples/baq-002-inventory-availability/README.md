@@ -403,7 +403,21 @@ Overall, BAQ-002 provides **inventory visibility and decision support that helps
 **Status: 🔒 Frozen**
 
 --
+## Technical Skills Demonstrated
 
+BAQ-002 demonstrates the application of Epicor ERP functional knowledge across Sales Order Management, Warehouse Management, and Inventory Management. The solution connects operational sales order demand with warehouse-level inventory information to provide availability visibility at the Part + Warehouse level.
+
+The implementation demonstrates knowledge of the Epicor ERP data model, including the use of Part for product information, PartWhse for inventory at the Part + Warehouse level, and OrderRel for identifying sales order release demand. Understanding the role and relationship of these tables was essential to building the BAQ around the required business scope.
+
+The BAQ design demonstrates the ability to join multiple data sources while controlling the level of aggregation. Multiple sales order releases are aggregated into a single demand quantity, while On-Hand inventory is evaluated once at the Part + Warehouse level to mitigate the risk of duplicated inventory values.
+
+The solution also demonstrates the use of business logic and calculated fields to transform raw ERP data into decision-support information. Remaining Availability, Availability Status, and Shortage Quantity provide meaningful indicators that allow users to understand whether current inventory can support operational demand.
+
+BAQ-002 also demonstrates query-level data selection through defined filters that identify operationally relevant records. Runtime parameters were intentionally not included in the initial scope, while filtering is used to control which records participate in the availability evaluation.
+
+Finally, the development and validation of BAQ-002 demonstrate the ability to translate business requirements into technical query logic and validate the resulting behavior against representative business scenarios. The solution required understanding not only where the data is stored in Epicor ERP, but also how the underlying business process should be represented within the system.
+
+**Status: 🔒 Frozen**
 
 --
 
