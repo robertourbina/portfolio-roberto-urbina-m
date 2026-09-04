@@ -440,7 +440,49 @@ The two main lessons from BAQ-002 are to clearly define the business issue to be
 **Status: 🔒 Draft**
 
 --
+## Future Enhancements
 
+BAQ-002 provides a foundation for future improvements to inventory availability analysis. The following enhancements could extend its usefulness while maintaining the current focus on Part + Warehouse visibility and active sales order demand.
+
+### Runtime Parameters
+
+Future versions could include runtime parameters that allow users to focus the analysis on a specific Part, Warehouse, or Availability Status. This would make the BAQ more flexible and allow users to select the information most relevant to their operational needs.
+
+### Bin-Level Detail
+
+Additional visibility could be provided through bin-level inventory information. This would help users investigate where inventory is located within a warehouse and support more detailed inventory availability analysis.
+
+### Additional Demand Sources
+
+The solution could be extended to include additional operational demand sources beyond sales orders. This would provide a broader view of requirements that may affect inventory availability and operational planning.
+
+### Purchasing Information
+
+Future enhancements could include open purchase orders, expected receipts, and raw material delivery dates. This information would help users evaluate whether required materials are expected to arrive on time and support purchasing and production planning decisions.
+
+### Production Information
+
+Production orders or planned production could be incorporated to provide additional visibility into how current and future requirements may be supported through production. This would be particularly useful for the Production area when evaluating the ability to meet operational demand.
+
+### Time-Based Analysis
+
+A time-based analysis could allow users to evaluate inventory availability according to Need By dates or upcoming periods. This would help users concentrate on relevant timeframes and identify requirements that may need attention.
+
+### Dashboard and Visualization
+
+BAQ-002 could be presented through an Epicor dashboard or another visual management tool. The use of colors, indicators, or visual marks could help users identify parts with shortages or other availability issues more clearly and prioritize situations requiring attention.
+
+### Enhancement Priorities
+
+Based on the potential business value, the following three enhancements are considered the most relevant initial opportunities:
+
+1. **Runtime Parameters:** Allow users to select and focus on the information they need.
+2. **Purchasing Information:** Provide visibility into expected raw material availability and delivery timing.
+3. **Time-Based Analysis:** Allow users to concentrate on a relevant period according to operational requirements.
+
+These enhancements would extend BAQ-002 from a consolidated inventory availability view into a broader decision-support solution, providing additional flexibility, supply visibility, and time-based analysis while preserving the original business scope.
+
+**Status: 🔒 Draft**
 
 --
 
