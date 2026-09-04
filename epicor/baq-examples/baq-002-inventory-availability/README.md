@@ -9,15 +9,12 @@
 | **Business Impact**     | High                          |
 | **Status**              | Completed                     |
 
----
-
 ## Overview
 
 This Business Activity Query (BAQ) provides a centralized view of inventory availability across the organization, enabling users to quickly verify stock levels by part, warehouse, and bin location. The query consolidates key inventory information into a single dataset, reducing the need to navigate multiple Epicor screens to obtain operational data.
 
 Designed to support warehouse operations, production planning, purchasing, and customer service, the BAQ presents essential inventory metrics such as on-hand quantity, allocated quantity, and available quantity. By improving inventory visibility, it helps users make informed decisions regarding material availability, production scheduling, and customer order fulfillment.
 
---
 ## Problem
 
 Inventory availability information is essential for operational decision-making, but users may need to review information from different areas of the ERP system to determine whether sufficient inventory is available to support current and upcoming requirements.
@@ -26,7 +23,6 @@ Without a consolidated view of inventory availability, users may spend additiona
 
 The lack of clear and centralized visibility can affect inventory management, production planning, and purchasing decisions by making it more difficult to identify available quantities and potential inventory risks in a timely manner.
 
---
 ## Business Context
 
 In a manufacturing environment, inventory availability affects the ability to support sales order fulfillment, production activities, material planning, and purchasing decisions. Operational teams need timely visibility into available quantities and inventory commitments to understand whether current inventory can support both immediate needs and upcoming requirements.
@@ -35,8 +31,6 @@ Inventory availability can change as quantities are received, allocated, consume
 
 A consolidated inventory availability view can support inventory management, production planning, and purchasing activities by helping users identify parts that may require attention before inventory shortages affect operations.
 
---
-
 ## Overview
 
 This Business Activity Query (BAQ) provides a consolidated view of inventory availability to support operational decision-making in a manufacturing environment.
@@ -44,8 +38,6 @@ This Business Activity Query (BAQ) provides a consolidated view of inventory ava
 The query brings together relevant inventory information to help users evaluate available quantities, inventory commitments, and potential availability concerns in a single view.
 
 By improving visibility into inventory availability, the BAQ supports inventory management, production planning, and purchasing activities by helping users identify parts that may require attention in relation to current and upcoming operational requirements.
-
---
 
 ### Business Requirements
 
@@ -58,8 +50,6 @@ The BAQ should help users identify potential inventory concerns and parts that m
 The information should reduce the effort required to evaluate inventory availability by providing a consolidated view of relevant inventory quantities and commitments.
 
 The solution should support inventory management, production planning, and purchasing decisions without replacing existing inventory planning or material planning processes.
-
---
 
 ### Functional Requirements
 
@@ -77,8 +67,6 @@ The solution should support inventory management, production planning, and purch
 
 7. The BAQ should support the analysis of inventory availability without replacing existing inventory, material planning, purchasing, or production planning processes.
 
---
-
 ## Solution Design
 
 The BAQ will provide a consolidated inventory availability view organized at the part level.
@@ -88,8 +76,6 @@ The solution will combine relevant inventory quantities, inventory commitments, 
 The resulting view will allow users to compare available inventory with identified requirements and recognize parts where inventory availability may require further attention.
 
 The solution will present inventory information and availability indicators in a single consolidated result set, supporting efficient review without replacing existing inventory, material planning, purchasing, or production planning processes.
-
---
 
 ## Data Sources
 
@@ -103,8 +89,6 @@ The BAQ uses a focused set of Epicor ERP data sources to provide warehouse-level
 
 The initial version of the BAQ is designed to provide inventory visibility at the warehouse level. Bin-level inventory detail is intentionally outside the initial scope and may be considered as a future enhancement for users who require more detailed inventory investigation.
 
---
-
 ## Query Logic
 
 The BAQ is organized around the part and warehouse combination to maintain the appropriate level of inventory visibility.
@@ -116,8 +100,6 @@ Sales order requirements are evaluated separately and consolidated at the corres
 This approach prevents inventory quantities from being duplicated when multiple sales order releases exist for the same part. The aggregated sales order requirements can then be compared with the relevant warehouse-level inventory quantity.
 
 The resulting logic provides a single inventory availability view for each relevant part and warehouse combination, supporting the identification of situations where available inventory may not be sufficient to support current and upcoming sales order requirements.
-
---
 
 ## Calculated Fields
 
@@ -191,8 +173,6 @@ The sequence supports the following business flow:
 
 This approach supports operational visibility and decision-making while preserving the BAQ as a decision-support tool rather than a replacement for inventory planning or material planning processes.
 
---
-
 ## Parameters
 
 The initial version of BAQ-002 does not use runtime parameters.
@@ -200,8 +180,6 @@ The initial version of BAQ-002 does not use runtime parameters.
 The BAQ is designed to provide broad visibility across the relevant Part + Warehouse combinations without requiring users to enter additional information at runtime. This approach supports the purpose of the BAQ as an inventory visibility and decision-support tool and avoids unnecessarily restricting the initial results.
 
 Future enhancements may introduce optional parameters, such as Part Number, Warehouse, or other business criteria, if additional filtering flexibility becomes necessary. These options are outside the scope of the initial version.
-
---
 
 ## Filter Criteria
 
@@ -278,8 +256,6 @@ These conditions define the relevant operational demand that determines the Part
 The corresponding On-Hand Quantity is then evaluated regardless of whether the inventory quantity is positive, zero, or insufficient to cover the demand.
 
 This approach keeps BAQ-002 focused on active operational requirements while avoiding the inclusion of inventory records with no relevant demand in the initial scope.
-
---
 
 ## Validation
 
@@ -380,8 +356,6 @@ Finally, the scenarios validate the logical relationship among **Total Sales Ord
 
 **Status: 🔒 Frozen**
 
---
-
 ## Business Value
 
 BAQ-002 provides a consolidated view of On-Hand inventory and active sales order demand at the Part + Warehouse level. By bringing information from multiple operational sources into a single BAQ, users can quickly evaluate inventory availability and identify situations that require attention.
@@ -402,7 +376,6 @@ Overall, BAQ-002 provides **inventory visibility and decision support that helps
 
 **Status: 🔒 Frozen**
 
---
 ## Technical Skills Demonstrated
 
 BAQ-002 demonstrates the application of Epicor ERP functional knowledge across Sales Order Management, Warehouse Management, and Inventory Management. The solution connects operational sales order demand with warehouse-level inventory information to provide availability visibility at the Part + Warehouse level.
@@ -418,8 +391,6 @@ BAQ-002 also demonstrates query-level data selection through defined filters tha
 Finally, the development and validation of BAQ-002 demonstrate the ability to translate business requirements into technical query logic and validate the resulting behavior against representative business scenarios. The solution required understanding not only where the data is stored in Epicor ERP, but also how the underlying business process should be represented within the system.
 
 **Status: 🔒 Frozen**
-
---
 
 ## Lessons Learned
 
@@ -437,9 +408,8 @@ The validation process reinforced another important lesson: a BAQ can execute wi
 
 The two main lessons from BAQ-002 are to clearly define the business issue to be resolved and understand how the required information is stored before designing the solution, and to validate the outcome to ensure that the resulting solution provides reliable information.
 
-**Status: 🔒 Draft**
+**Status: 🔒 Frozen**
 
---
 ## Future Enhancements
 
 BAQ-002 provides a foundation for future improvements to inventory availability analysis. The following enhancements could extend its usefulness while maintaining the current focus on Part + Warehouse visibility and active sales order demand.
@@ -482,9 +452,6 @@ Based on the potential business value, the following three enhancements are cons
 
 These enhancements would extend BAQ-002 from a consolidated inventory availability view into a broader decision-support solution, providing additional flexibility, supply visibility, and time-based analysis while preserving the original business scope.
 
-**Status: 🔒 Draft**
+**Status: 🔒 Frozen**
 
---
-
---
 
