@@ -1,19 +1,19 @@
 # BAQ-002 – Inventory Availability
 
-| Property                | Value                         |
-| ----------------------- | ----------------------------- |
-| **Module**              | Inventory Management          |
-| **Functional Area**     | Inventory Visibility          |
+| Property | Value |
+|----------|-------|
+| **Module** | Inventory Management |
+| **Functional Area** | Inventory Visibility |
 | **Implementation Type** | Business Activity Query (BAQ) |
-| **Difficulty**          | Intermediate                  |
-| **Business Impact**     | High                          |
-| **Status**              | Completed                     |
+| **Difficulty** | Intermediate |
+| **Business Impact** | High |
+| **Status** | Completed |
 
 ## Overview
 
-This Business Activity Query (BAQ) provides a centralized view of inventory availability across the organization, enabling users to quickly verify stock levels by part, warehouse, and bin location. The query consolidates key inventory information into a single dataset, reducing the need to navigate multiple Epicor screens to obtain operational data.
+This Business Activity Query (BAQ) provides a centralized view of inventory availability at the Part + Warehouse level. The query consolidates relevant inventory information and active sales order demand into a single dataset, reducing the need to navigate multiple Epicor screens to evaluate operational availability.
 
-Designed to support warehouse operations, production planning, purchasing, and customer service, the BAQ presents essential inventory metrics such as on-hand quantity, allocated quantity, and available quantity. By improving inventory visibility, it helps users make informed decisions regarding material availability, production scheduling, and customer order fulfillment.
+Designed to support inventory management, production planning, purchasing, and customer service, the BAQ presents essential inventory information such as On-Hand Quantity, Total Sales Order Requirement, Remaining Availability, Availability Status, and Shortage Quantity. By improving inventory visibility, it helps users identify potential shortages and make informed decisions regarding material availability, production scheduling, and customer order fulfillment.
 
 ## Problem
 
@@ -45,7 +45,7 @@ The solution should support inventory management, production planning, and purch
 
 ### Functional Requirements
 
-1. The BAQ must provide a consolidated view of inventory information at the part level.
+1. The BAQ must provide a consolidated view of inventory information at the Part + Warehouse level.
 
 2. The BAQ must display relevant inventory quantities required to evaluate current availability.
 
@@ -53,9 +53,9 @@ The solution should support inventory management, production planning, and purch
 
 4. The BAQ must support the comparison of available inventory with current and upcoming operational requirements.
 
-5. The BAQ must help identify parts where available inventory may not be sufficient to support the defined requirements.
+5. The BAQ must help identify Part + Warehouse combinations where available inventory may not be sufficient to support the defined requirements.
 
-6. The BAQ must present the information in a format that allows users to quickly review inventory availability and identify parts that may require further attention.
+6. The BAQ must present the information in a format that allows users to quickly review inventory availability and identify Part + Warehouse combinations that may require further attention.
 
 7. The BAQ should support the analysis of inventory availability without replacing existing inventory, material planning, purchasing, or production planning processes.
 
