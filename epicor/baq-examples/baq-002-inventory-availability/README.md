@@ -61,11 +61,15 @@ The solution should support inventory management, production planning, and purch
 
 ## Solution Design
 
-The BAQ will provide a consolidated inventory availability view organized at the part level.
+The BAQ will provide a consolidated inventory availability view organized at the Part + Warehouse level.
 
 The solution will combine relevant inventory quantities, inventory commitments, and operational requirements to provide a clearer representation of the quantity available to support current and upcoming needs.
 
-The resulting view will allow users to compare available inventory with identified requirements and recognize parts where inventory availability may require further attention.
+Sales order requirements will be evaluated and consolidated at the Part + Warehouse level. This ensures that multiple sales order releases for the same Part + Warehouse are represented as a single operational demand quantity.
+
+On-Hand inventory will be evaluated once at the corresponding Part + Warehouse level. This approach prevents inventory quantities from being duplicated when multiple sales order releases exist for the same part.
+
+The resulting view will allow users to compare available inventory with identified requirements and recognize Part + Warehouse combinations where inventory availability may require further attention.
 
 The solution will present inventory information and availability indicators in a single consolidated result set, supporting efficient review without replacing existing inventory, material planning, purchasing, or production planning processes.
 
