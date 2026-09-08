@@ -75,15 +75,15 @@ The solution will present inventory information and availability indicators in a
 
 ## Data Sources
 
-The BAQ uses a focused set of Epicor ERP data sources to provide warehouse-level inventory availability and compare available quantities with sales order requirements.
+The BAQ uses a focused set of Epicor ERP data sources to provide inventory availability at the Part + Warehouse level and compare On-Hand quantities with sales order requirements.
 
 | Data Source | Purpose |
 |---|---|
 | **Part** | Provides the part-level identity and descriptive information for the result set. |
-| **PartWhse** | Provides warehouse-level inventory information used to evaluate inventory availability. |
+| **PartWhse** | Provides On-Hand inventory information for the corresponding Part + Warehouse combination. |
 | **OrderRel** | Provides current and upcoming sales order requirements used as the operational demand source. |
 
-The initial version of the BAQ is designed to provide inventory visibility at the warehouse level. Bin-level inventory detail is intentionally outside the initial scope and may be considered as a future enhancement for users who require more detailed inventory investigation.
+The initial version of the BAQ is designed to provide inventory visibility at the Part + Warehouse level. Bin-level inventory detail is intentionally outside the initial scope and may be considered as a future enhancement for users who require more detailed inventory investigation.
 
 ## Query Logic
 
