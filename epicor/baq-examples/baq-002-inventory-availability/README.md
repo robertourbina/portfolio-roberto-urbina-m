@@ -87,19 +87,19 @@ The initial version of the BAQ is designed to provide inventory visibility at th
 
 ## Query Logic
 
-The BAQ is organized around the part and warehouse combination to maintain the appropriate level of inventory visibility.
+The BAQ is organized around the Part + Warehouse combination to maintain the appropriate level of inventory visibility.
 
-Inventory information is obtained at the warehouse level through the relationship between the Part and PartWhse data sources.
+Inventory information is obtained through the relationship between the Part and PartWhse data sources. The corresponding On-Hand Quantity is evaluated once for each Part + Warehouse combination.
 
-Sales order requirements are evaluated separately and consolidated at the corresponding part and warehouse level before being used in the inventory availability evaluation.
+Sales order requirements are evaluated separately and consolidated at the corresponding Part + Warehouse level before being used in the inventory availability evaluation.
 
-This approach prevents inventory quantities from being duplicated when multiple sales order releases exist for the same part. The aggregated sales order requirements can then be compared with the relevant warehouse-level inventory quantity.
+This approach prevents inventory quantities from being duplicated when multiple sales order releases exist for the same Part + Warehouse combination. The aggregated sales order requirements can then be compared with the corresponding On-Hand inventory quantity.
 
-The resulting logic provides a single inventory availability view for each relevant part and warehouse combination, supporting the identification of situations where available inventory may not be sufficient to support current and upcoming sales order requirements.
+The resulting logic provides a single inventory availability view for each relevant Part + Warehouse combination, supporting the identification of situations where available inventory may not be sufficient to support current and upcoming sales order requirements.
 
 ## Calculated Fields
 
-The BAQ uses calculated fields and business indicators to compare warehouse-level On-Hand inventory with the total unfulfilled sales order requirements for each Part + Warehouse combination.
+The BAQ uses calculated fields and business indicators to compare On-Hand inventory at the Part + Warehouse level with the total unfulfilled sales order requirements for each Part + Warehouse combination.
 
 The calculated fields are designed to provide a clear inventory availability evaluation without introducing unnecessary complexity.
 
@@ -113,7 +113,7 @@ This field consolidates multiple sales order releases into a single operational 
 
 **Purpose:** Represents the current physical inventory quantity recorded for a part at a specific warehouse.
 
-The On-Hand Quantity is used as the inventory input for the availability evaluation. Using the physical inventory balance provides a clear distinction between inventory quantity and the sales order requirements that will be evaluated against it.
+The On-Hand Quantity is evaluated once for each Part + Warehouse combination and is used as the inventory input for the availability evaluation. Using the physical inventory balance provides a clear distinction between inventory quantity and the sales order requirements that will be evaluated against it.
 
 ### Remaining Availability
 
@@ -156,7 +156,7 @@ When Remaining Availability is negative, the Shortage Quantity represents the ab
 | Calculated Field | Business Purpose |
 |---|---|
 | **Total Sales Order Requirement** | Measures the relevant unfulfilled operational demand. |
-| **On-Hand Quantity** | Represents the current physical inventory at the warehouse. |
+| **On-Hand Quantity** | Represents the current physical inventory for the Part + Warehouse combination. |
 | **Remaining Availability** | Calculates the inventory balance after demand is considered. |
 | **Availability Status** | Provides a quick business interpretation of the availability result. |
 | **Shortage Quantity** | Shows the magnitude of the inventory shortage when demand exceeds On-Hand Quantity. |
