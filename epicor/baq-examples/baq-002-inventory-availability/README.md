@@ -374,7 +374,7 @@ Overall, BAQ-002 provides **inventory visibility and decision support that helps
 
 ## Technical Skills Demonstrated
 
-BAQ-002 demonstrates the application of Epicor ERP functional knowledge across Sales Order Management, Warehouse Management, and Inventory Management. The solution connects operational sales order demand with warehouse-level inventory information to provide availability visibility at the Part + Warehouse level.
+BAQ-002 demonstrates the application of Epicor ERP functional knowledge across Sales Order Management, Warehouse Management, and Inventory Management. The solution connects operational sales order demand with inventory information at the Part + Warehouse level to provide clear availability visibility.
 
 The implementation demonstrates knowledge of the Epicor ERP data model, including the use of Part for product information, PartWhse for inventory at the Part + Warehouse level, and OrderRel for identifying sales order release demand. Understanding the role and relationship of these tables was essential to building the BAQ around the required business scope.
 
