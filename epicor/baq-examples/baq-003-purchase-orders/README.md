@@ -77,6 +77,22 @@ The resulting view will provide Purchasing, Receiving, Inventory Management, and
 
 The initial solution is intentionally limited to receipt visibility and pending quantities. Supplier performance measurements, delivery-performance analysis, and other purchasing metrics are outside the scope of this BAQ.
 
+## Data Sources
+
+The BAQ uses a focused set of Epicor ERP data sources to identify purchase order lines with outstanding receipt quantities.
+
+| Data Source | Purpose |
+|---|---|
+| **PODetail** | Provides the purchase order line information, including the ordered quantity and the part associated with the line. |
+| **PORel** | Provides release-level information used to identify the quantities expected for each purchase order line. |
+| **Vendor** | Provides supplier information associated with the purchase order. |
+| **Part** | Provides part-level identification and descriptive information for the purchased item. |
+| **RcvDtl** | Provides receipt information used to determine quantities that have already been received against purchase order requirements. |
+
+The initial version of the BAQ is designed to evaluate outstanding receipt requirements at the Purchase Order Line level.
+
+The data sources are intentionally limited to the information required to compare purchase order requirements with received quantities. Supplier performance measurements, purchasing cost analysis, and detailed receiving analysis are outside the initial scope.
+
 
 
 
