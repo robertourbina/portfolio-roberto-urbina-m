@@ -62,3 +62,24 @@ The BAQ should help Purchasing, Receiving, Inventory Management, and Production 
 - Understand the quantity still expected from each purchase order line.
 - Identify potential impacts on inventory availability and production planning.
 - Reduce the time required to review purchase orders individually.
+
+## Solution Design
+
+BAQ-003 is designed to provide a consolidated view of purchase order lines with outstanding receipt quantities.
+
+The BAQ will use the purchase order line as the primary result level, allowing each purchase order line to be evaluated independently based on its ordered quantity and received quantity.
+
+The solution will compare the original ordered quantity with the quantity already received to determine the remaining quantity to be received.
+
+The BAQ will focus on open purchase order requirements and will include both partially received lines and lines for which no receipt has been recorded. Fully received lines will be excluded from the result.
+
+The resulting view will provide Purchasing, Receiving, Inventory Management, and Production Planning with a focused operational view of outstanding purchase order requirements.
+
+The initial solution is intentionally limited to receipt visibility and pending quantities. Supplier performance measurements, delivery-performance analysis, and other purchasing metrics are outside the scope of this BAQ.
+
+
+
+
+
+
+
