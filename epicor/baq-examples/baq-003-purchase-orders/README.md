@@ -40,28 +40,46 @@ BAQ-003 addresses this need by providing a consolidated view of purchase order l
 
 The BAQ must:
 
-- Identify purchase order lines with outstanding receipt quantities.
+- Identify open purchase orders with outstanding receipt requirements.
+- Identify open purchase order lines within those purchase orders.
 - Display the purchase order number and purchase order line.
-- Identify the supplier associated with each purchase order.
+- Identify the release associated with the purchase order line.
+- Identify the supplier associated with the purchase order.
 - Display the part or item associated with the purchase order line.
-- Display the original ordered quantity.
-- Display the quantity already received.
+- Display the released quantity associated with the purchase order line.
+- Display the quantity already received against the applicable release.
 - Calculate the remaining quantity to be received.
-- Include partially received purchase order lines.
-- Include purchase order lines with no receipts.
-- Exclude purchase order lines that have been fully received.
-- Provide a clear view of pending receipt requirements at the purchase order line level.
+- Include partially received purchase order requirements.
+- Include purchase order requirements for which no receipt has been recorded.
+- Exclude purchase order lines that have no remaining quantity to be received.
+- Provide a clear view of pending receipt requirements at the Purchase Order Line level.
 
 ### Business Requirements
 
 The BAQ should help Purchasing, Receiving, Inventory Management, and Production Planning:
 
 - Identify outstanding supplier deliveries.
-- Determine which materials or items remain pending receipt.
+- Determine which purchase order lines and releases have quantities still pending receipt.
 - Prioritize follow-up activities with suppliers.
-- Understand the quantity still expected from each purchase order line.
+- Understand the quantity still expected for each purchase order line and release.
 - Identify potential impacts on inventory availability and production planning.
 - Reduce the time required to review purchase orders individually.
+
+### Scope Clarification
+
+The initial version will focus on open purchase orders, open purchase order lines, release quantities, received quantities, and remaining quantities to be received.
+
+The following topics are intentionally outside the initial scope:
+
+- Supplier delivery performance.
+- Supplier quality evaluation.
+- On-time delivery measurements.
+- Purchase price analysis.
+- General purchasing efficiency.
+- Detailed material planning calculations.
+- Promised delivery date analysis or delivery-date prioritization.
+
+These topics can be considered as future enhancements or addressed through other BAQ examples, particularly **BAQ-006 — Supplier Performance Analysis**.
 
 ## Solution Design
 
