@@ -83,15 +83,23 @@ The BAQ uses a focused set of Epicor ERP data sources to identify purchase order
 
 | Data Source | Purpose |
 |---|---|
-| **PODetail** | Provides the purchase order line information, including the ordered quantity and the part associated with the line. |
-| **PORel** | Provides release-level information used to identify the quantities expected for each purchase order line. |
+| **POHeader** | Provides purchase order header information and is used to identify open purchase orders within the scope of the analysis. |
+| **PODetail** | Provides purchase order line information and serves as the primary result level for the BAQ. |
+| **PORel** | Provides release-level purchasing requirements, including released quantities and received quantities used to determine the remaining quantity to be received. |
 | **Vendor** | Provides supplier information associated with the purchase order. |
 | **Part** | Provides part-level identification and descriptive information for the purchased item. |
-| **RcvDtl** | Provides receipt information used to determine quantities that have already been received against purchase order requirements. |
+| **RcvDtl** | Provides receipt transaction detail that can be used when additional receiving information is required. It is not used as the primary source for the received-quantity calculation in the initial design. |
 
 The initial version of the BAQ is designed to evaluate outstanding receipt requirements at the Purchase Order Line level.
 
-The data sources are intentionally limited to the information required to compare purchase order requirements with received quantities. Supplier performance measurements, purchasing cost analysis, and detailed receiving analysis are outside the initial scope.
+The primary quantity evaluation uses the release information available through PORel. This approach allows released and received quantities to be evaluated without introducing unnecessary receipt-transaction joins into the primary calculation.
+
+RcvDtl remains available as a supporting data source for future receipt-related details, such as receipt transaction information, when required.
+
+The data sources are intentionally limited to the information required to identify open purchase orders, evaluate their open lines and releases, and determine remaining quantities to be received. Supplier performance measurements, purchasing cost analysis, and detailed receiving analysis are outside the initial scope.
+
+
+
 
 
 
