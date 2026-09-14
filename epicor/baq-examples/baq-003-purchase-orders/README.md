@@ -98,6 +98,28 @@ RcvDtl remains available as a supporting data source for future receipt-related 
 
 The data sources are intentionally limited to the information required to identify open purchase orders, evaluate their open lines and releases, and determine remaining quantities to be received. Supplier performance measurements, purchasing cost analysis, and detailed receiving analysis are outside the initial scope.
 
+## Query Logic
+
+The BAQ is organized around the Purchase Order Line as the primary result level.
+
+The query first evaluates the Purchase Order header to identify open purchase orders. Closed or void purchase orders are excluded from the analysis because they no longer represent active purchasing requirements.
+
+Within an open purchase order, the query evaluates the corresponding purchase order lines and includes only lines that remain open. Closed or void purchase order lines are excluded from the result.
+
+Release information from PORel is then used to evaluate the purchasing requirements associated with each purchase order line. Because a purchase order line may contain multiple releases, the release quantities are consolidated at the Purchase Order Line level.
+
+The received quantity available through PORel is used as the primary input for determining how much of the released quantity has already been received. This avoids using receipt transaction detail as part of the primary quantity calculation and reduces the risk of duplicating quantities when multiple receipt transactions exist.
+
+The remaining quantity to be received is determined by comparing the applicable released quantity with the accumulated received quantity.
+
+Purchase order lines with a remaining quantity greater than zero are included in the final result. This allows the BAQ to identify both partially received lines and lines for which no receipt has been recorded.
+
+Vendor and Part information are included to provide supplier and item context without changing the primary Purchase Order Line result level.
+
+RcvDtl is retained as a supporting data source for receipt transaction details when additional receiving information is required, but it is not used as the primary source for the received-quantity calculation in the initial design.
+
+This approach provides a consolidated view of open purchase order lines with outstanding receipt quantities while preventing multiple releases or receipt transactions from artificially increasing the quantities used in the calculation.
+
 
 
 
