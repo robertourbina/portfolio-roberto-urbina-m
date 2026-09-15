@@ -138,6 +138,42 @@ RcvDtl is retained as a supporting data source for receipt transaction details w
 
 This approach provides a consolidated view of open purchase order lines with outstanding receipt quantities while preventing multiple releases or receipt transactions from artificially increasing the quantities used in the calculation.
 
+## Calculated Fields
+
+The BAQ uses calculated fields to transform the release-level quantity information into values that are easier to interpret from an operational perspective.
+
+### Remaining Quantity
+
+**Purpose:** Determines the quantity that remains to be received for the applicable purchase order requirement.
+
+The calculation compares the released quantity with the quantity already received.
+
+A positive result indicates that a portion of the released quantity remains outstanding.
+
+### Receipt Status
+
+**Purpose:** Provides a simple business interpretation of the receipt condition.
+
+The status is derived from the relationship between the released quantity and the received quantity:
+
+| Condition | Receipt Status |
+|---|---|
+| Received Quantity = 0 | Not Received |
+| Received Quantity > 0 and Remaining Quantity > 0 | Partially Received |
+
+Fully received requirements are excluded from the final result because the BAQ only includes purchase order requirements with a remaining quantity greater than zero.
+
+The Receipt Status provides a business-friendly value that can later support visual indicators in a dashboard or other presentation layer.
+
+### Design Consideration
+
+The initial version intentionally focuses on the two calculated fields required to identify and interpret outstanding receipt quantities.
+
+Additional metrics, such as receipt completion percentage, can be considered as future enhancements if the BAQ is later incorporated into a dashboard or broader purchasing analysis.
+
+
+
+
 
 
 
