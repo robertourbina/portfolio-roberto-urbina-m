@@ -188,7 +188,51 @@ Because the BAQ is intended to provide an overall operational view of outstandin
 
 Future versions may introduce runtime parameters if specific operational scenarios require users to limit the results by criteria such as supplier, purchase order, part, plant, or date.
 
+## Filter Criteria
 
+The filter criteria are designed to ensure that the BAQ returns only active purchase order requirements with quantities still pending receipt.
+
+### Purchase Order Header
+
+The query includes only purchase orders that:
+
+- Are open.
+- Are not voided.
+
+Closed or voided purchase orders are excluded because they no longer represent active purchasing requirements.
+
+### Purchase Order Line
+
+Within the qualifying purchase orders, the query includes only purchase order lines that:
+
+- Are open.
+- Are not voided.
+
+This prevents closed or voided purchase order lines from being included in the pending receipt analysis.
+
+### Purchase Order Release
+
+The query evaluates the applicable purchase order releases and includes only releases that:
+
+- Are open.
+- Are not voided.
+
+This ensures that the quantity calculation is based on active purchase order requirements.
+
+### Remaining Quantity
+
+The final filter includes only purchase order requirements where the **Remaining Quantity is greater than zero**.
+
+This results in the inclusion of:
+
+- Purchase order requirements for which no receipt has been recorded.
+- Partially received purchase order requirements.
+
+Fully received requirements are excluded because their remaining quantity is zero.
+
+### Filter Design Consideration
+
+The filters are intentionally defined within the BAQ rather than exposed as runtime parameters. This allows the initial version to provide a complete operational view of outstanding purchase order receipts while maintaining the business rules established in the Query Logic section.
 
 
 
