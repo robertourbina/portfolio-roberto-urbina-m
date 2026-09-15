@@ -124,13 +124,13 @@ The query first evaluates the Purchase Order header to identify open purchase or
 
 Within an open purchase order, the query evaluates the corresponding purchase order lines and includes only lines that remain open. Closed or void purchase order lines are excluded from the result.
 
-Release information from PORel is then used to evaluate the purchasing requirements associated with each purchase order line. Because a purchase order line may contain multiple releases, the release quantities are consolidated at the Purchase Order Line level.
+Release information from PORel is then used to evaluate the purchasing requirements associated with each purchase order line. Because a purchase order line may contain multiple releases, release-level quantities are evaluated and consolidated appropriately at the Purchase Order Line level.
 
-The received quantity available through PORel is used as the primary input for determining how much of the released quantity has already been received. This avoids using receipt transaction detail as part of the primary quantity calculation and reduces the risk of duplicating quantities when multiple receipt transactions exist.
+The released quantity and received quantity from PORel are used to determine the remaining quantity to be received for the applicable purchase order requirements.
 
-The remaining quantity to be received is determined by comparing the applicable released quantity with the accumulated received quantity.
+The remaining quantity is calculated by comparing the released quantity with the accumulated received quantity.
 
-Purchase order lines with a remaining quantity greater than zero are included in the final result. This allows the BAQ to identify both partially received lines and lines for which no receipt has been recorded.
+Purchase order requirements with a remaining quantity greater than zero are included in the final result. This allows the BAQ to identify both partially received requirements and requirements for which no receipt has been recorded.
 
 Vendor and Part information are included to provide supplier and item context without changing the primary Purchase Order Line result level.
 
