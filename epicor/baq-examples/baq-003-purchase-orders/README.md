@@ -171,7 +171,22 @@ The initial version intentionally focuses on the two calculated fields required 
 
 Additional metrics, such as receipt completion percentage, can be considered as future enhancements if the BAQ is later incorporated into a dashboard or broader purchasing analysis.
 
+## Runtime Parameters
 
+The initial version of BAQ-003 does not use runtime parameters.
+
+This is intentional because the purpose of the BAQ is to provide a consolidated view of **all purchase order requirements that meet the defined query conditions**.
+
+The query conditions already determine which records are included in the result, based on criteria such as:
+
+- Open purchase orders.
+- Open purchase order lines.
+- Applicable open purchase order releases.
+- Remaining quantity greater than zero.
+
+Because the BAQ is intended to provide an overall operational view of outstanding receipt requirements, additional user-defined parameters are not required for the initial scope.
+
+Future versions may introduce runtime parameters if specific operational scenarios require users to limit the results by criteria such as supplier, purchase order, part, plant, or date.
 
 
 
