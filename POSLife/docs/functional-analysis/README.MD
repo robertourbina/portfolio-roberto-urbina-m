@@ -1,27 +1,27 @@
 # POSLife
 
-POSLife es un sistema de Punto de Venta e Inventario para ferreterías.
+POSLife Is a Point Of Sale and inventory for hardware Stores.
 
-## Estado del Proyecto
+## Project Status
 
-✅ Análisis Funcional Completo
+✅ Functional Analysis, complete
 
-⏳ Diseño Técnico
+⏳ Technical design 
 
-⏳ Desarrollo
+⏳ Develop
 
-## Tecnologías
+## Tecnologies
 
 - Windows Forms .NET 8
 - PostgreSQL
 - Npgsql
 - RDLC Reports
 
-## Filosofía
+## Philosophy
 
-"No correr, pero tampoco detenerse."
+"Don't run, but don't stop."
 
-## Estructura
+## Structure
 
 - docs
 - database
