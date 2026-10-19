@@ -15,7 +15,9 @@ Functional Analysis     ✅ 100%
 
 Technical Standards     ✅ 100%
 
-Naming Conventions      🔄  
+Naming Conventions      ✅ 100%  
+
+Data Dictionary         🔄
 
 Technical Design        ⏳ Ready to Start
 
