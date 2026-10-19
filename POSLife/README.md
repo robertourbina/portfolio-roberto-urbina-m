@@ -15,6 +15,8 @@ Functional Analysis     ✅ 100%
 
 Technical Standards     ✅ 100%
 
+Naming Conventions      🔄  
+
 Technical Design        ⏳ Ready to Start
 
 Database Design         ⏳ Pending
