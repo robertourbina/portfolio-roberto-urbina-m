@@ -13,6 +13,8 @@ POSLife es un sistema de Punto de Venta e Inventario para ferreterías.
 
 Functional Analysis     ✅ 100%
 
+Technical Standards     ✅ 100%
+
 Technical Design        ⏳ Ready to Start
 
 Database Design         ⏳ Pending
