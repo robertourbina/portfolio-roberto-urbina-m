@@ -19,6 +19,24 @@ Naming Conventions      ✅ 100%
 
 Data Dictionary         🔄
 
+   ✅ Organization
+
+   ✅ Security
+
+   ✅ Products
+
+   ⏳ Inventory
+
+   ⏳ Customers
+
+   ⏳ Suppliers
+
+   ⏳ Sales
+
+   ⏳ Purchases
+
+   ⏳ Cash
+
 Technical Design        ⏳ Ready to Start
 
 Database Design         ⏳ Pending
