@@ -71,3 +71,161 @@ Main Fields:
 - section
 - bin
 - status
+
+# Security
+
+## roles
+
+Description:
+
+Stores user roles.
+
+Primary Key:
+
+role_id
+
+Main Fields:
+
+- role_id
+- code
+- name
+- description
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+---
+
+## users
+
+Description:
+
+Stores system users.
+
+Primary Key:
+
+user_id
+
+Main Fields:
+
+- user_id
+- username
+- password_hash
+- full_name
+- email
+- phone
+- role_id
+- branch_id
+- status
+- last_login_at
+- password_last_change_at
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+---
+
+## permissions
+
+Description:
+
+Stores system permissions.
+
+Primary Key:
+
+permission_id
+
+Main Fields:
+
+- permission_id
+- code
+- name
+- module
+- description
+- status
+
+---
+
+## role_permissions
+
+Description:
+
+Assigns permissions to roles.
+
+Primary Key:
+
+role_permission_id
+
+Main Fields:
+
+- role_permission_id
+- role_id
+- permission_id
+
+---
+
+## user_permissions
+
+Description:
+
+Stores user-specific permission overrides.
+
+Primary Key:
+
+user_permission_id
+
+Main Fields:
+
+- user_permission_id
+- user_id
+- permission_id
+- granted
+
+---
+
+## user_sessions
+
+Description:
+
+Stores user login sessions.
+
+Primary Key:
+
+session_id
+
+Main Fields:
+
+- session_id
+- user_id
+- login_at
+- logout_at
+- computer_name
+- ip_address
+
+---
+
+## audit_log
+
+Description:
+
+Stores audit information.
+
+Primary Key:
+
+audit_id
+
+Main Fields:
+
+- audit_id
+- module
+- action
+- record_id
+- old_values
+- new_values
+- comments
+- user_id
+- created_at
+
