@@ -388,6 +388,133 @@ Main Fields:
 - updated_at
 - updated_by
 
+## product_units
+
+Description:
+
+Stores product unit conversions.
+
+Primary Key:
+
+product_unit_id
+
+Main Fields:
+
+- product_unit_id
+- product_id
+- unit_id
+- factor
+- status
+
+---
+
+## product_barcodes
+
+Description:
+
+Stores multiple barcodes for products.
+
+Primary Key:
+
+barcode_id
+
+Main Fields:
+
+- barcode_id
+- product_id
+- barcode
+- is_default
+- status
+
+---
+
+## product_images
+
+Description:
+
+Stores product images.
+
+Primary Key:
+
+product_image_id
+
+Main Fields:
+
+- product_image_id
+- product_id
+- image_path
+- description
+- is_primary
+- status
+
+---
+
+## price_lists
+
+Description:
+
+Stores sales price lists.
+
+Primary Key:
+
+price_list_id
+
+Main Fields:
+
+- price_list_id
+- code
+- name
+- description
+- status
+
+---
+
+## product_prices
+
+Description:
+
+Stores product prices by price list.
+
+Primary Key:
+
+product_price_id
+
+Main Fields:
+
+- product_price_id
+- product_id
+- product_unit_id
+- price_list_id
+- price
+- minimum_price
+- status
+
+---
+
+## product_suppliers
+
+Description:
+
+Stores supplier information for products.
+
+Primary Key:
+
+product_supplier_id
+
+Main Fields:
+
+- product_supplier_id
+- product_id
+- supplier_id
+- supplier_product_code
+- last_cost
+- lead_time_days
+- is_preferred
+- status
+
+
+
+
 
 
 
