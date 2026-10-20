@@ -340,6 +340,56 @@ Main Fields:
 - updated_at
 - updated_by
 
+## products
+
+Description:
+
+Stores product master information.
+
+Primary Key:
+
+product_id
+
+Main Fields:
+
+- product_id
+- internal_code
+- barcode
+- description
+- short_description
+- search_keywords
+
+- line_id
+- category_id
+- brand_id
+- manufacturer_id
+
+- base_unit_id
+
+- tax_id
+
+- status
+
+- weight
+- length
+- width
+- height
+
+- minimum_stock
+- reorder_point
+- maximum_stock
+
+- image_path
+
+- comments
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+
+
 
 
 
