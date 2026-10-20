@@ -229,3 +229,121 @@ Main Fields:
 - user_id
 - created_at
 
+## product_lines
+
+Description:
+
+Stores product lines.
+
+Primary Key:
+
+line_id
+
+Main Fields:
+
+- line_id
+- code
+- name
+- description
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## categories
+
+Description:
+
+Stores product categories.
+
+Primary Key:
+
+category_id
+
+Main Fields:
+
+- category_id
+- line_id
+- code
+- name
+- description
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## brands
+
+Description:
+
+Stores product brands.
+
+Primary Key:
+
+brand_id
+
+Main Fields:
+
+- brand_id
+- code
+- name
+- description
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## manufacturers
+
+Description:
+
+Stores manufacturers.
+
+Primary Key:
+
+manufacturer_id
+
+Main Fields:
+
+- manufacturer_id
+- code
+- name
+- description
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## units
+
+Description:
+
+Stores units of measure.
+
+Primary Key:
+
+unit_id
+
+Main Fields:
+
+- unit_id
+- code
+- name
+- decimals
+- status
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+
+
+
+
+
+
+
