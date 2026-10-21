@@ -1091,3 +1091,88 @@ Main Fields:
 
 - line_total
 
+## sale_statuses
+
+Description:
+
+Stores sales statuses.
+
+Primary Key:
+
+sale_status_id
+
+Main Fields:
+
+- sale_status_id
+- code
+- name
+- description
+- status
+
+## sale_payments
+
+Description:
+
+Stores sale payment transactions.
+
+Primary Key:
+
+sale_payment_id
+
+Main Fields:
+
+- sale_payment_id
+- sale_id
+- payment_method_id
+- amount
+- reference
+- payment_date
+
+---
+
+## sale_status_history
+
+Description:
+
+Stores sales status history.
+
+Primary Key:
+
+history_id
+
+Main Fields:
+
+- history_id
+- sale_id
+- sale_status_id
+- change_date
+- user_id
+- comments
+
+---
+
+## store_credit_vouchers
+
+Description:
+
+Stores store credit vouchers.
+
+Primary Key:
+
+voucher_id
+
+Main Fields:
+
+- voucher_id
+- voucher_number
+- customer_id
+- issue_date
+- expiration_date
+- amount
+- remaining_amount
+- status
+
+
+
+
+
