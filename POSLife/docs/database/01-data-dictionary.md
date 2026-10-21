@@ -1005,5 +1005,89 @@ Main Fields:
 - reference
 - comments
 
+# Sales
 
+## sales
+
+Description:
+
+Stores sales transactions.
+
+Primary Key:
+
+sale_id
+
+Main Fields:
+
+- sale_id
+- sale_number
+
+- branch_id
+- customer_id
+
+- seller_user_id
+- cashier_user_id
+
+- sale_type
+- status
+
+- sale_date
+
+- subtotal
+- discount_amount
+- tax_amount
+- total
+
+- comments
+
+- due_date
+
+- delivery_status
+- delivery_date
+- delivery_comments
+
+- source_sale_id
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## sale_details
+
+Description:
+
+Stores sales lines.
+
+Primary Key:
+
+sale_detail_id
+
+Main Fields:
+
+- sale_detail_id
+- sale_id
+
+- product_id
+
+- product_internal_code
+- product_barcode
+- product_description
+
+- unit_id
+- unit_code
+
+- quantity
+
+- unit_price
+
+- discount_percent
+- discount_amount
+
+- tax_id
+- tax_code
+- tax_percent
+- tax_amount
+
+- line_total
 
