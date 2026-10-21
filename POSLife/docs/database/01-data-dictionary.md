@@ -928,7 +928,82 @@ Main Fields:
 - is_default
 - status
 
+## suppliers
 
+Description:
+
+Stores supplier master information.
+
+Primary Key:
+
+supplier_id
+
+Main Fields:
+
+- supplier_id
+- code
+- name
+- business_name
+- rfc
+- phone
+- mobile_phone
+- email
+
+- address
+- city
+- state
+- zip_code
+
+- comments
+- status
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+---
+
+## supplier_account_movements
+
+Description:
+
+Stores supplier account statement movements.
+
+Primary Key:
+
+movement_id
+
+Main Fields:
+
+- movement_id
+- supplier_id
+- movement_date
+- reference_type
+- reference_id
+- debit
+- credit
+
+---
+
+## supplier_payments
+
+Description:
+
+Stores supplier payments.
+
+Primary Key:
+
+supplier_payment_id
+
+Main Fields:
+
+- supplier_payment_id
+- supplier_id
+- payment_date
+- amount
+- reference
+- comments
 
 
 
