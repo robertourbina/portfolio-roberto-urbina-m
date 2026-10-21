@@ -1172,7 +1172,23 @@ Main Fields:
 - remaining_amount
 - status
 
+## payment_methods
 
+Description:
+
+Stores payment methods.
+
+Primary Key:
+
+payment_method_id
+
+Main Fields:
+
+- payment_method_id
+- code
+- name
+- description
+- status
 
 
 
