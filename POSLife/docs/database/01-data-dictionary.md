@@ -643,7 +643,122 @@ Main Fields:
 - counted_quantity
 - difference
 
+# Customers
 
+## customer_classifications
+
+Description:
+
+Stores customer classifications.
+
+Primary Key:
+
+customer_classification_id
+
+Main Fields:
+
+- customer_classification_id
+- code
+- name
+- description
+- status
+
+Examples:
+
+NORMAL
+
+PREFERRED
+
+VIP
+
+STRATEGIC
+
+---
+
+## customers
+
+Description:
+
+Stores customer master information.
+
+Primary Key:
+
+customer_id
+
+Main Fields:
+
+- customer_id
+- code
+- name
+- business_name
+- rfc
+- phone
+- mobile_phone
+- email
+
+- customer_classification_id
+
+- price_list_id
+
+- credit_limit
+- credit_days
+
+- customer_status
+
+- credit_status
+
+- comments
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+---
+
+## customer_contacts
+
+Description:
+
+Stores customer contacts.
+
+Primary Key:
+
+customer_contact_id
+
+Main Fields:
+
+- customer_contact_id
+- customer_id
+- contact_name
+- position
+- phone
+- mobile_phone
+- email
+- status
+
+---
+
+## customer_addresses
+
+Description:
+
+Stores customer addresses.
+
+Primary Key:
+
+customer_address_id
+
+Main Fields:
+
+- customer_address_id
+- customer_id
+- address_type
+- address
+- city
+- state
+- zip_code
+- status
 
 
 
