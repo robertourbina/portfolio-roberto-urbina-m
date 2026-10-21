@@ -844,7 +844,89 @@ Main Fields:
 - next_followup_date
 - user_id
 
+# Suppliers
 
+## suppliers
+
+Description:
+
+Stores supplier master information.
+
+Primary Key:
+
+supplier_id
+
+Main Fields:
+
+- supplier_id
+- code
+- name
+- business_name
+- rfc
+- phone
+- mobile_phone
+- email
+
+- address
+- city
+- state
+- zip_code
+
+- comments
+
+- status
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+---
+
+## supplier_contacts
+
+Description:
+
+Stores supplier contacts.
+
+Primary Key:
+
+supplier_contact_id
+
+Main Fields:
+
+- supplier_contact_id
+- supplier_id
+- contact_name
+- position
+- phone
+- mobile_phone
+- email
+- status
+
+---
+
+## supplier_bank_accounts
+
+Description:
+
+Stores supplier bank accounts.
+
+Primary Key:
+
+supplier_bank_account_id
+
+Main Fields:
+
+- supplier_bank_account_id
+- supplier_id
+- bank_name
+- account_number
+- clabe
+- account_holder
+- currency
+- is_default
+- status
 
 
 
