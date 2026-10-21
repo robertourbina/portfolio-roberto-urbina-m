@@ -512,7 +512,136 @@ Main Fields:
 - is_preferred
 - status
 
+# Inventory
 
+## product_stock
+
+Description:
+
+Stores current inventory balances.
+
+Primary Key:
+
+stock_id
+
+Main Fields:
+
+- stock_id
+- product_id
+- warehouse_id
+- location_id
+- on_hand_quantity
+- reserved_quantity
+- updated_at
+
+---
+
+## inventory_movements
+
+Description:
+
+Stores inventory transactions (Kardex).
+
+Primary Key:
+
+movement_id
+
+Main Fields:
+
+- movement_id
+- product_id
+- warehouse_id
+- location_id
+- movement_date
+- movement_type
+- quantity
+- unit_cost
+- reference_type
+- reference_id
+- comments
+- user_id
+
+---
+
+## transfers
+
+Description:
+
+Stores inventory transfers.
+
+Primary Key:
+
+transfer_id
+
+Main Fields:
+
+- transfer_id
+- source_warehouse_id
+- destination_warehouse_id
+- transfer_date
+- status
+- comments
+- user_id
+
+---
+
+## transfer_details
+
+Description:
+
+Stores transfer lines.
+
+Primary Key:
+
+transfer_detail_id
+
+Main Fields:
+
+- transfer_detail_id
+- transfer_id
+- product_id
+- quantity
+
+---
+
+## inventory_counts
+
+Description:
+
+Stores physical inventory counts.
+
+Primary Key:
+
+count_id
+
+Main Fields:
+
+- count_id
+- warehouse_id
+- count_date
+- status
+- comments
+
+---
+
+## inventory_count_details
+
+Description:
+
+Stores physical inventory count lines.
+
+Primary Key:
+
+count_detail_id
+
+Main Fields:
+
+- count_detail_id
+- count_id
+- product_id
+- system_quantity
+- counted_quantity
+- difference
 
 
 
