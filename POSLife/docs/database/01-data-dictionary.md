@@ -760,7 +760,89 @@ Main Fields:
 - zip_code
 - status
 
+## customer_account_movements
 
+Description:
+
+Stores customer account statement movements.
+
+Primary Key:
+
+movement_id
+
+Main Fields:
+
+- movement_id
+- customer_id
+- movement_date
+- reference_type
+- reference_id
+- debit
+- credit
+
+---
+
+## customer_payments
+
+Description:
+
+Stores customer payments.
+
+Primary Key:
+
+payment_id
+
+Main Fields:
+
+- payment_id
+- customer_id
+- payment_date
+- total_amount
+- payment_method_id
+- reference
+- comments
+
+---
+
+## customer_payment_applications
+
+Description:
+
+Stores customer payment applications.
+
+Primary Key:
+
+application_id
+
+Main Fields:
+
+- application_id
+- payment_id
+- sale_id
+- applied_amount
+
+---
+
+## customer_collection_actions
+
+Description:
+
+Stores collection activities.
+
+Primary Key:
+
+collection_action_id
+
+Main Fields:
+
+- collection_action_id
+- customer_id
+- sale_id
+- action_date
+- action_type
+- comments
+- next_followup_date
+- user_id
 
 
 
