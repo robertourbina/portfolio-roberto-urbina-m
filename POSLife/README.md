@@ -25,13 +25,13 @@ Data Dictionary         🔄
 
    ✅ Products
 
-   ⏳ Inventory
+   ✅ Inventory
 
-   ⏳ Customers
+   ✅ Customers
 
-   ⏳ Suppliers
+   ✅ Suppliers
 
-   ⏳ Sales
+   ✅ Sales
 
    ⏳ Purchases
 
