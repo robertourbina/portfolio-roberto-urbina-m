@@ -1226,6 +1226,43 @@ CANCELLED
 
 ---
 
+## sale_statuses
+
+Description:
+
+Stores sales statuses.
+
+Primary Key:
+
+sale_status_id
+
+Main Fields:
+
+- sale_status_id
+- code
+- name
+- description
+- status
+
+## payment_methods
+
+Description:
+
+Stores payment methods.
+
+Primary Key:
+
+payment_method_id
+
+Main Fields:
+
+- payment_method_id
+- code
+- name
+- description
+- status
+
+
 ## purchases
 
 Description:
@@ -1330,41 +1367,7 @@ Main Fields:
 - amount
 - comments
 
-## sale_statuses
 
-Description:
-
-Stores sales statuses.
-
-Primary Key:
-
-sale_status_id
-
-Main Fields:
-
-- sale_status_id
-- code
-- name
-- description
-- status
-
-## payment_methods
-
-Description:
-
-Stores payment methods.
-
-Primary Key:
-
-payment_method_id
-
-Main Fields:
-
-- payment_method_id
-- code
-- name
-- description
-- status
 
 
 
