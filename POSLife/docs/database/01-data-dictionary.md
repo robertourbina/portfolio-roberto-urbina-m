@@ -1368,6 +1368,128 @@ Main Fields:
 - comments
 
 
+## purchase_statuses
+
+Description:
+
+Stores purchase statuses.
+
+Primary Key:
+
+purchase_status_id
+
+Main Fields:
+
+- purchase_status_id
+- code
+- name
+- description
+- status
+
+## purchases
+
+Description:
+
+Stores purchases.
+
+Primary Key:
+
+purchase_id
+
+Main Fields:
+
+- purchase_id
+- purchase_number
+
+- supplier_id
+
+- warehouse_id
+
+- supplier_invoice_series
+- supplier_invoice_number
+- supplier_invoice_date
+
+- purchase_status_id
+
+- purchase_date
+
+- subtotal
+- tax_amount
+- total
+
+- comments
+
+- created_at
+- created_by
+- updated_at
+- updated_by
+
+## purchase_details
+
+Description:
+
+Stores purchase lines.
+
+Primary Key:
+
+purchase_detail_id
+
+Main Fields:
+
+- purchase_detail_id
+- purchase_id
+
+- product_id
+
+- product_internal_code
+- product_description
+
+- quantity
+
+- unit_cost
+
+- tax_percent
+- tax_amount
+
+- line_total
+
+## supplier_returns
+
+Description:
+
+Stores supplier returns.
+
+Primary Key:
+
+supplier_return_id
+
+Main Fields:
+
+- supplier_return_id
+- supplier_id
+- purchase_id
+- return_date
+- reason
+- comments
+
+## purchase_additional_costs
+
+Description:
+
+Stores additional purchase costs.
+
+Primary Key:
+
+purchase_cost_id
+
+Main Fields:
+
+- purchase_cost_id
+- purchase_id
+- cost_type
+- amount
+- comments
+
 
 
 
