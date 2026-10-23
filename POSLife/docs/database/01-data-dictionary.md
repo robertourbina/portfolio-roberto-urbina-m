@@ -1647,6 +1647,45 @@ Main Fields:
 
 - total
 
+## bank_deposits
+
+Description:
+
+Stores bank deposits generated from cash withdrawals.
+
+Primary Key:
+
+bank_deposit_id
+
+Main Fields:
+
+- bank_deposit_id
+- cash_movement_id
+- bank_id
+- deposit_date
+- amount
+- reference
+- comments
+- status
+
+## cash_expense_types
+
+Description:
+
+Stores cash expense concepts.
+
+Primary Key:
+
+cash_expense_type_id
+
+Main Fields:
+
+- cash_expense_type_id
+- code
+- name
+- description
+- status
+
 
 
 
