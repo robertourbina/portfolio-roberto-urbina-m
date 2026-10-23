@@ -1490,6 +1490,163 @@ Main Fields:
 - amount
 - comments
 
+## cash_registers
+
+Description:
+
+Stores cash register stations.
+
+Primary Key:
+
+cash_register_id
+
+Main Fields:
+
+- cash_register_id
+- branch_id
+- code
+- name
+- default_cash_fund
+- status
+
+## cash_sessions
+
+Description:
+
+Stores cash register sessions.
+
+Primary Key:
+
+cash_session_id
+
+Main Fields:
+
+- cash_session_id
+
+- cash_register_id
+
+- user_id
+
+- open_datetime
+
+- opening_amount
+
+- close_datetime
+
+- closing_amount
+
+- status
+
+- recovery_required
+
+- unexpected_shutdown
+
+- last_activity_datetime
+
+- computer_name
+
+- application_version
+
+- recovered_datetime
+
+- recovered_by
+
+## cash_movement_types
+
+Description:
+
+Stores cash movement types.
+
+Primary Key:
+
+cash_movement_type_id
+
+Main Fields:
+
+- cash_movement_type_id
+- code
+- name
+- description
+- status
+
+## cash_movements
+
+Description:
+
+Stores cash movements.
+
+Primary Key:
+
+cash_movement_id
+
+Main Fields:
+
+- cash_movement_id
+
+- cash_session_id
+
+- cash_movement_type_id
+
+- movement_date
+
+- amount
+
+- reference_type
+
+- reference_id
+
+- comments
+
+- user_id
+
+## cash_counts
+
+Description:
+
+Stores cash counts.
+
+Primary Key:
+
+cash_count_id
+
+Main Fields:
+
+- cash_count_id
+
+- cash_session_id
+
+- count_date
+
+- expected_amount
+
+- counted_amount
+
+- difference
+
+- comments
+
+## cash_count_details
+
+Description:
+
+Stores denomination details.
+
+Primary Key:
+
+cash_count_detail_id
+
+Main Fields:
+
+- cash_count_detail_id
+
+- cash_count_id
+
+- denomination
+
+- quantity
+
+- total
+
 
 
 
