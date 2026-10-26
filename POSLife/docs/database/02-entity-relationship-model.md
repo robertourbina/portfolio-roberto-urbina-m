@@ -144,6 +144,41 @@ warehouses
     1 → N inventory_counts
 
 
+Customers
+
+customer_classifications
+    1 → N customers
+
+price_lists
+    1 → N customers
+
+customers
+    1 → N customer_contacts
+
+customers
+    1 → N customer_addresses
+
+customers
+    1 → N customer_account_movements
+
+customers
+    1 → N customer_payments
+
+customer_payments
+    1 → N customer_payment_applications
+
+sales
+    1 → N customer_payment_applications
+
+customers
+    1 → N customer_collection_actions
+
+sales
+    1 → N customer_collection_actions
+
+
+
+
 
 
 
