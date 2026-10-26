@@ -94,3 +94,15 @@ suppliers
 
 1 → N product_suppliers
 
+taxes
+    1 → N products
+
+
+
+
+
+
+
+
+
+
