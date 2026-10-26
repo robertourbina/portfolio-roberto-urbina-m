@@ -97,6 +97,55 @@ suppliers
 taxes
     1 → N products
 
+units
+    1 → N products
+
+Inventory
+
+products
+    1 → N product_stock
+
+warehouses
+    1 → N product_stock
+
+warehouse_locations
+    1 → N product_stock
+
+products
+    1 → N inventory_movements
+
+warehouses
+    1 → N inventory_movements
+
+warehouse_locations
+    1 → N inventory_movements
+
+transfers
+    1 → N transfer_details
+
+products
+    1 → N transfer_details
+
+warehouses
+    1 → N transfers
+(source_warehouse)
+
+warehouses
+    1 → N transfers
+(destination_warehouse)
+
+inventory_counts
+    1 → N inventory_count_details
+
+products
+    1 → N inventory_count_details
+
+warehouses
+    1 → N inventory_counts
+
+
+
+
 
 
 
