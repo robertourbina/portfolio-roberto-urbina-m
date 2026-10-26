@@ -43,3 +43,54 @@ users
 users
 
 1 → N audit_log
+
+# Products
+
+product_lines
+
+1 → N categories
+
+categories
+
+1 → N products
+
+brands
+
+1 → N products
+
+manufacturers
+
+1 → N products
+
+units
+
+1 → N product_units
+
+products
+
+1 → N product_units
+
+products
+
+1 → N product_barcodes
+
+products
+
+1 → N product_images
+
+products
+
+1 → N product_prices
+
+price_lists
+
+1 → N product_prices
+
+products
+
+1 → N product_suppliers
+
+suppliers
+
+1 → N product_suppliers
+
