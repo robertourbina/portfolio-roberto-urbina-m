@@ -177,6 +177,104 @@ sales
     1 → N customer_collection_actions
 
 
+Suppliers
+
+suppliers
+    1 → N supplier_contacts
+
+suppliers
+    1 → N supplier_bank_accounts
+
+suppliers
+    1 → N supplier_account_movements
+
+suppliers
+    1 → N supplier_payments
+
+
+purchase_statuses
+    1 → N purchases
+
+suppliers
+    1 → N purchases
+
+warehouses
+    1 → N purchases
+
+purchases
+    1 → N purchase_details
+
+products
+    1 → N purchase_details
+
+purchases
+    1 → N purchase_additional_costs
+
+suppliers
+    1 → N supplier_returns
+
+purchases
+    1 → N supplier_returns
+
+
+sale_statuses
+    1 → N sales
+
+customers
+    1 → N sales
+
+branches
+    1 → N sales
+
+users
+    1 → N sales
+(seller)
+
+users
+    1 → N sales
+(cashier)
+
+sales
+    1 → N sale_details
+
+products
+    1 → N sale_details
+
+sales
+    1 → N sale_payments
+
+payment_methods
+    1 → N sale_payments
+
+sales
+    1 → N sale_status_history
+
+
+branches
+    1 → N cash_registers
+
+cash_registers
+    1 → N cash_sessions
+
+users
+    1 → N cash_sessions
+
+cash_sessions
+    1 → N cash_movements
+
+cash_movement_types
+    1 → N cash_movements
+
+cash_sessions
+    1 → N cash_counts
+
+cash_counts
+    1 → N cash_count_details
+
+cash_movements
+    1 → N bank_deposits
+
+
 
 
 
