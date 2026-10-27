@@ -292,6 +292,11 @@ users
 users
     1 → N inventory_counts
 
+users
+    1 → N customer_collection_actions
+
+
+
 
 
 
