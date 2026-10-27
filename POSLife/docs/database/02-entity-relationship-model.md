@@ -295,7 +295,11 @@ users
 users
     1 → N customer_collection_actions
 
+payment_methods
+    1 → N supplier_payments
 
+purchases
+    1 → N supplier_account_movements
 
 
 
