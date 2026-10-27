@@ -280,6 +280,11 @@ cash_movements
 permissions
     1 → N user_permissions
 
+product_units
+    1 → N product_prices
+
+
+
 
 
 
