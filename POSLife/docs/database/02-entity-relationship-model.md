@@ -313,7 +313,8 @@ users
 customers
     1 → N store_credit_vouchers
 
-
+users
+    1 → N sale_payments
 
 
 
