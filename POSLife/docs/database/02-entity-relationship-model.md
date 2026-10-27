@@ -316,7 +316,14 @@ customers
 users
     1 → N sale_payments
 
+users
+    1 → N cash_movements
 
+cash_expense_types
+    1 → N cash_movements
+
+banks
+    1 → N bank_deposits
 
 
 
