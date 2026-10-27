@@ -283,6 +283,14 @@ permissions
 product_units
     1 → N product_prices
 
+users
+    1 → N inventory_movements
+
+users
+    1 → N transfers
+
+users
+    1 → N inventory_counts
 
 
 
