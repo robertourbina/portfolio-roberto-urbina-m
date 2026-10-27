@@ -301,7 +301,11 @@ payment_methods
 purchases
     1 → N supplier_account_movements
 
+users
+    1 → N purchases
 
+users
+    1 → N supplier_returns
 
 
 
