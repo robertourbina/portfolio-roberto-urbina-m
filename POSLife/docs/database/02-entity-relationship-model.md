@@ -277,6 +277,12 @@ cash_movements
 
 # Review Notes
 
+permissions
+    1 → N user_permissions
+
+
+
+
 
 
 
