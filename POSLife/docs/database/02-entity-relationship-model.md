@@ -307,7 +307,11 @@ users
 users
     1 → N supplier_returns
 
+users
+    1 → N sale_status_history
 
+customers
+    1 → N store_credit_vouchers
 
 
 
