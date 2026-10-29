@@ -154,6 +154,181 @@ POSLife Philosophy
 ===================================================
 */
 
+===================================================
+Schema Strategy
+===================================================
+
+Default Schema:
+
+public
+
+Future schemas may be added for:
+
+audit
+integration
+reporting
+
+
+===================================================
+Constraint Naming Strategy
+===================================================
+
+Primary Keys:
+
+pk_<table>
+
+Examples:
+
+pk_products
+
+pk_customers
+
+Foreign Keys:
+
+fk_<table>_<referenced_table>
+
+Examples:
+
+fk_products_categories
+
+fk_sales_customers
+
+Unique Keys:
+
+uk_<table>_<column>
+
+Examples:
+
+uk_products_internal_code
+
+Check Constraints:
+
+chk_<table>_<rule>
+
+Examples:
+
+chk_products_status
+
+
+===================================================
+Field Standards
+===================================================
+
+Status Columns
+
+VARCHAR(30)
+
+Examples:
+
+status
+
+customer_status
+
+credit_status
+
+sale_status
+
+---------------------------------------------------
+
+Code Columns
+
+VARCHAR(50)
+
+Examples:
+
+code
+
+internal_code
+
+customer_code
+
+supplier_code
+
+---------------------------------------------------
+
+Name Columns
+
+VARCHAR(255)
+
+Examples:
+
+name
+
+contact_name
+
+business_name
+
+---------------------------------------------------
+
+Description Columns
+
+VARCHAR(255)
+
+Examples:
+
+description
+
+short_description
+
+---------------------------------------------------
+
+Comments and Notes
+
+TEXT
+
+Examples:
+
+comments
+
+notes
+
+audit_comments
+
+---------------------------------------------------
+
+Barcode Columns
+
+VARCHAR(100)
+
+Examples:
+
+barcode
+
+supplier_barcode
+
+---------------------------------------------------
+
+Money Columns
+
+NUMERIC(18,2)
+
+Examples:
+
+price
+
+amount
+
+subtotal
+
+tax_amount
+
+total
+
+---------------------------------------------------
+
+Quantity Columns
+
+NUMERIC(18,4)
+
+Examples:
+
+quantity
+
+stock
+
+factor
+
+reserved_quantity
 
 
 
