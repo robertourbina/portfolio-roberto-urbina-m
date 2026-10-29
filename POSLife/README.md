@@ -37,9 +37,9 @@ Data Dictionary         ✅ 100%
 
    ✅ Cash
 
-Technical Design        ⏳ Ready to Start
+Technical Design         🔄 In Progress
 
-Database Design         ⏳ Pending
+Database Design          🔄 In Progress
 
 Development             ⏳ Pending
 
