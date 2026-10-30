@@ -1,138 +1,99 @@
-## portfolio-roberto-urbina-m
-Epicor ERP specialist portfolio with SQL, Python data analysis, and mapping projects.
-# 👋 Hi, I'm Roberto Urbina
+# Roberto Urbina — Professional Portfolio
 
-### Epicor ERP Application Specialist | Data Analysis Learner | GIS Enthusiast
+**ERP Application Specialist | Data Analysis | Application Development | GIS**
 
-Welcome to my professional portfolio repository.  
-Here you can find projects and examples related to:
+Welcome to my professional portfolio. This repository brings together practical projects that reflect my experience in ERP applications, databases, business systems, data analysis, application development, and geographic information systems.
 
-## ERP & Business Systems
-- 🏢 Epicor ERP
-- 📋 Functional Analysis
-- 🧩 Business Process Mapping
-- ⚙️ BPM (Business Process Management)
-- 📊 BAQ (Business Activity Queries)
-- 🧾 SSRS Reports
-- 🎛 Dashboard Customization
+## About Me
 
----
+I am an ERP Application Specialist with more than 25 years of experience in IT, including ERP application support, requirements analysis, database administration, systems programming, and business application development. My experience includes 3.5 years working with Epicor ERP, supporting business processes, developing customizations and reports, preparing data, and helping users work effectively with business systems.
 
-# 💼 About Me
+My work focuses on understanding business needs, evaluating technology options, and finding practical solutions that support daily operations. My broader background includes SQL and database management, application development, data preparation, reporting, and business intelligence.
 
-I am an Epicor ERP Application Specialist with experience supporting business processes, reporting, data extraction, and ERP customization.
+Alongside my professional experience, I continue to develop personal projects in data analysis, application development, and GIS to expand my technical knowledge and explore practical ways to work with business information.
 
-Currently, I am expanding my technical skills in:
-- Python for data analysis
-- GIS and spatial analysis
-- Data visualization
-- Automation and reporting solutions
+## Technical Skills
 
-My goal is to combine ERP business knowledge with data analytics and visualization tools to create practical and efficient solutions.
+### ERP & Business Applications
+- Epicor ERP application support and customization
+- Business requirements and process analysis
+- Forms, BPMs, BAQs, and Updatable BAQs (UBAQs)
+- SSRS reports and Report Data Definitions
+- Microsoft Dynamics NAV (Navision) support and implementation support
 
----
+### Databases, SQL & Data Integration
+- Oracle 8i database administration
+- SQL and PL/SQL queries, procedures, functions, and triggers
+- SQL Server database support and data management
+- SSIS and ETL data preparation
 
-# 🛠 Technical Skills
+### Application Development & Reporting
+- Delphi 5
+- Visual Basic and VBA
+- Crystal Reports
+- Power BI data preparation and reporting support
 
-## ERP & Business Systems
-- Epicor ERP
-- BAQ (Business Activity Queries)
-- BPM (Business Process Management)
-- SSRS Reports
-- Dashboard customization
+### Data Analysis & GIS
+- Python for data analysis and portfolio projects
+- Pandas, NumPy, and Jupyter Notebook
+- QGIS, GeoJSON, and Leaflet
+- Data cleaning, exploratory analysis, and interactive mapping
 
-## Data Analysis
-- Python
-- Pandas
-- GeoPandas
-- NumPy
-- Jupyter Notebook
+## Portfolio Projects
 
-## Databases
-- SQL Server
-- SQL Queries
-- Data extraction and transformation
+### Epicor ERP
+Projects and documentation related to ERP business processes, query development, reporting, customization, and process improvement.
 
-## GIS & Visualization
-- QGIS
-- GeoJSON
-- Leaflet
-- Spatial analysis
+**Project areas:** BAQs, BPMs, dashboards, SSRS reports, and ERP application support.
 
----
+**Folder:** [`epicor/`](epicor/)
 
-# 📂 Portfolio Projects
+### Data Analysis
+Projects exploring data preparation, cleaning, exploratory analysis, and practical applications of Python.
 
-## 🏢 Epicor ERP Projects
-Examples of:
-- BAQ development
-- BPM automation
-- SQL reporting
-- SSRS report customization
-- ERP process improvements
+**Project areas:** Data cleaning, exploratory data analysis, analysis scripts, and visualization.
 
-📁 Folder: `/epicor`
+**Folder:** [`data-analysis/`](data-analysis/)
 
----
+### GIS & Mapping
+Projects using geographic data, spatial analysis, and web mapping to explore and communicate information.
 
-## 📊 Data Analysis Projects
-Examples of:
-- CSV and MK file analysis
-- Data cleaning
-- Exploratory data analysis
-- Python automation scripts
+**Project areas:** Interactive maps, GeoJSON visualizations, QGIS projects, and spatial data processing.
 
-📁 Folder: `/data-analysis`
+**Folder:** [`maps/`](maps/)
 
----
+### POSLife — Point of Sale & Inventory Management
 
-## 🗺 GIS & Mapping Projects
-Examples of:
-- Interactive maps with Leaflet
-- GeoJSON visualizations
-- QGIS projects
-- Spatial data processing
+POSLife is a point-of-sale application for a hardware store, currently under development using **C#, Windows Forms on .NET 8, and PostgreSQL**.
 
-📁 Folder: `/maps`
+The project follows a layered architecture that separates the user interface, business rules, and data access. Its planned business scope includes sales, inventory, purchasing, customer credit, cash management, and reporting, with support for multiple branches and warehouses considered in the design.
 
----
+**Technologies:** C# · .NET 8 Windows Forms · PostgreSQL · Npgsql · RDLC Reports · Git/GitHub
 
-# 🚀 Current Learning Goals
+**Project documentation:** Available in the [`POSLife/`](POSLife/) project directory.
 
-- Advanced Python for analytics
-- Machine learning fundamentals
-- Interactive dashboards
-- GIS web applications
-- Data storytelling
+## Learning & Development
+
+I continue to expand my technical knowledge through personal projects and independent learning, building on my experience with ERP systems, databases, and business applications.
+
+My current learning interests include:
+
+- **Data Analysis:** Exploring data preparation, cleaning, and exploratory analysis using Python.
+- **Machine Learning:** Learning fundamental techniques and exploring practical applications.
+- **Data Visualization:** Developing interactive dashboards and ways to communicate information clearly.
+- **GIS & Web Mapping:** Working with geographic data, spatial analysis, and interactive maps.
+
+Through these projects, I continue learning new tools and applying them to practical problems.
+
+## Contact
+
+- **Email:** [r_urbina@outlook.com](mailto:r_urbina@outlook.com)
+- **GitHub:** [github.com/robertourbina](https://github.com/robertourbina)
+
+## Portfolio Purpose
+
+This repository showcases practical projects, documents technical problem-solving, and reflects my continued development across ERP systems, data analysis, application development, and GIS.
 
 ---
 
-# 📌 Featured Technologies
-
-| Technology | Area |
-|---|---|
-| Python | Data Analysis |
-| SQL Server | Databases |
-| Epicor ERP | ERP Solutions |
-| QGIS | GIS |
-| Leaflet | Web Mapping |
-| Git & GitHub | Version Control |
-
----
-
-# 📫 Contact
-
-- LinkedIn: *(Add your LinkedIn URL here)*
-- GitHub: *(Add your GitHub profile URL here)*
-
----
-
-# 📈 Portfolio Purpose
-
-This repository was created to document my technical growth, share practical solutions, and demonstrate projects combining ERP systems, data analysis, and geospatial technologies.
-
----
-
-⭐ Thanks for visiting my portfolio repository!
-
-
+Thank you for visiting my portfolio.
