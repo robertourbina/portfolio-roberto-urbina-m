@@ -1,68 +1,55 @@
 # POSLife
 
-POSLife es un sistema de Punto de Venta e Inventario para ferreterías.
+POSLife is a Point of Sale and Inventory Management system for hardware stores.
 
-## Tecnologías
+## Technology
 
-- Windows Forms .NET 8
+- Windows Forms .NET 8 (C#)
 - PostgreSQL
 - Npgsql
 - RDLC Reports
+- GitHub
 
-## Estado del Proyecto
+## Project Status
 
-Functional Analysis     ✅ 100%
+The master plan and the current status of every step are maintained in [docs/roadmap.md](docs/roadmap.md).
 
-Technical Standards     ✅ 100%
+## Philosophy
 
-Naming Conventions      ✅ 100%  
+"Do not rush, but do not stop."
 
-Data Dictionary         ✅ 100%
+## V1 Scope
 
-   ✅ Organization
+- Products
+- Inventory
+- Sales
+- Purchases
+- Customers (credit and collections)
+- Cash Management
+- Security
+- Configuration
 
-   ✅ Security
+The full approved scope is in [docs/functional-scope-v1.md](docs/functional-scope-v1.md).
 
-   ✅ Products
+## Repository Structure
 
-   ✅ Inventory
+```text
+POSLife/
+├── docs/
+├── database/
+├── src/
+│   ├── Models/
+│   ├── Repositories/
+│   ├── Services/
+│   ├── Forms/
+│   ├── Reports/
+│   ├── Resources/
+│   ├── Data/
+│   └── Utils/
+├── backups/
+└── README.md
+```
 
-   ✅ Customers
+## Documentation
 
-   ✅ Suppliers
-
-   ✅ Sales
-
-   ✅ Purchases
-
-   ✅ Cash
-
-Technical Design         🔄 In Progress
-
-Database Design          🔄 In Progress
-
-Development             ⏳ Pending
-
-## Filosofía del Proyecto
-
-"No correr, pero tampoco detenerse."
-
-## Alcance V1
-
-- Productos
-- Inventario
-- Ventas
-- Compras
-- Clientes
-- Crédito
-- Cobranza
-- Caja
-- Seguridad
-- Configuración
-
-## Próxima Fase
-
-- Convenciones Técnicas
-- Diccionario de Datos
-- Modelo Entidad-Relación
-- Diseño PostgreSQL
+All design decisions are documented under `docs/` before implementation.
