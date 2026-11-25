@@ -279,6 +279,20 @@ The initial validation focuses on the accuracy of the query logic, quantity calc
 
 Actual validation results should be documented during BAQ execution and testing, using representative purchase order data and comparing the BAQ output with the corresponding Epicor purchasing and receiving information.
 
+## Business Value
+
+BAQ-003 provides a consolidated view of purchase order requirements with outstanding receipt quantities, helping the organization improve visibility into pending supplier deliveries.
+
+The BAQ supports the following business activities:
+
+- **Improved visibility:** Allows Purchasing and Receiving personnel to identify purchase order lines with quantities still pending receipt without reviewing individual purchase orders.
+- **Supplier follow-up:** Helps Purchasing prioritize follow-up activities by identifying outstanding supplier deliveries and their remaining quantities.
+- **Operational coordination:** Provides Purchasing, Receiving, Inventory Management, and Production Planning with a shared view of pending purchase order requirements.
+- **Inventory and production awareness:** Helps identify materials that may affect inventory availability or production planning when expected quantities have not yet been received.
+- **Reduced manual review:** Simplifies the identification of outstanding receipt requirements by presenting relevant purchasing information in a consolidated view.
+
+The initial version focuses on improving operational visibility and supporting purchasing and receiving activities. It does not replace standard Epicor purchasing, receiving, or material planning processes.
+
 
 
 
