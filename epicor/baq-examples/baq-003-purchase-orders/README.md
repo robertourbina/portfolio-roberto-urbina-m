@@ -234,7 +234,50 @@ Fully received requirements are excluded because their remaining quantity is zer
 
 The filters are intentionally defined within the BAQ rather than exposed as runtime parameters. This allows the initial version to provide a complete operational view of outstanding purchase order receipts while maintaining the business rules established in the Query Logic section.
 
+## Validation
 
+The validation process is designed to verify that the BAQ correctly identifies outstanding purchase order receipt requirements and calculates the remaining quantities as expected.
+
+The validation scenarios focus on the inclusion and exclusion of purchase order requirements, the accuracy of the remaining quantity calculation, and the correct assignment of receipt status.
+
+### Validation Scenarios
+
+| ID | Scenario | Expected Result |
+|---|---|---|
+| VAL-01 | Purchase order release with no receipts | Included. Remaining Quantity equals Released Quantity. Status: Not Received. |
+| VAL-02 | Purchase order release partially received | Included. Remaining Quantity equals Released Quantity minus Received Quantity. Status: Partially Received. |
+| VAL-03 | Purchase order release fully received | Excluded because Remaining Quantity equals zero. |
+| VAL-04 | Purchase order line with multiple releases | Remaining quantities are calculated per release and consolidated correctly at the Purchase Order Line level. |
+| VAL-05 | Closed or voided purchase order | Excluded from the results. |
+| VAL-06 | Closed or voided purchase order line or release | The affected line or release is excluded according to the defined filters. |
+| VAL-07 | Multiple receipt transactions against one release | Received quantities are accounted for correctly without duplication. |
+
+### Quantity Calculation Verification
+
+The Remaining Quantity calculation is verified by comparing the released quantity against the quantity already received for each applicable purchase order release.
+
+The expected result must be greater than zero for a requirement to appear in the final BAQ output.
+
+### Receipt Status Verification
+
+The Receipt Status must correctly identify the receipt condition of each qualifying purchase order line:
+
+- **Not Received:** No quantity has been received.
+- **Partially Received:** A quantity has been received, but some quantity remains outstanding.
+
+Fully received requirements must not appear in the final results.
+
+### Multiple Release Verification
+
+Special attention is given to purchase order lines containing multiple releases.
+
+The validation must confirm that each release is evaluated correctly and that the resulting outstanding quantities are consolidated at the Purchase Order Line level without duplicating released or received quantities.
+
+### Validation Consideration
+
+The initial validation focuses on the accuracy of the query logic, quantity calculations, receipt status, and defined filters.
+
+Actual validation results should be documented during BAQ execution and testing, using representative purchase order data and comparing the BAQ output with the corresponding Epicor purchasing and receiving information.
 
 
 
