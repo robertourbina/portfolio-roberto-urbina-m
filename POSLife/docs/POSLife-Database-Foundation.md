@@ -4,9 +4,9 @@
 |---|---|
 | Project | POSLife, point of sale for a hardware store in Mexico |
 | Document | Database design, Section 2, block 1: Foundation |
-| Version | 0.1 (draft) |
-| Status | Develop step done, validated against the requirements, waiting for owner review |
-| Date | 2026-11-25 |
+| Version | 1.0 |
+| Status | Approved and frozen. Baseline for the Foundation scripts and the later blocks |
+| Date | Created 2026-11-25, approved 2026-11-27 |
 | Baseline | POSLife-Requirements.md v1.0 (frozen) |
 | Level of detail | Tables and key columns. SQL scripts come after the design is approved |
 
@@ -240,10 +240,22 @@ Credentials are never stored in plain text, and the connection uses an encrypted
 | Ch. 16.3 | `attachment.sha256`, job definitions |
 | Ch. 16.6 | `schema_version`, required version setting |
 
-## 9. Open points for review
+## 9. Resolved points
 
-1. **Catalog structure:** one table per catalog (as drafted, with real foreign keys) or a single generic lookup table.
-2. **Roles per user:** one role per user plus overrides (as drafted) or several roles per user.
-3. **Attachment folder:** the root folder must be reachable from all 8 registers, normally a shared folder on the computer that hosts the database. To be confirmed in the technical design.
-4. **Audit partitioning from the start** (as proposed) or a plain table in Phase 1.
-5. **Domains** (`dom_amount` and the others): accept as proposed or use plain `numeric` types.
+All five review points were approved as drafted.
+
+| # | Point | Resolution |
+|---|---|---|
+| 1 | Catalog structure | One table per catalog, with real foreign keys |
+| 2 | Roles per user | One role per user, plus per-user overrides |
+| 3 | Attachment folder | Shared folder reachable from all 8 registers. Exact location confirmed in the technical design |
+| 4 | Audit partitioning | Partitioned by month from the start |
+| 5 | Domains | `dom_amount`, `dom_unit_price`, `dom_qty`, `dom_rate` |
+
+## 10. Change control
+
+Changes only for a very important reason and with the owner's authorization. Every change is listed here.
+
+| Date | Section | Change | Reason |
+|---|---|---|---|
+| | | None yet | |
