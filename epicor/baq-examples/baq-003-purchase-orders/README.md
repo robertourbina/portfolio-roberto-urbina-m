@@ -293,7 +293,20 @@ The BAQ supports the following business activities:
 
 The initial version focuses on improving operational visibility and supporting purchasing and receiving activities. It does not replace standard Epicor purchasing, receiving, or material planning processes.
 
+## Technical Skills Demonstrated
 
+The development of BAQ-003 demonstrates the application of Epicor ERP knowledge and Business Activity Query (BAQ) design techniques to address a purchasing and receiving requirement.
+
+The main technical skills demonstrated include:
+
+- **BAQ Development:** Designing and configuring an Epicor Business Activity Query to retrieve purchase order information and identify outstanding receipt quantities.
+- **Epicor Data Structures:** Understanding the purchasing data structures required to retrieve relevant purchase order information.
+- **Table Relationships:** Establishing the appropriate relationships between data sources to present purchase order information at the purchase order line level.
+- **Calculated Fields:** Applying calculated fields to determine pending receipt quantities based on the available purchasing information.
+- **Query Filtering:** Defining filter criteria to focus the results on purchase order lines with outstanding receipt quantities.
+- **Data Validation:** Reviewing query results against expected business scenarios to verify that the information accurately represents pending purchase order receipts.
+
+These skills demonstrate the ability to translate a purchasing business requirement into a practical Epicor BAQ solution.
 
 
 
